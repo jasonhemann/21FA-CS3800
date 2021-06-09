@@ -8,31 +8,11 @@ sidebar:
   nav: sidebar-site-map
 ---
 
-## Project Description Here
-
-[Project Description]({{ site.baseurl }}/project-description.txt)
-
-
-## Book an appointment !
-[Book an appointment here!!](https://v2.waitwhile.com/book/280018279office/calendar)
-
-Please make sure you get a confirmation email. If you do not get a confirmation email, you do not have an appointment. (This time for real).
-
-> "I know what you're thinking about," said Tweedledum; "but it isn't
-> so, nohow." "Contrariwise," continued Tweedledee, "if it was so, it
-> might be; and if it were so, it would be; but as it isn't, it
-> ain't. That's logic."
->
-> Lewis Carroll, "Through the Looking Glass" 
-
-Welcome to the "Logic and Computation" for Spring 2021. We hope this
-will be an education and enjoyable experience. We endeavor to
-spotlight the logical underpinnings of skills you have previously
-learned, and also to contextualize the deep connections between
-mathematical logic and computation. This course will teach you how to
-prove theorems about your programs. You will learn the importance of
-thinking logically when designing your programs, and the benefits of
-tooling that helps to check your programs are correct.
+Welcome to the "Theory of Computation" for Fall 2021. We aim to highlight the practical importance of the
+basic theory of computation in the everyday lives of working software developers and computer scientists. This
+course will teach you how to prove theorems about your programs. You will learn the importance of thinking
+logically when designing your programs, and the benefits of tooling that helps to check your programs are
+correct.
 
 
 
