@@ -4,10 +4,17 @@ layout: single
 classes: wide
 ---
 
+# Supplementary Videos
+
+
+- [P v. NP](https://www.youtube.com/watch?v=YX40hbAHx3s) (High level gist, 10m)
+
+
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
 - [Quine-McCluskey Algorithm, Visualized](https://www.mathematik.uni-marburg.de/~thormae/lectures/ti1/code/qmc/)
 - [Automatically generating /conjectures/](https://www.nature.com/articles/s41586-021-03229-4)
 - [DeBruijn and Automath: the first proof checker](https://pure.tue.nl/ws/files/3614142/372812914182296.pdf)
+- [Galactic Algorithms](https://en.wikipedia.org/wiki/Galactic_algorithm)
 
 # P, NP, SAT
 - Results of the [SAT Solver Competition](http://hdl.handle.net/10138/237063) at the [2018 Computational Logic Olympic Games](https://www.labri.fr/perso/lsimon/flog2018/)
@@ -15,8 +22,17 @@ classes: wide
 - [CNF, DNF Normalization, Visualized](https://www.mathematik.uni-marburg.de/~thormae/lectures/ti1/code/normalform/index.html)
 - [It's tough to organize a pub crawl](http://www.math.uwaterloo.ca/tsp/pubs/)
 
-# Other classes' notes 
-
+# Other Sipser-based courses
+- 
+- [Ed4U](https://www.youtube.com/watch?v=dCiZZiqVv9w&list=PLrjkTql3jnm_TWSXXvWX1_jX-L6f1QJSx)
+- [UC Davis](https://www.youtube.com/watch?v=7w_hO_1sPuA&list=PL_w_qWAQZtAYRxrBXDwlSGo5tgm7bXJqW)
+- [CoderIsland](https://www.youtube.com/watch?v=HyUK5RAJg1c&list=PL601FC994BDD963E4)
+- [Portland State](https://www.youtube.com/watch?v=TOsMcgIK95k&list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz)
+- [NESO](https://www.youtube.com/watch?v=58N2N7zJGrQ&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev)
+ 
+# Other non-Sipser based courses
+- [Easy Theory](https://www.youtube.com/c/EasyTheory/playlists)
+- [IIT](https://www.youtube.com/playlist?list=PLbMVogVj5nJSd25WnSU144ZyGmsqjuKr3)
 
 # Meta 
 
