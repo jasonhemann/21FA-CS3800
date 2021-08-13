@@ -8,10 +8,10 @@ sidebar:
   nav: sidebar-site-map
 ---
 
-> “The formulation of a problem is often more essential than its solution, which may be merely a matter of
-> mathematical or experimental skill.” 
->
-> in *Einstein and Infeld*, **Evolution of Physics** (1938)
+<!-- > “The formulation of a problem is often more essential than its solution, which may be merely a matter of -->
+<!-- > mathematical or experimental skill.”  -->
+<!-- > -->
+<!-- > in *Einstein and Infeld*, **Evolution of Physics** (1938) -->
 
 > “... this theory ... it's sort of a research methodology whose real goal is not to solve problems but to
 > identify the right problem. So what I'm saying is that computer scientists are interested in exactly the
@@ -29,6 +29,9 @@ correct.
 
 ## Classes and Labs
 
- | Lecture | Instructor | Dates | Time        | Location               |
- | 30057   | Jason      | MWR   | 10:30-11:35 | Dodge Hall 050 or Zoom |
- | 30057   | Jason      | MWR   | 10:30-11:35 | Dodge Hall 050 or Zoom |
+ | Lecture | Instructor | Dates | Time      | Location                                                   |
+ | 16453   | Jason      | TF    | 1:35-3:15 | [Richards Hall 300](https://goo.gl/maps/Jf7SkDTUHnAoNU429) |
+ | 10376   | Jason      | TF    | 3:25-5:05 | [Hurtig Hall 130](https://goo.gl/maps/51ZtNjVzfKeaF7sS8)   |
+
+
+
