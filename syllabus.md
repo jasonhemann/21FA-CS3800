@@ -93,13 +93,16 @@ automated theorem proving or the like, please let me know on that too!
 
 ## Required Texts 
 
-We will use the 3rd Edition of Sipser's "Introduction to the Theory of
-Computation" text for this class. There are courses where you do not
-need the putatively required textbook. In this course, the text is
-really, actually necessary both to complete the required readings and
-also portions of the homework assignments. This textbook is widely
+We will use the 3rd Edition of Sipser's [Introduction to the Theory of
+Computation](https://en.wikipedia.org/wiki/Introduction_to_the_Theory_of_Computation)
+text for this class. There are courses where you do not need the
+putatively required textbook. In this course, the text is really,
+actually necessary both to complete the required readings and also
+portions of the homework assignments. This textbook is widely
 available, including at the [Northeastern University
-bookstore](https://northeastern.bncollege.com/shop/northeastern/home)
+bookstore](https://northeastern.bncollege.com/shop/northeastern/home).
+As you read, please also take care to pay attention for the author's
+[known errata](http://www-math.mit.edu/~sipser/itoc-errs3.1.html).
 
 ## Technology and Platforms
 
