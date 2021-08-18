@@ -93,11 +93,13 @@ automated theorem proving or the like, please let me know on that too!
 
 ## Required Texts 
 
-There are no required texts for this course. Our course will follow a
-draft of [Pete Manolios's](https://www.ccs.neu.edu/~pete/) [/Reasoning
-About Programs/ (2021)]({{ site.baseurl }}/readings/). You will find these
-notes linked from this website. I invite you to collaboratively
-annotate these notes with me, and with each other.
+We will use the 3rd Edition of Sipser's "Introduction to the Theory of
+Computation" text for this class. There are courses where you do not
+need the putatively required textbook. In this course, the text is
+really, actually necessary both to complete the required readings and
+also portions of the homework assignments. This textbook is widely
+available, including at the [Northeastern University
+bookstore](https://northeastern.bncollege.com/shop/northeastern/home)
 
 ## Technology and Platforms
 
