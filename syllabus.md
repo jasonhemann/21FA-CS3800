@@ -333,7 +333,9 @@ add two points onto the class-wide final average.
 Students of course play an integral part in ensuring they receive the
 full benefit of their coursework. The students of 2800 are certainly
 beholden to the academic integrity policies of [Northeastern
-University](http://www.northeastern.edu/osccr/academic-integrity-policy/),
+University](http://www.northeastern.edu/osccr/academic-integrity-policy/)
+and as laid out in the [student
+handbook](https://cpb-us-w2.wpmucdn.com/sites.northeastern.edu/dist/8/569/files/2020/09/2021-22-UG-Student-Handbook.pdf),
 the [Khoury
 College](https://www.khoury.northeastern.edu/information-for-overview/current-undergrad/undergraduate-advising-academic-support/academic-policies/).
 
@@ -460,7 +462,7 @@ appropriate measures are taken and resources are made available to the
 student who may have been harmed. Protecting a student’s privacy is of
 utmost concern, and all involved will only share information with
 those that need to know to ensure the University can respond and
-assist.
+assist. 
 
 ## Acknowledgments 
 
