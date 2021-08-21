@@ -56,7 +56,6 @@ can find *an* edition of this text [available as an E-book from the
 Snell
 library](https://onesearch.library.northeastern.edu/primo-explore/fulldisplay?docid=NEU_ALMA21174526980001401&context=L&vid=NU&lang=en_US&search_scope=default_scope&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,Introduction%20to%20the%20theory%20of%20computation).
 
-
 ## Grade Breakdown
 
 I will assign overall course grades as follows:
@@ -108,22 +107,34 @@ even those we find compelling may not be implementable as we go.
 
 ## Participation
 
-I expect you to attend each lecture. Your attendance is a prerequisite
-for a substantial portion of the course's grade. I expect students to
-attend every class and remain in class throughout the duration of the
-session. Your absence or tardiness will impact your ability to achieve
-course objectives which could hurt your course grade. An absence,
-excused or unexcused, does not relieve a student of any course
-requirement. Lecture content quizzes serve as proxies for
-participation and thus attendance, as well as to gauge students'
-understanding.
+I expect you to attend each lecture. We will [not take
+attendance](https://vm.tiktok.com/ZMJBoQovg/) as such, but attendance
+is a prerequisite for participation, a substantial portion of your
+grade for this course. I expect students to attend every class and
+remain in class throughout the duration of the session. Your absence
+or tardiness will impact your ability to achieve course objectives
+which could hurt your course grade. An absence, excused or unexcused,
+does not relieve a student of any course requirement. Lecture content
+quizzes serve as proxies for participation and thus attendance, as
+well as to gauge students' understanding.
+
+### Oral Explanation and Participation
+
+Proof has a [social
+component](https://www.jstor.org/stable/3482651). As such, part of
+your grade will also include your participating by communicating with
+your colleagues in both lecture and lab sections. These can take the
+form of small group "breakout room" work, open class votes and
+discussions, or walk us all through some of your answers. 
 
 ### Lecture Quizzes/Polls
 
 Expect to have regular content quizzes during or toward the end of
 lecture. These act as a forcing function, encouraging attention to
 lectures and/or the ancillary readings and to alert me to students'
-difficulties.
+difficulties. Sometimes we take these for completion, others for
+accuracy. These lecture quizzes belongs under your participation
+grade.
 
 ## Homework
 
@@ -170,7 +181,6 @@ ensures that your programs compute the correct answers.
 You will have two long-form exams. I have yet to determine our exams'
 format.
 
-
 ### TRACE evaluations
 
 I encourage students to take time and submit TRACE evaluations. Your
@@ -179,53 +189,6 @@ to fairly compensate you for that time without violating the integrity
 or anonymity of the TRACE system, if 85% or more of the enrolled
 students complete these TRACE evaluations, then I shall add a point
 onto the class-wide final average.
-
-
-## Participation
-
-I expect you to attend each lecture. Your attendance is a prerequisite
-for a substantial portion of the course's grade. I expect students to
-attend every class and remain in class throughout the duration of the
-session. Your absence or tardiness will impact your ability to achieve
-course objectives which could hurt your course grade. An absence,
-excused or unexcused, does not relieve a student of any course
-requirement. Lecture content quizzes serve as proxies for
-participation and thus attendance, as well as to gauge students'
-understanding.
-
-### Oral Explanation and Participation
-
-Proof has a [social
-component](https://www.jstor.org/stable/3482651). As such, part of
-your grade will also include your participating by communicating with
-your colleagues in both lecture and lab sections. These can take the
-form of small group "breakout room" work, open class votes and
-discussions, or walk us all through some of your answers. 
-
-## Participation
-
-I expect you to attend lecture and lab each class period. Your
-attendance is a prerequisite for a substantial portion of the course's
-grade, both in your lecture and lab sections. We will [not take
-attendance](https://vm.tiktok.com/ZMJBoQovg/) as such, but attendance
-is a prerequisite for participation. We will have reading content
-quizzes and elicit oral or group explanations as proxies for
-participation. 
-
-### Content Quiz, Pre-reading
-
-Before class, I will expect you to have read the notes as marked on
-the schedule. These act as a forcing function for the lecture notes
-and alert me to students' difficulties. Sometimes we take these for
-completion, others for accuracy. These lecture quizzes belongs under
-your participation grade.
-
-### Lecture Quizzes/Polls
-
-Expect to have regular content quizzes during or toward the end of
-lecture. These act as a forcing function, encouraging attention to
-lectures and/or the ancillary readings and to alert me to students'
-difficulties.
 
 #### Recording 
 
@@ -240,15 +203,6 @@ notified of any such accommodation prior to recording. Any
 distribution of such recordings is prohibited. Obviously I cannot
 [stop you](https://obsproject.com/), but it's to both our benefits.
 
-
-## TRACE evaluations
-
-I encourage students to take time and submit TRACE evaluations. Your
-time is busy at the end of the term when these are available. In order
-to fairly compensate you for that time, if 85% or more of the students
-enrolled in a section complete these TRACE evaluations, then I shall
-add two points onto the class-wide final average.
-
 ## Academic Integrity Policy
 
 Students of course play an integral part in ensuring they receive the
@@ -262,13 +216,11 @@ College](https://www.khoury.northeastern.edu/information-for-overview/current-un
 
 ### Teamwork and Collaboration
 
-I had originally stipulated that groups of at least 2 from within the
-same lab section. *Gradescope cannot enforce either, so I will not
-require them.* You can work with up to 3 others, for a total of 4
-people in a group. You aren't required to work with anyone else if you
-don't wish. You can work with students from any other sections you
-wish. You will submit a single submission for your entire group, and
-it is your responsibility to include the names of your group members.
+You can work with up to 3 others, for a total of 4 people in a group.
+You aren't required to work with anyone else if you don't wish. You
+can work with students from any other sections you wish. You will
+submit a single submission for your entire group, and it is your
+responsibility to include the names of your group members.
 
 Do bear in mind pair programming is a central part of the
 undergraduate curriculum here. Pair programming is not intended to
@@ -290,11 +242,13 @@ mastery when we request.
 
 #### Group Dynamics and Difficulties
 
-If you find that your group is no longer able to work effectively
-together or that not everyone can equally participate, please bring
-this to your lab instructor's attention. Your lab instructor may have
-suggestions about how to improve your group cohesion, or may use the
-staff privilege to reallocate group members. 
+These groups are not fixed; you should feel free to adjust them to
+your own need and benefit on a per-week basis. If you find that your
+group is no longer able to work effectively together or that not
+everyone can equally participate, please bring this to your lab
+instructor's attention. Your lab instructor may have suggestions about
+how to improve your group cohesion, or may use the staff privilege to
+reallocate group members.
 
 ## Academic Accommodations 
 
