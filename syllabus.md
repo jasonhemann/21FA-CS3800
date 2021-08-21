@@ -5,6 +5,98 @@ toc: true
 toc_label: "Syllabus Contents"
 ---
 
+## Purpose and Objectives
+
+In CS 3800 you will learn to understand formal treatments of the
+notions of computation, computability, computational power, and
+efficiency. You will learn to understand both intuitively and formally
+simple models of computation. You will gain expertise with
+mathematical proofs and common proof techniques, and you will also
+come to understand the connections between these theoretical models 
+and computational tasks in common programming languages. 
+
+After this course you will know how to:
+
+  1. 
+  2. 
+
+After this course you will 
+
+## Contact
+
+The best way to get in contact for personal, private (FERPA, etc)
+messages is via my email address
+[jhemann@northeastern.edu](mailto:jhemann@northeastern.edu). You
+should expect a response within 48 hours. You will find that I am
+faster with [Piazza]({{ site.baseurl }}/tech/) or our public forums. If I deem it even
+potentially useful to others, I will likely anonymize your letter,
+re-post it on Piazza, answer it there, and forward you the link.
+
+A great regular way to reach out for help is via our [office
+hours]({{ site.baseurl }}/office-hours/).
+
+If in fact you're interested in PL research, logic, logic program,
+automated theorem proving or the like, please let me know on that too!
+[I'm excited to talk more about it all
+:-)](https://scholar.google.com/citations?user=SePR8OkAAAAJ)
+
+## Required Texts 
+
+We will use the 3rd Edition of Sipser's [Introduction to the Theory of
+Computation](https://en.wikipedia.org/wiki/Introduction_to_the_Theory_of_Computation)
+text for this class. There are courses where you do not need the
+putatively required textbook. In this course, the text is really,
+actually necessary both to complete the required readings and also
+portions of the homework assignments. This textbook is widely
+available, including at the [Northeastern University
+bookstore](https://northeastern.bncollege.com/shop/northeastern/home).
+As you read, please also take care to pay attention for the author's
+[known errata](http://www-math.mit.edu/~sipser/itoc-errs3.1.html). You
+can find *an* edition of this text [available as an E-book from the
+Snell
+library](https://onesearch.library.northeastern.edu/primo-explore/fulldisplay?docid=NEU_ALMA21174526980001401&context=L&vid=NU&lang=en_US&search_scope=default_scope&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,Introduction%20to%20the%20theory%20of%20computation).
+
+
+## Grade Breakdown
+
+I will assign overall course grades as follows:
+
+     | Category                  | Weight (%) |
+     |---------------------------+------------|
+     | Lecture Quizzes           |         20 |
+     | Exams                     |         35 |
+     | Homework*                 |         45 |
+     | TRACE                     |          1 | 
+     | Total                     |        101 |
+
+I will calculate overall numeric grade according to this grading
+scheme. Everyone who gets at least 90% will get some form of A,
+everyone with at least 80% will get at least some form of B, and
+everyone with at least 70% will get at least some form of
+C. Additionally, there will be a "curve", but I will determine it only
+at the end of the semester. This curve will potentially raise grades
+above those described here, but will not lower them. Therefore, the
+total grade shown on Canvas does not necessarily reflects the
+worst-case scenario of the letter grade you will get at the end of the
+semester. This means I *cannot* give you a more precise estimate of
+your grade than what you calculate from the raw score. I detail below
+the aforementioned individual components of your final grade.
+
+I will base some portions of your homework and lecture quiz
+grades on completion and submission of the relevant exercises. I will
+base the remaining portion of each on correctness. 
+
+### Total Running Grade Calculation
+
+We will track the completion portions of your lab and homework grades,
+as well as your project grades, on
+[Canvas](https://canvas.northeastern.edu/). You will have an
+approximate assessment of your *current* grade status before the
+Add/Drop deadline. We cannot give you a standing completion percentage
+of the participation component of your grade because, logically, there
+[are no pop
+quizzes](https://en.wikipedia.org/wiki/Unexpected_hanging_paradox).
+
 ### Collaborative Course Construction and Feedback 
 
 We are together in unprecedented times. The typical course structure
@@ -23,139 +115,6 @@ go. Please do not hesitate. You can see any and all changes on the
 course website's repository. Students in prior semesters gave a good
 deal of feedback, and at times I wish they'd given more, and sooner.
 
-## Purpose and Objectives
-
-CS 2800 will introduce you to formal logic and its deep connections to
-computing. The goal of the course is to introduce fundamental,
-foundational methods for modeling, designing and reasoning about
-computation. This course considers approaches to proving programs
-properties including termination, correctness, and safety. The course
-also introduces students to modeling with logic the range of artifacts
-and phenomena that arise in computer and information science.
-
-After this course you will know how to:
-
-  1. translate statements about programs' behavior into logical claims
-  2. prove such claims both by hand and via automated tools.
-
-After this course you will appreciate the benefits thinking logically
-when developing software, as well as the benefit of formal tools for
-ensuring software correctness. You will also familiarize yourself with
-
-  - propositional and first order predicate logic
-  - logical inference
-  - mathematical and structural induction
-  - recursion 
-  - equational reasoning,
-  - rewriting, and 
-  - various proof techniques
-
-as well as the common notations for the preceding. We will study logic
-from a computational perspective using the [ACL2 Sedan theorem proving
-system](http://acl2s.ccs.neu.edu/acl2s/doc). **Please do not use the
-installation instructions on the this website. Instead follow the
-first lab assignment.**
-
-## Contact
-
-The best way to get in contact for personal, private (FERPA, etc)
-messages is via my email address
-[jhemann@northeastern.edu](mailto:jhemann@northeastern.edu). You
-should expect a response within 48 hours. You will find that I am
-faster with [Piazza]({{ site.baseurl }}/tech/) or our public forums. If I deem it even
-potentially useful to others, I will likely anonymize your letter,
-re-post it on Piazza, answer it there, and forward you the link.
-
-A great regular way to reach out for help is via our [office
-hours]({{ site.baseurl }}/office-hours/).
-
-## Recent Changes
-
-This semester I split the difference between exam-based summative
-assessments that are more traditional in this course with
-project-based ["authentic
-assessments"](https://learning.northeastern.edu/event/workshop-using-projects-and-presentations-as-assessment-strategies-in-nuflex/). These
-projects will be uniquely tailored with and for the particular group
-of students, and may take the forms of proofs for topics that have
-come up in practice or programmatic reduction of a real world example.
-
-I'm also planning to use some of the last part of the course, while
-students are working on these larger projects, to talk about
-computational logic in a different context: logic programming. We can
-also get into the "guts" of an implementation of such a system, where
-ACL2, ACL2s is so much more sophisticated that it's tough for students
-to wrap their heads around an implementation. 
-
-If in fact you're interested in PL research, logic, logic program,
-automated theorem proving or the like, please let me know on that too!
-[I'm excited to talk more about it all
-:-)](https://scholar.google.com/citations?user=SePR8OkAAAAJ)
-
-## Required Texts 
-
-We will use the 3rd Edition of Sipser's [Introduction to the Theory of
-Computation](https://en.wikipedia.org/wiki/Introduction_to_the_Theory_of_Computation)
-text for this class. There are courses where you do not need the
-putatively required textbook. In this course, the text is really,
-actually necessary both to complete the required readings and also
-portions of the homework assignments. This textbook is widely
-available, including at the [Northeastern University
-bookstore](https://northeastern.bncollege.com/shop/northeastern/home).
-As you read, please also take care to pay attention for the author's
-[known errata](http://www-math.mit.edu/~sipser/itoc-errs3.1.html).
-
-## Technology and Platforms
-
-As a course and a student body, we are more remote than usual, and
-preferable. We will leverage a number of Northeastern's technology
-platforms to help bridge the chasm. Your first lab assignment will
-walk you through installing and configuring these.
-
-We will use a variety of tools and platforms to facilitate teaching
-and learning at a somewhat remote distance and to compensate for this
-unconventional semester. These include but are not limited to ACL2s,
-Eclipse, VirtualBox, CodeTogether, WaitWhile, PollEverywhere, and
-Hypothes.is. Please see the [technology page]({{ site.baseurl
-}}/tech/) for more details.
-
-## Grade Breakdown
-
-I will assign overall course grades as follows:
-
-     | Category                  | Weight (%) |
-     |---------------------------+------------|
-     | Participation             |         15 |
-     | Homework                  |         40 |
-	 | Midterm Exam              |         15 |
-     | Project Proposal          |          5 |
-	 | Project Progress Report   |         10 |
-     | Project, Presentation     |         15 |
-     | TRACE evaluation          |          2 |
-     | Total                     |        102 |
-
-I will calculate overall numeric grade according to this grading
-scheme. Everyone who gets at least 90% will get some form of A,
-everyone with at least 80% will get at least some form of B, and
-everyone with at least 70% will get at least some form of
-C. Additionally, there will be a "curve", but I will determine it only
-at the end of the semester. This curve will potentially raise grades
-above those described here, but will not lower them. Therefore, the
-total grade shown on Canvas does not necessarily reflects the
-worst-case scenario of the letter grade you will get at the end of the
-semester. This means I *cannot* give you a more precise estimate of
-your grade than what you calculate from the raw score. I detail below
-the aforementioned individual components of your final grade.
-
-### Total Running Grade Calculation
-
-We will track the completion portions of your lab and homework grades,
-as well as your project grades, in
-[Canvas](https://canvas.northeastern.edu/). You will have an
-approximate assessment of your *current* grade status before the
-Add/Drop deadline. We cannot give you a standing completion percentage
-of the participation component of your grade because, logically, there
-[are no pop
-quizzes](https://en.wikipedia.org/wiki/Unexpected_hanging_paradox).
 
 ### Combined Lecture and Lab Grade
 
