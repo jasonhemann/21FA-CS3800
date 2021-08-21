@@ -5,6 +5,41 @@ classes: wide
 ---
 
 
+| Month | Date | Day  | Topic              | Optional Texts | Optional Notes |
+| Sept. | 10   | Fri  |                    |                |                |
+| Sept. | 14   | Tues |                    |                |                |
+| Sept. | 17   | Fri  |                    |                |                |
+| Sept. | 21   | Tues |                    |                |                |
+| Sept. | 24   | Fri  |                    |                |                |
+| Sept. | 28   | Tues |                    |                |                |
+| Oct.  | 1    | Fri  |                    |                |                |
+| Oct.  | 5    | Tues |                    |                |                |
+| Oct.  | 8    | Fri  |                    |                |                |
+| Oct.  | 12   | Tues |                    |                |                |
+| Oct.  | 15   | Fri  |                    |                |                |
+| Oct.  | 19   | Tues |                    |                |                |
+| Oct.  | 22   | Fri  |                    |                |                |
+| Oct.  | 26   | Tues |                    |                |                |
+| Oct.  | 29   | Fri  |                    |                |                |
+| Nov.  | 2    | Tues |                    |                |                |
+| Nov.  | 5    | Fri  |                    |                |                |
+| Nov.  | 9    | Tues |                    |                |                |
+| Nov.  | 12   | Fri  |                    |                |                |
+| Nov.  | 16   | Tues |                    |                |                |
+| Nov.  | 19   | Fri  |                    |                |                |
+| Nov.  | 23   | Tues |                    |                |                |
+| Nov.  | 26   | Fri  | Thanksgiving Break |                |                |
+| Nov.  | 30   | Tues |                    |                |                |
+| Dec.  | 3    | Fri  |                    |                |                |
+| Dec.  | 7    | Tues |                    |                |                |
+| Dec.  | 10   | Fri  |                    |                |                |
+
+
+
+
+
+
+
 | Date    | Day       | Lab/Lecture Topic                                                                                      | Assigned HW                                        | Notes Covered (Expected to pre-read)                                                                                                    |
 | 1/20/21 | Wednesday | Welcome; why?; website; what's where; programming review                                               | HW1 - Setup; Config                                | Ch1-2.4 + Website                                                                                                                       |
 | 1/21/21 | Thursday  | Programming review; datatypes; expressions; primitives' syntax & semantics                             |                                                    | 1-2.4 + REPL + ACL2 Ref                                                                                                                 |
