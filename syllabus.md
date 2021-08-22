@@ -192,16 +192,60 @@ onto the class-wide final average.
 
 #### Recording 
 
-I do not permit electronic video and/or audio recording of class in
-either modality. Unless the student obtains permission from the
-instructor electronic video and/or audio recording of class is
-prohibited. If permission is granted, any distribution of the
-recording is prohibited. Students with specific electronic recording
-accommodations authorized by the [DRC](academic-accommodations) do not
-require instructor permission; however, the instructor must be
-notified of any such accommodation prior to recording. Any
-distribution of such recordings is prohibited. Obviously I cannot
-[stop you](https://obsproject.com/), but it's to both our benefits.
+I do not permit electronic video and/or audio recording of class.
+Unless the student obtains permission from the instructor electronic
+video and/or audio recording of class is prohibited. If permission is
+granted, any distribution of the recording is prohibited. Students
+with specific electronic recording accommodations authorized by the
+[DRC](academic-accommodations) do not require instructor permission;
+however, the instructor must be notified of any such accommodation
+prior to recording. Any distribution of such recordings is prohibited.
+Obviously I cannot [stop you](https://obsproject.com/), but it's to
+both our benefits.
+
+## Additional Support 
+
+In addition to lecture, we provide the following additional resources
+for students to avail themselves. Do consider taking regular advantage
+of them.
+
+### Scheduled Office Hours
+
+Course personnel will make ourselves available for 8-10 hours of
+[office hours]({{ site.baseurl}}/office-hours/) available weekly,
+concentrated toward assignment due dates. If our office hours schedule
+in particularly ill-suited to your class schedule, let me know and we
+may be able to adjust them.
+
+### Piazza Forums
+
+Outside of office hours, you should utilize the class's Piazza forums
+for questions. We have disabled private messages to instructors, but
+you can choose to remain anonymous to the class when asking
+questions. We prefer Piazza over email, as it gives other students the
+opportunity to learn from those same anwers. Please restrict your
+questions to those that do not ``give away the punchline'' to a
+homework question. For more sensitive questions, or administrative
+issues that should addressed in private, please email me at the
+address listed on the front of this syllabus.
+
+### Ancillary Videos and Optional Texts
+
+The theory of computation is central to the practice of computer
+science. Computer scientists have understood this for decades. As
+such, instructors have covered these materials in a wide variety of
+styles and media which redounds to all our benefit. Whenever I have
+them, I will link to some best-in-breed videos that explain the topics
+from class in a complementary manner, and may also provide sections
+from other texts. Neither will cover topics precisely the way we do in
+lecture. Their presentations will differ in technical details and
+particulars of syntax. However, both provide material that translates
+to what we do in class. Some students may choose to use these videos
+or readings after lectures to supplement their understanding.
+Especially diligent students may use them to preview the lecture and
+be that much farther ahead. In the rare circumstance you must miss
+lecture, these may help supplement your understanding from lab, our
+additional support, and perhaps lecture notes from a friend.
 
 ## Academic Integrity Policy
 
@@ -263,61 +307,6 @@ I encourage all students who may benefit from learning more about DRC
 services to [contact the
 DRC](http://www.northeastern.edu/drc/#fp-blog-entry:~:text=Contact%20Information).
 
-## Health and Safety
-
-The university has put into place a robust plan to make the campus
-healthy and safe for all — but you must do your part. On August 22, all
-students received an
-[email](https://news.northeastern.edu/coronavirus/university-messages/university-response-to-unsafe-behavior/)
-from Senior Vice Chancellor for Student Affairs Madeleine Estabrook on
-the expectations for behavior both on campus and off campus. **Please
-read it carefully today.**
-
-To summarize:
-
-* Gatherings on or off campus must conform to healthy practices as
-  outlined by university and [Massachusetts state
-  guidance](https://www.mass.gov/doc/revised-gatherings-order-august-7-2021).
-  If you host or attend an inappropriate party or gathering, you run the
-  very real risk of immediate removal from the community.
-
-* Wear a mask indoors and outdoors as you maintain a 6-foot distance
-  from everyone.
-
-* Get tested every three days using the COVID-19 Test Scheduler
-  ([covid19-testing.northeastern.edu](https://northeastern.sharepoint.com/sites/covidscheduler).)
-  We may require more frequent testing as the semester progresses. It’s
-  quick, easy and will help us to quickly identify and care for anyone
-  who tests positive. I will not be told the identity of anyone who
-  tests positive, and you do not need to share that information with me
-  or anyone else unless you want to. If you receive a positive test
-  result, you will be contacted by a member of the university’s
-  telehealth team who will provide you with next steps.
-
-* Do a Daily Wellness Check
-  ([wellness-check.northeastern.edu](https://wellness-check.northeastern.edu)),
-  wash your hands well and regularly, and disinfect high-touch surfaces
-  and spaces.
-
-* I will be wearing a [face
-  covering](https://news.northeastern.edu/coronavirus/reopening/frequently-asked-questions/#reopening)
-  or mask as I teach and expect that you will do the same in class. If
-  you come to class without a mask, I’ll ask you to go and [get one on
-  campus](https://news.northeastern.edu/coronavirus/reopening/policies-and-protocols/#face-covering-protocol).
-  You can get a mask at the Visitor Center or at the Curry Student
-  Center Help Desk. If you refuse to wear a mask in class, I won’t be
-  able to continue the class. If you are not sitting six feet apart from
-  your classmate, I’ll ask you to do so. We won’t be able to eat or
-  drink in class (except water). If you test positive, you will need to
-  enter isolation as directed by the university’s telehealth team. I
-  expect that you will not come in-person to class and that you will
-  follow the guidance from the university telehealth team to isolate and
-  get appropriate healthcare if needed.
-
-* Staying safe is a responsibility that we all must take seriously.
-  Keep in mind the “Protect the Pack” theme. Remember that our
-  individual actions will help everyone stay safe this fall."
-
 ## Equity and Compliance
 
 One of our responsibilities in supporting student learning 360° is to
@@ -341,6 +330,13 @@ assist.
 
 ## Acknowledgments 
 
-![In the syllabus]({{ site.baseurl }}/assets/images/syllabus.gif "Might just be worth checking.")
+I have taken much of the design and execution of this course from
+Stephen Chang's version of a similar class at UMass Boston. [Lindsey
+Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site
+and syllabus as well as being all-around inspirational.
+
+
+![In the syllabus]({{ site.baseurl }}/assets/images/syllabus.gif
+"Might just be worth checking.")
 
 
