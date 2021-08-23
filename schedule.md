@@ -5,38 +5,68 @@ classes: wide
 ---
 
 
-| Month | Date | Day  | Topic              | Optional Texts | Optional Notes |
-| Sept. | 10   | Fri  |                    |                |                |
-| Sept. | 14   | Tues |                    |                |                |
-| Sept. | 17   | Fri  |                    |                |                |
-| Sept. | 21   | Tues |                    |                |                |
-| Sept. | 24   | Fri  |                    |                |                |
-| Sept. | 28   | Tues |                    |                |                |
-| Oct.  | 1    | Fri  |                    |                |                |
-| Oct.  | 5    | Tues |                    |                |                |
-| Oct.  | 8    | Fri  |                    |                |                |
-| Oct.  | 12   | Tues |                    |                |                |
-| Oct.  | 15   | Fri  |                    |                |                |
-| Oct.  | 19   | Tues |                    |                |                |
-| Oct.  | 22   | Fri  |                    |                |                |
-| Oct.  | 26   | Tues |                    |                |                |
-| Oct.  | 29   | Fri  |                    |                |                |
-| Nov.  | 2    | Tues |                    |                |                |
-| Nov.  | 5    | Fri  |                    |                |                |
-| Nov.  | 9    | Tues |                    |                |                |
-| Nov.  | 12   | Fri  |                    |                |                |
-| Nov.  | 16   | Tues |                    |                |                |
-| Nov.  | 19   | Fri  |                    |                |                |
-| Nov.  | 23   | Tues |                    |                |                |
-| Nov.  | 26   | Fri  | Thanksgiving Break |                |                |
-| Nov.  | 30   | Tues |                    |                |                |
-| Dec.  | 3    | Fri  |                    |                |                |
-| Dec.  | 7    | Tues |                    |                |                |
-| Dec.  | 10   | Fri  |                    |                |                |
+| Month | Date | Day  | Topic                                   | Assigned Pre-reading | Homework Out |
+| Sept. | 10   | Fri  | Intro to Theory of Computation          | Ch 0                 | 0            |
+| Sept. | 14   | Tues | Deterministic Finite Automata           | Ch 1.1               |              |
+| Sept. | 17   | Fri  | Regular Languages                       | Ch 1.1               | 1            |
+| Sept. | 21   | Tues | Combining Regular Languages             | Ch 1.1               | 2            |
+| Sept. | 24   | Fri  | Nondeterminism and NFAs                 | Ch 1.2               |              |
+| Sept. | 28   | Tues | NFA →  DFA, Reg Exprs                   | Ch 1.2-1.3           | 3            |
+| Oct.  | 1    | Fri  | More Reg Exprs, Inductive Proofs        | Ch 1.3               |              |
+| Oct.  | 5    | Tues | More Inductive Proofs, Non-reg Langs    | Ch 1.3-1.4           |              |
+| Oct.  | 8    | Fri  | Pumping Lemma Proof Examples            | Ch 1.4               | 4            |
+| Oct.  | 12   | Tues | Context-free Grammars                   | Ch 2.1               |              |
+| Oct.  | 15   | Fri  | Pushdown Automata (PDA) CFG ↔ PDA       | Ch 2.2               | 5            |
+| Oct.  | 19   | Tues | DCFLS, DPDAs, and Parsing               | Ch 2.4               |              |
+| Oct.  | 22   | Fri  | Non-CFLs; Intro to TMs                  | Ch 2.3, 3.1, 3.3     |              |
+| Oct.  | 26   | Tues | Turing Machine Variants                 | Ch 3.2, 3.3          | 6            |
+| Oct.  | 29   | Fri  | Decidability and Regular Languages      | Ch 4.1               |              |
+| Nov.  | 2    | Tues | Decidability and CFLs                   | Ch 4.1               | 7            |
+| Nov.  | 5    | Fri  | Diagonalization and Undecidability      | Ch 4.2               |              |
+| Nov.  | 9    | Tues | Reducibility and the Halting Problem    | Ch 5.1               | 8            |
+| Nov.  | 12   | Fri  | Mapping Reducibility                    | Ch 5.3               |              |
+| Nov.  | 16   | Tues | Turing Machines and Recursion           | Ch 6.1               | 9            |
+| Nov.  | 19   | Fri  | Intro to Time Complexity                | Ch 7.1               |              |
+| Nov.  | 23   | Tues | Polynomial Time (P)                     | Ch 7.2               | 10           |
+| Nov.  | 26   | Fri  | Thanksgiving Break                      |                      |              |
+| Nov.  | 30   | Tues | NP                                      | Ch 7.3               |              |
+| Dec.  | 3    | Fri  | Poly-time Reducibility, NP Completeness | Ch 7.4               | 11           |
+| Dec.  | 7    | Tues | Cook-Levin theorem                      | Ch 7.4-7.5           |              |
+| Dec.  | 10   | Fri  | Recap & Dealing with NP Completeness    | Ch 10.1-10.2         |              |
 
 
 
+<!-- HAMPATH is NP Complete -->
+<!-- More NP Complete problems  -->
 
+| Month | Date | Day  | Suggested Spots                    | Topic                                   |
+| Sept. | 10   | Fri  | Topic 1 Why and Theory of Comp     | Intro to Theory of Computation          |
+| Sept. | 14   | Tues |                                    | Deterministic Finite Automata           |
+| Sept. | 17   | Fri  | Topic 2 Regular languages          | Regular Languages                       |
+| Sept. | 21   | Tues |                                    | Combining Regular Languages             |
+| Sept. | 24   | Fri  | Topic 3 Regular languages 2        | Nondeterminism and NFAs                 |
+| Sept. | 28   | Tues |                                    | NFA →  DFA, Reg Exprs                   |
+| Oct.  | 1    | Fri  |                                    | More Reg Exprs, Inductive Proofs        |
+| Oct.  | 5    | Tues |                                    | More Inductive Proofs, Non-reg Langs    |
+| Oct.  | 8    | Fri  | Topic 4 CFG                        | Pumping Lemma Proof Examples            |
+| Oct.  | 12   | Tues | Topic 5 CFG DFPDA                  | Context-free Grammars                   |
+| Oct.  | 15   | Fri  |                                    | Pushdown Automata (PDA) CFG ↔ PDA       |
+| Oct.  | 19   | Tues | Topic 6 Church-Turing thesis       | DCFLS, DPDAs, and Parsing               |
+| Oct.  | 22   | Fri  |                                    | Non-CFLs; Intro to TMs                  |
+| Oct.  | 26   | Tues |                                    | Turing Machine Variants                 |
+| Oct.  | 29   | Fri  | Topic 7 More on thms, decidability | Decidability and Regular Languages      |
+| Nov.  | 2    | Tues |                                    | Decidability and CFLs                   |
+| Nov.  | 5    | Fri  |                                    | Diagonalization and Undecidability      |
+| Nov.  | 9    | Tues | Topic 8 Reductions                 | Reducibility and the Halting Problem    |
+| Nov.  | 12   | Fri  |                                    | Mapping Reducibility                    |
+| Nov.  | 16   | Tues |                                    | Turing Machines and Recursion           |
+| Nov.  | 19   | Fri  | Topic 9 Time complexity            | Intro to Time Complexity                |
+| Nov.  | 23   | Tues |                                    | Polynomial Time (P)                     |
+| Nov.  | 26   | Fri  |                                    | Thanksgiving Break                      |
+| Nov.  | 30   | Tues | Topic 10 NP Completeness           | NP                                      |
+| Dec.  | 3    | Fri  |                                    | Poly-time Reducibility, NP Completeness |
+| Dec.  | 7    | Tues |                                    | Cook-Levin theorem                      |
+| Dec.  | 10   | Fri  | Topic 11 dealing w/NP completeness | Recap & Dealing with NP Completeness    |
 
 
 

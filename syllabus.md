@@ -7,37 +7,58 @@ toc_label: "Syllabus Contents"
 
 ## Purpose and Objectives
 
-In CS 3800 you will learn to understand formal treatments of the
-notions of computation, computability, computational power, and
-efficiency. You will learn to understand both intuitively and formally
-simple models of computation. You will gain expertise with
-mathematical proofs and common proof techniques, and you will also
-come to understand the connections between these theoretical models 
-and computational tasks in common programming languages. 
+Why do some tasks seem more difficult to compute than others? In CS
+3800 you will learn to understand formal treatments of the notions of
+computation, computability, computational power, and efficiency that
+will give you the tools to answer this question. You will learn to
+understand both intuitively and formally simple models of computation.
+You will gain expertise with mathematical proofs and common proof
+techniques, and you will also come to understand the connections
+between these theoretical models and computational tasks in common
+programming languages.
 
-After this course you will know how to:
+After this course you will know how to think about:
 
-  1. 
-  2. 
+  1. What's going to be an easy task, and what's going to be a
+     complicated job?
+  2. How can we compose programs together?
+  3. As computers get more powerful, how much easier do various tasks
+     (e.g. chess, password cracking) get?
 
-After this course you will 
+We call this course "theory", but the subject is imminently practical,
+and *about* the practice of computing. The early field of computer
+science carved these areas of computationally inspired mathematics out
+from the broader field as their own subject.
+
+Research in this field concerns how to recognize and classify
+difficult tasks, and what options we have when we are faced with a
+computationally difficult task. For instance, we could:
+
+  1. Perhaps, slightly change the problem statement to an easier
+     problem. 
+  2. Perhaps, satisfy ourselves with some "good enough" sub-optimal
+     solution that's easier to solve.
+  3. Think broadly and be less pessimistic: if the problem is only
+     really difficult in some worst-case scenarios but usually not so
+     bad, we might just go with the solution we have.
 
 ## Contact
+
+I strongly recommend that for general questions that might benefit
+others, we communicate via [Piazza](###Piazza). A great regular way to
+reach out for help is via our [office hours]({{ site.baseurl
+}}/office-hours/).
 
 The best way to get in contact for personal, private (FERPA, etc)
 messages is via my email address
 [jhemann@northeastern.edu](mailto:jhemann@northeastern.edu). You
 should expect a response within 48 hours. You will find that I am
-faster with [Piazza]({{ site.baseurl }}/tech/) or our public forums. If I deem it even
-potentially useful to others, I will likely anonymize your letter,
-re-post it on Piazza, answer it there, and forward you the link.
-
-A great regular way to reach out for help is via our [office
-hours]({{ site.baseurl }}/office-hours/).
-
-If in fact you're interested in PL research, logic, logic program,
-automated theorem proving or the like, please let me know on that too!
-[I'm excited to talk more about it all
+faster with [Piazza](###Piazza). In fact, if I deem it even
+potentially useful to others, I will (1) anonymize your letter, (2)
+post the question and answer on Piazza, and (3) forward you the link.
+If you're interested in PL research, logic, logic program, automated
+theorem proving or the like, please let me know on that too! [I'm
+excited to talk more about it all
 :-)](https://scholar.google.com/citations?user=SePR8OkAAAAJ)
 
 ## Required Texts 
@@ -87,15 +108,10 @@ base the remaining portion of each on correctness.
 
 ### Total Running Grade Calculation
 
-We will track the completion portions of your lab and homework grades,
-as well as your project grades, on
+We will track your calculated grades on
 [Canvas](https://canvas.northeastern.edu/). You will have an
 approximate assessment of your *current* grade status before the
-Add/Drop deadline. We cannot give you a standing completion percentage
-of the participation component of your grade because, logically, there
-[are no pop
-quizzes](https://en.wikipedia.org/wiki/Unexpected_hanging_paradox).
-
+Add/Drop deadline. 
 
 ### Collaborative Course Construction and Feedback
 
@@ -107,16 +123,16 @@ even those we find compelling may not be implementable as we go.
 
 ## Participation
 
-I expect you to attend each lecture. We will [not take
-attendance](https://vm.tiktok.com/ZMJBoQovg/) as such, but attendance
-is a prerequisite for participation, a substantial portion of your
-grade for this course. I expect students to attend every class and
-remain in class throughout the duration of the session. Your absence
-or tardiness will impact your ability to achieve course objectives
-which could hurt your course grade. An absence, excused or unexcused,
-does not relieve a student of any course requirement. Lecture content
-quizzes serve as proxies for participation and thus attendance, as
-well as to gauge students' understanding.
+I expect you to attend each lecture. We will not take attendance as
+such, but attendance is a prerequisite for participation, a
+substantial portion of your grade for this course. I expect students
+to attend every class and remain in class throughout the duration of
+the session. Your absence or tardiness will impact your ability to
+achieve course objectives which could hurt your course grade. An
+absence, excused or unexcused, does not relieve a student of any
+course requirement. Lecture content quizzes serve as proxies for
+participation and thus attendance, as well as to gauge students'
+understanding.
 
 ### Oral Explanation and Participation
 
@@ -138,21 +154,17 @@ grade.
 
 ## Homework
 
-Homework, consisting of weekly programming assignments, is an
-essential part of the course. Assignments are available by at least
-Thursday evening, and unless otherwise indicated, homework submissions
-are due by 10 p.m. on the Wednesday after I have assigned them. We
-give a few (randomly varying) extra minutes to account for network
-time disagreements, but beyond this homework assignments are due
-strictly on the day and time listed on the assignment.
+Homework, consisting of roughly weekly programming assignments, is an
+essential part of the course. We give a few (randomly varying) extra
+minutes to account for network time disagreements, but beyond this
+homework assignments are due strictly on the day and time listed on
+the assignment.
 
 To universally, uniformly and preemptively account for any number of
 situations that arise, *I will drop every student's lowest homework
-assignment grade.* You will also have an opportunity for a bonus
-assignment to replace your lowest remaining assignment. This
-absolution for one assignment and optional bonus *is* our late/etc
-homework clemency. I shan't accept late submissions except under the
-most exceptional of circumstances (family emergencies,
+assignment grade.* This absolution for one assignment *is* our
+late/etc homework clemency. I shan't accept late submissions except
+under the most exceptional of circumstances (family emergencies,
 hospitalizations, the like)---if that comes up please see me. We are,
 however happy to go over these missed submissions with you at office
 hours.
@@ -179,7 +191,9 @@ ensures that your programs compute the correct answers.
 ### Exams 
 
 You will have two long-form exams. I have yet to determine our exams'
-format.
+format. Students' suggestions led to several improvements in how I
+conduct this course, and your continued suggestions will help lead to
+continued improvements. 
 
 ### TRACE evaluations
 
@@ -221,8 +235,8 @@ may be able to adjust them.
 
 Outside of office hours, you should utilize the class's Piazza forums
 for questions. We have disabled private messages to instructors, but
-you can choose to remain anonymous to the class when asking
-questions. We prefer Piazza over email, as it gives other students the
+you can choose to remain anonymous to the class when asking questions.
+We prefer Piazza over email, as it gives other students the
 opportunity to learn from those same anwers. Please restrict your
 questions to those that do not ``give away the punchline'' to a
 homework question. For more sensitive questions, or administrative
@@ -250,7 +264,7 @@ additional support, and perhaps lecture notes from a friend.
 ## Academic Integrity Policy
 
 Students of course play an integral part in ensuring they receive the
-full benefit of their coursework. The students of 2800 are certainly
+full benefit of their coursework. The students of 3800 are certainly
 beholden to the academic integrity policies of [Northeastern
 University](http://www.northeastern.edu/osccr/academic-integrity-policy/)
 and as laid out in the [student
@@ -273,16 +287,16 @@ problems together. You are only twice as fast working separately if
 the typing is by and away the hardest part of programming. Which it is
 not.
 
-Whatever size group you work in you should still plan to [all work
-synchronously and simultaneously
+Whatever size group you work in or how you meet you should still plan
+to [all work synchronously and simultaneously
 together](https://www.remotemobprogramming.org/). Note a larger group
 is not necessarily better. You should at least try to do some of this
 wholly on your own. It's good to have a baseline early on to know [if
 you have this material under your belt or if you are getting
-lost](https://martinfowler.com/articles/on-pair-programming.html#couldIReallyDoThisByMyself). Ultimately,
-you should be responsible for and have a firm understanding of all
-work submitted under your name. You should be able to demonstrate this
-mastery when we request.
+lost](https://martinfowler.com/articles/on-pair-programming.html#couldIReallyDoThisByMyself).
+Ultimately, you should be responsible for and have a firm
+understanding of all work submitted under your name. You should be
+able to demonstrate this mastery when we request.
 
 #### Group Dynamics and Difficulties
 
