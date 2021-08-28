@@ -136,12 +136,11 @@ understanding.
 
 ### Oral Explanation and Participation
 
-Proof has a [social
-component](https://www.jstor.org/stable/3482651). As such, part of
-your grade will also include your participating by communicating with
-your colleagues in both lecture and lab sections. These can take the
-form of small group "breakout room" work, open class votes and
-discussions, or walk us all through some of your answers. 
+Proof has a [social component](https://www.jstor.org/stable/3482651).
+As such, part of your grade will also include your participating by
+communicating with your colleagues in lecture. These can take the form
+of small group "breakout room" work, open class votes and discussions,
+or walk us all through some of your answers.
 
 ### Lecture Quizzes/Polls
 
@@ -303,8 +302,8 @@ able to demonstrate this mastery when we request.
 These groups are not fixed; you should feel free to adjust them to
 your own need and benefit on a per-week basis. If you find that your
 group is no longer able to work effectively together or that not
-everyone can equally participate, please bring this to your lab
-instructor's attention. Your lab instructor may have suggestions about
+everyone can equally participate, please bring this to your grader's
+attention. Your grader and/or instructor may have suggestions about
 how to improve your group cohesion, or may use the staff privilege to
 reallocate group members.
 

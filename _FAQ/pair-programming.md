@@ -4,7 +4,7 @@ title: Are we pair programming? Do I have to?
 
 On both homeworks and projects, you will be working in groups of
 between 2-4 people, which you all yourselves select from within your
-lab section.
+lecture section.
 
 The designer of the NEU core CS curriculum considers pair programming,
 incl. colleague management, coordination, in addition to the actual
