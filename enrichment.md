@@ -6,9 +6,9 @@ classes: wide
 
 # Supplementary Videos
 
-
+- [Big O notation](https://www.youtube.com/watch?v=Q_1M2JaijjQ)
+- [Big O notation (again)](https://www.youtube.com/watch?v=dNorFNlDbX0)
 - [P v. NP](https://www.youtube.com/watch?v=YX40hbAHx3s) (High level gist, 10m)
-
 
 
 # Additional / ancillary reading
