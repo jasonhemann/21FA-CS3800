@@ -9,6 +9,13 @@ practical application.
 Applying your understanding of these theoretical concepts helps you to
 transfer this information to a familiar domain (your own favorite
 programming language) and acts a bridge between theory and practice.
+As Olivier Danvy writes:
+
+> Witness interpreters, compilers, and partial evaluators, and going
+> all the way back to Alan Turing's point of simulating a virtual
+> machine with another one as well as all the way forth to the
+> POPLmark Challenge today, there is simply nothing like computation
+> to describe computation.
 
 Furthermore, you should see this as an opportunity to use the skills
 you've developed in your other classes in a new domain. Beyond using

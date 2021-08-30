@@ -21,6 +21,8 @@ sidebar-site-map:
     url: /schedule/
   - title: "Piazza"
     url: https://piazza.com/
+  - title: "People"
+    url: /people/
   - title: "Syllabus"
     url: /syllabus/
   - title: "Tech"

@@ -153,11 +153,13 @@ grade.
 
 ## Homework
 
-Homework, consisting of roughly weekly programming assignments, is an
-essential part of the course. We give a few (randomly varying) extra
-minutes to account for network time disagreements, but beyond this
-homework assignments are due strictly on the day and time listed on
-the assignment.
+Homework, consisting of problem sets assigned roughly once per week,
+is an essential part of the course. We give a few (randomly varying)
+extra minutes to account for network time disagreements, but beyond
+this homework assignments are due strictly on the day and time listed
+on the assignment. Some other assignments will require hand-written
+proofs; we fall back to these when programming assignments add more
+difficult than the learning they would bestow. 
 
 To universally, uniformly and preemptively account for any number of
 situations that arise, *I will drop every student's lowest homework
@@ -183,9 +185,10 @@ We allow an unlimited number of submissions per assignment, up to the
 deadline.
 
 We will evaluate your work both for correctness using an automated
-test suite and also by manual hand inspection. We provide you an
-autograder test suite for each assignment. This autograder merely
-ensures that your programs compute the correct answers. 
+test suite when possible and also by manual hand inspection. We
+provide you an autograder test suite for each assignment. This
+autograder merely ensures that your programs compute the correct
+answers.
 
 ### Exams 
 
