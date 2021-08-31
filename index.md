@@ -27,7 +27,7 @@ logically when designing your programs, and the benefits of tooling that helps t
 correct.
 
 
-## Classes and Labs
+## Classes
 
  | Lecture | Instructor | Dates | Time      | Location                                                   |
  | 16453   | Jason      | TF    | 1:35-3:15 | [Richards Hall 300](https://goo.gl/maps/Jf7SkDTUHnAoNU429) |
