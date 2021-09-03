@@ -157,9 +157,10 @@ Homework, consisting of problem sets assigned roughly once per week,
 is an essential part of the course. We give a few (randomly varying)
 extra minutes to account for network time disagreements, but beyond
 this homework assignments are due strictly on the day and time listed
-on the assignment. Some other assignments will require hand-written
-proofs; we fall back to these when programming assignments add more
-difficult than the learning they would bestow. 
+on the assignment. These will usually be on Tuesday at 10pm. Some
+other assignments will require hand-written proofs; we fall back to
+these when programming assignments add more difficult than the
+learning they would bestow.
 
 To universally, uniformly and preemptively account for any number of
 situations that arise, *I will drop every student's lowest homework

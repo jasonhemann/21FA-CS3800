@@ -27,3 +27,9 @@ We might find that some problems really do _demand_ that we address
 them with formal proof. If and when those come up we will adjust, but
 at least for the time being plan as though you will be programming
 your theory of computation assignments.
+
+To quote Alan Perlis from his _Epigrams in Programming_, 
+
+> 16. You think you know when you can learn, are more sure when you
+>     can write, even more when you can teach, but certain when you
+>     can program.
