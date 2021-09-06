@@ -32,4 +32,4 @@ classes: wide
 | Nov.  | 30   | Tues | NP                                      | Ch 7.3               |        |
 | Dec.  | 3    | Fri  | Poly-time Reducibility, NP Completeness | Ch 7.4               | 11     |
 | Dec.  | 7    | Tues | Cook-Levin theorem                      | Ch 7.4-7.5           |        |
-| Dec.  | 10   | Fri  | Recap & Dealing with NP Completeness    | Ch 10.1-10.2         |        |
+

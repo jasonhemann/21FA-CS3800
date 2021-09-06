@@ -17,9 +17,16 @@ site.baseurl }}/syllabus/#contact) for an appointment.
 
 {% raw %} 
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=America%2FNew_York&amp;src=Y19objIxajA0ZnJqYTE1dXNkNmozYmthbDYxb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%230B8043&amp;showNav=1&amp;showTitle=0&amp;title=2800%20OH%20Calendar&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ai5oZW1hbm5Abm9ydGhlYXN0ZXJuLmVkdQ&src=Y19uMGdhMDZvZmRoam4wYXVtYW1sbGVnc25xY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%238E24AA&showTitle=1&title=3800%20Office%20Hours&showPrint=0&showCalendars=1&mode=AGENDA&showNav=0&showDate=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 {% endraw %}
+
+
+
+
+<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=America%2FNew_York&amp;src=Y19objIxajA0ZnJqYTE1dXNkNmozYmthbDYxb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%230B8043&amp;showNav=1&amp;showTitle=0&amp;title=2800%20OH%20Calendar&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no"> -->
+<!-- </iframe> -->
+
 
 
 ![Effective Office Hours]({{ site.baseurl }}/assets/images/office-hours.jpeg "Logic in everyday life!")
