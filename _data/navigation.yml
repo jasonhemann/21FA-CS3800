@@ -20,7 +20,7 @@ sidebar-site-map:
   - title: "Schedule"
     url: /schedule/
   - title: "Piazza"
-    url: https://piazza.com/class/ksn8pjve84031c
+    url: {{ site.piazza_link }}
   - title: "People"
     url: /people/
   - title: "Syllabus"

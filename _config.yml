@@ -43,6 +43,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : "FA21 3800"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+piazza_link              : "https://piazza.com/class/ksn8pjve84031c" 
 
 search                   : true 
 search_full_content      : true
