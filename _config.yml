@@ -32,12 +32,12 @@ title_separator          : "-"
 subtitle                 : "Home Page"
 name                     : "Jason Hemann"
 description              : "Hemann's Theory of Computation Course"
-github                   : [metadata]
+github                   : "http://github.ccs.neu.edu" 
 # e.g. http://example.com
 url                      : "http://pages.github.ccs.neu.edu" 
 # the site subpath, e.g. /blog
 baseurl                  : "/jhemann/21FA-CS3800" 
-repository               : jhemann/21FA-CS3800
+repository               : "/jhemann/21FA-CS3800"
 teaser                   : "/assets/images/500x300teaser.png" 
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "FA21 3800"

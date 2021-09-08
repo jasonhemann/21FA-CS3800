@@ -323,7 +323,7 @@ Write the following program:
 ## 5. Parsing XML Files
 
 We’ll occasionally use XML, a common data format, to communicate with
-your programs.
+your programs. 
 
 Here is an example:
 
@@ -376,11 +376,11 @@ Here is an example:
 ```
 
 In general, an XML document consists of nested pairs of opening and
-closing _tags_ that can have arbitrary names, e.g., the `<automaton> ...
-</automaton>` above.
-
-An opening tag can have several _attributes_, each with an associated
-_value_, e.g., the `state` tag above has attributes `id` and `name`.
+closing _tags_ that can have arbitrary names, e.g., the `<automaton>
+... </automaton>` above. We will generate these files via
+[jflap](http://www.jflap.org/). An opening tag can have several
+_attributes_, each with an associated _value_, e.g., the `state` tag
+above has attributes `id` and `name`.
 
 Anything between the tags is called its _content_, which can be
 arbitrary strings or more tags. A pair of open/close tags, its
