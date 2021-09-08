@@ -284,11 +284,11 @@ Write the following program:
 
 ## 4. Subsets and Power Sets
 
-A _subset_ A of a set S, written A\subset S or A\subseteq S (the latter
-means that A may be equal to S), is a set whose elements must be in S.
+A _subset_ A of a set S, written \[[A\subset S\]] or \[[A\subseteq S\]] (the latter means that A may be equal to S), is a set whose
+elements must be in S.
 
-The _power set_ of a set S, sometimes written \mathcal{P}(S), is the set
-of all subsets of S.
+The _power set_ of a set S, sometimes written \[[\mathcal{P}(S)\]], is
+the set of all subsets of S.
 
 Write the following program:
 
@@ -318,7 +318,7 @@ Write the following program:
   a b c
 ```
 
-  \(Note: there’s an initial blank line, representing the empty set.)
+\(Note: there’s an initial blank line, representing the empty set.)
 
 ## 5. Parsing XML Files
 
@@ -443,7 +443,7 @@ Specifically, write the following program:
 * **Example**:
 
   You can test your program with [this file named
-  `fig1.4.jff`](fig1.4.jff) containing the XML above (right-click and
+  `fig1.4.jff`]({{ site.baseurl }}/assets/docs/fig1.4.jff) containing the XML above (right-click and
   choose "Save as").
 
   `printf "fig1.4.jff" | make -sf Makefile run-hw0-xml`
