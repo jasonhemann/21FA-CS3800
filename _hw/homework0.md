@@ -43,7 +43,7 @@ it works in our environment, and ideally you'll use `login-students`
 or the Khoury virtual machines.
 
 Input and output will be handled with `stdin`, `stdout`, as well as
-files, and we’ll use [[Makefiles]] to run the assignments.
+files, and we’ll use [Makefiles](#1-makefiles) to run the assignments.
 
 **Homework Problems**
 
@@ -102,7 +102,7 @@ case-sensitive):
 
 Since students will be using different programming languages, we need a
 common way to run submitted assignments. We will do this with
-[[Makefiles]].
+[Makefiles](#1-makefiles).
 
 In general, a `Makefile` (case-sensitive) is a script consisting of a
 series of commands, each on its own tab-indented (not spaces) line.
@@ -242,7 +242,7 @@ On paper, sets are often written with brace notation, e.g., `{0,1}`, and
 can be infinite in size. This problem will require you to manipulate
 sets programatically.
 
-An _alphabet_, often denoted with the \Sigma symbol (Greek letter
+An _alphabet_, often denoted with the \((\Sigma symbol\)) (Greek letter
 Sigma), is a set of characters from which strings in a _language_ may be
 created.
 
@@ -251,10 +251,10 @@ created.
 Write the following program:
 
 * **Input** (from `stdin`): a string whose characters represent an
-  alphabet \Sigma
+  alphabet $\Sigma$.
 
 * **Output** (to `stdout`): all possible strings of length 3
-  that may be created from \Sigma.
+  that may be created from $\Sigma$.
 
   In other words, you are computing the _cartesian product_
   $\Sigma\times\Sigma\times\Sigma$.
@@ -284,10 +284,10 @@ Write the following program:
 
 ## 4. Subsets and Power Sets
 
-A _subset_ A of a set S, written \[[A\subset S\]] or \[[A\subseteq S\]] (the latter means that A may be equal to S), is a set whose
+A _subset_ A of a set S, written $A\subset S$ or \((A\subseteq S\)) (the latter means that A may be equal to S), is a set whose
 elements must be in S.
 
-The _power set_ of a set S, sometimes written \[[\mathcal{P}(S)\]], is
+The _power set_ of a set S, sometimes written \((\mathcal{P}(S)\)), is
 the set of all subsets of S.
 
 Write the following program:
