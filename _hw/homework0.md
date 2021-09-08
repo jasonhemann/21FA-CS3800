@@ -308,6 +308,7 @@ Write the following program:
   Output:
 
 ```
+
   a
   b
   a b
