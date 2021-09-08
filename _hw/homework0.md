@@ -467,7 +467,6 @@ Create a `README` file (case-sensitive) with the following information:
   This will help me gauge whether assignments are too easy or hard.
 
 
-  See the syllabus for more information.
 
 * Any other **books or websites you used**.
 
