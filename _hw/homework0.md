@@ -466,11 +466,6 @@ Create a `README` file (case-sensitive) with the following information:
 
   This will help me gauge whether assignments are too easy or hard.
 
-* The names of **other students you worked with**.
-
-  You may discuss homework with other students but any submitted work
-  ​_must be your own work_​. In other words, you must come up with your
-  solutions independently.
 
   See the syllabus for more information.
 
