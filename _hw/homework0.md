@@ -2,7 +2,7 @@
 title: "Homework 0"
 layout: single
 ---
-
+	
 ### Objectives 
   
   - Introduce some possibly-new tools for build and interaction.
@@ -213,8 +213,7 @@ these streams.
 
 ```
 setup:  # is a comment
-        # ... setup steps from before
-  run-hw0-stdio:
+        # ... setup steps from before run-hw0-stdio:
           racket hw0-stdio.rkt # this line must start with a tab character
 ```
 
@@ -224,9 +223,11 @@ We will run your submission with a command like:
 
 The grader would then check for the following output:
 
-`Hello, World!`
-`Hello, World!`
-`Hello, World!`
+```
+Hello, World!
+Hello, World!
+Hello, World!
+```
 
 ## 3. Sets and Alphabets
 
@@ -256,7 +257,7 @@ Write the following program:
   that may be created from \Sigma.
 
   In other words, you are computing the _cartesian product_
-  \Sigma\times\Sigma\times\Sigma.
+  $\Sigma\times\Sigma\times\Sigma$.
 
   Print strings one per line in any order (but there should be no
   duplicates).
@@ -270,14 +271,16 @@ Write the following program:
 
   Example output:
 
-  `000`
-  `001`
-  `010`
-  `011`
-  `100`
-  `101`
-  `110`
-  `111`
+```
+  000
+  001
+  010
+  011
+  100
+  101
+  110
+  111
+```
 
 ## 4. Subsets and Power Sets
 
@@ -304,13 +307,15 @@ Write the following program:
 
   Output:
 
-  `a`    
-  `b`    
-  `a b`  
-  `c`    
-  `a c`  
-  `b c`  
-  `a b c`
+```
+  a
+  b
+  a b
+  c
+  a c
+  b c
+  a b c
+```
 
   \(Note: there’s an initial blank line, representing the empty set.)
 
@@ -444,9 +449,11 @@ Specifically, write the following program:
 
   Output:
 
-  `q1 q2 q3`
-  `q1`      
-  `q2`      
+```
+  q1 q2 q3
+  q1
+  q2
+```
 
 ## 6. README
 
