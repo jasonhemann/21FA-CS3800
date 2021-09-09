@@ -132,7 +132,12 @@ achieve course objectives which could hurt your course grade. An
 absence, excused or unexcused, does not relieve a student of any
 course requirement. Lecture content quizzes serve as proxies for
 participation and thus attendance, as well as to gauge students'
-understanding.
+understanding. To account for illnesses, other commitments that come
+up, and all the other vagaries of life, I'll drop 5/25 of these
+quizzes for you all. I don't know that I'd be comfortable dropping 1/5
+of them under normal circumstances, but at least in the current
+situation that seems like a reasonable precaution. If you think you're
+sick, please do get yourself checked and be safe.
 
 ### Oral Explanation and Participation
 
