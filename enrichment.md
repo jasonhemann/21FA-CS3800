@@ -6,6 +6,7 @@ classes: wide
 
 # Supplementary Videos
 
+- [make and `Makefiles`](https://www.youtube.com/watch?v=_r7i5X0rXJk)
 - [Big O notation](https://www.youtube.com/watch?v=Q_1M2JaijjQ)
 - [Big O notation (again)](https://www.youtube.com/watch?v=dNorFNlDbX0)
 - [P v. NP](https://www.youtube.com/watch?v=YX40hbAHx3s) (High level gist, 10m)
