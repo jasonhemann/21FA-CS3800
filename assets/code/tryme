@@ -1,4 +1,6 @@
 #!/bin/bash
 
-echo $1
+echo "$@"
+# for just the first argument
+# echo "$1"
 echo "how are you doing"
