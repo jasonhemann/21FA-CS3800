@@ -48,6 +48,7 @@ classes: wide
 - [Teaching theory of computation through search](https://dl.acm.org/doi/pdf/10.1145/3382036)
 - [Philosophy of Computer Science](https://cse.buffalo.edu/~rapaport/Papers/phics.pdf) (Draft text)
 - [Keeping logic in the trivium of computer science: a teaching perspective](https://link.springer.com/article/10.1007/s10703-017-0301-z)
+- [Turing did not invent the computer](https://cacm.acm.org/magazines/2014/1/170862-actually-turing-did-not-invent-the-computer/fulltext)
 
 # Ancillary
 
