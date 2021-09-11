@@ -143,20 +143,24 @@ DFA.
 
   Output:
 
-  `q1`
-  `q2`
-  `q3`
+```
+  q1
+  q2
+  q3
+```
 
   `printf "transitions" | make -sf Makefile run-hw1-dfa`
 
   Output:
 
-  `q1 0 q1`
-  `q1 1 q2`
-  `q2 0 q3`
-  `q2 1 q2`
-  `q3 0 q2`
-  `q3 1 q2`
+```
+  q1 0 q1
+  q1 1 q2
+  q2 0 q3
+  q2 1 q2
+  q3 0 q2
+  q3 1 q2
+```
 
 **NOTE**: Don’t submit a program that just directly prints the expected
 outputs, e.g., `printf "q1\nq2\nq3\n"`. The program must actually
