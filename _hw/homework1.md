@@ -3,7 +3,7 @@ title: "Homework 1"
 layout: single
 ---
 
-### Objectives 
+### Objectives
 
   - Explore deterministic finite-state automata (DFAs) using code. 
   - Define a representation for DFAs in the datatypes of your language

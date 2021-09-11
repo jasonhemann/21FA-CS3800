@@ -5,9 +5,9 @@ layout: single
 
 ### Objectives 
 
-    - Continue exploring deterministic finite automata (DFAs) using code
-	- Build upon previous assignments'
-	- 
+   - Continue exploring deterministic finite automata (DFAs) using code
+   - Build upon previous assignments' code
+   - Practice simulating computation
 
 **Homework Problems**
 
