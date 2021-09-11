@@ -18,7 +18,7 @@ This short assignment starts exploring deterministic finite automata
 
 * A First DFA (5 points)
 
-* README (1 point)
+* README.md (1 point)
 
 **Total**: 10 points
 
@@ -164,7 +164,7 @@ DFA.
 
 **NOTE**: Don’t submit a program that just directly prints the expected
 outputs, e.g., `printf "q1\nq2\nq3\n"`. The program must actually
-construct an instance of your DFA data structure, and then query it it
+construct an instance of your DFA data structure, and then query it
 to produce to the requested information.
 
 \(We will check all submitted code to make sure.\)
