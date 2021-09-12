@@ -14,7 +14,7 @@ classes: wide
 
 # Additional / ancillary reading
 
-
+- [Fast implementation of DFAs w/Haskell and C.](https://www.youtube.com/watch?v=b4bb8EP_pIE)
 - [Why theory pops up in practice](https://twitter.com/__phantomderp/status/1406334623408402441?s=20)
 - [Inappropriate regex](https://stackoverflow.com/a/1732454/)
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
