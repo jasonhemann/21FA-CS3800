@@ -298,7 +298,7 @@ College](https://www.khoury.northeastern.edu/information-for-overview/current-un
 
 ### Teamwork and Collaboration
 
-You can work with up to 3 others, for a total of 4 people in a group.
+You can work with up to 2 others, for a total of 3 people in a group.
 You aren't required to work with anyone else if you don't wish. You
 can work with students from any other sections you wish. You will
 submit a single submission for your entire group, and it is your
@@ -370,9 +370,10 @@ assist.
 
 I have taken much of the design and execution of this course from
 [Stephen Chang](https://www.umb.edu/stephen_chang)'s version of a
-similar class at UMass Boston. [Lindsey
-Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site
-and syllabus as well as being all-around inspirational.
+similar class at UMass Boston. Some slides and material therein
+is borrowed from, in no particular order: Costas Busch, Stephen Chang, [Lindsey Kuper](https://users.soe.ucsc.edu/~lkuper/)
+inspires some of this site and syllabus as well as being all-around
+inspirational.
 
 
 ![In the syllabus]({{ site.baseurl }}/assets/images/syllabus.gif
