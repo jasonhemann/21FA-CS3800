@@ -4,6 +4,14 @@ layout: single
 classes: wide
 ---
 
+
+# JFLAP tool and instructions
+
+- [JFLAP download site](https://www.jflap.org/jflaptmp/)
+- [Main site](http://www2.cs.duke.edu/csed/jflap/)
+- [JFLAP FA instruction manual](http://www2.cs.duke.edu/csed/jflap/tutorial/fa/createfa/fa.html)
+
+
 # Supplementary Videos
 
 - [make and `Makefiles`](https://www.youtube.com/watch?v=_r7i5X0rXJk)
