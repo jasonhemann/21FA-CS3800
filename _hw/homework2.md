@@ -268,9 +268,11 @@ Your solution will be tested as follows:
 
   You can test your program with these files:
 
-  * [`dfa-a.xml`](dfa-a.xml): recognizes the language $\{"a"\}$
+  * [`dfa-a.xml`]({{
+  site.baseurl }}/assets/docs/dfa-a.xml): recognizes the language $\{"a"\}$
 
-  * [`dfa-b.xml`](dfa-b.xml): recognizes the language $\{"b"\}$
+  * [`dfa-b.xml`]({{
+  site.baseurl }}/assets/docs/dfa-b.xml): recognizes the language $\{"b"\}$
 
   `printf "dfa-a.xml dfa-b.xml" | make -sf Makefile run-hw2-union`
 
