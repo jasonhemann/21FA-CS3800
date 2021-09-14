@@ -25,8 +25,7 @@ layout: single
 
 **Submitting**
 
-Submit your solution to this assignment in [Gradescope
-`hw2`](https://www.gradescope.com/courses/219302/assignments/984728).
+Submit your solution to this assignment in Gradescope.
 
 A submission must include the following files (**NOTE**: everything is
 case-sensitive):
