@@ -84,7 +84,7 @@ this concept.
   * `Makefile` **target name**: `run-hw2-dfa`
 
   * **Input** (from `stdin`): a (randomly generated) string in alphabet
-    $\Sigma = \{`0`,`1`\}$
+    $\Sigma = \{0,1\}$
 
   * Expected **Output** (to `stdout`):
 
