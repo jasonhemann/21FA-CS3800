@@ -443,7 +443,7 @@ Specifically, write the following program:
 * **Example**:
 
   You can test your program with [this file named
-  `fig1.4.jff`]({{ site.baseurl }}/assets/docs/fig1.4.jff) containing the XML above (right-click and
+  `fig1.4.jff`]({{ site.baseurl }}/assets/docs/fig1.4.jff) containing  XML B(right-click and
   choose "Save as").
 
   `printf "fig1.4.jff" | make -sf Makefile run-hw0-xml`
