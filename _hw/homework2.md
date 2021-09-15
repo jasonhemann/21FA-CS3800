@@ -204,7 +204,8 @@ Your solution will be tested as follows:
 * Write a function that converts an instance of your DFA to an XML
   string corresponding to an automaton element.
 
-* Implement the "three 1’s" DFA from class as an instance of your DFA
+* Implement the ["three 1’s" DFA from class]({{
+  site.baseurl }}/assets/images/three-1s.jpg) as an instance of your DFA
   representation.
 
 * Write a program that when run, calls your DFA->XML function with this
