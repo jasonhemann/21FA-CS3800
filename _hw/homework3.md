@@ -15,9 +15,7 @@ layout: single
 
 * The Union Operation, on NFAs (4 points)
 
-* NFA -> DFA (Optional Bonus) (5 points)
-
-* NFAs vs DFAs (6 points) (**NOTE**: This is a non-coding problem.)
+* NFA -> DFA  (6 points)
 
 * `README` (1 point)
 
@@ -353,16 +351,3 @@ Your solution will be tested as follows:
   <transition><from>(q1 q2 q3 q4)</from><to>(q1 q2 q3 q4)</to><read>1</read></transition>
   </automaton>
 ```
-
-## 5. NFAs vs DFAs
-
-Give a proof of the following theorem:
-
-For any language A, some DFA M recognizes A
-**if and only if** some NFA N recognizes A.
-
-You may assume the theorem from NFA -> DFA (Optional Bonus)
-
-You may write up your proof in any way but the submission must be either
-a pdf or plain text. Also, make sure you assign it to the proper problem
-in gradescope when submitting.
