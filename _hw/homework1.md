@@ -36,7 +36,8 @@ everything is case-sensitive):
   * `run-hw1-dfa`
 
 * a file `README.md` containing your DFA data representation (see A
-  Data Representation for DFAs), and the other required information,
+  Data Representation for DFAs), and the information we required from
+  you last assignment (time spent, resources consulted).
 
 * and finally, files containing the solution to each problem.
 

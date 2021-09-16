@@ -262,7 +262,7 @@ Your solution will be tested as follows:
 * **Input** (from `stdin`): the names of **two XML files**, separated by
   a space, each containing an automaton element representing a DFA
 
-* Expected **Output** (to `stdout`):    an automaton XML string
+* Expected **Output** (to `stdout`): an automaton XML string
   representing a DFA that is the union of the two inputs
 
 * **Example**:
