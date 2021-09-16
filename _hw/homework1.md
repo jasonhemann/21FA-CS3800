@@ -98,7 +98,7 @@ e.g., a dict or a graph, respectively, to represent them in a program.
   A DFA is a (struct states alpha delta start accepts) where:
   - states is a list of State
   - alpha is a list of Symbol
-  - delta is a hash of State Symbol -> Symbol
+  - delta is a hash of State Symbol -> State
   - start is a State
   - accept is a list of State
 ```
