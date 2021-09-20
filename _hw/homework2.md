@@ -11,11 +11,11 @@ layout: single
 
 **Homework Problems**
 
-* Simulating Computation for DFAs (2 points)
+* Simulating Computation for DFAs (3 points)
 
 * DFAs and the Language They Recognize (2 points)
 
-* DFA->XML (3 points)
+* DFA->XML (2 points)
 
 * The Union Operation (2 points)
 
