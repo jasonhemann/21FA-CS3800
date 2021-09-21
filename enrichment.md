@@ -44,6 +44,7 @@ classes: wide
 - [CoderIsland](https://www.youtube.com/watch?v=HyUK5RAJg1c&list=PL601FC994BDD963E4)
 - [Portland State](https://www.youtube.com/watch?v=TOsMcgIK95k&list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz)
 - [NESO](https://www.youtube.com/watch?v=58N2N7zJGrQ&list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev)
+- [CSUSacramento](https://www.youtube.com/watch?v=gWj7WZdk5-g&list=PL6KMWPQP_DM9Y7IgaEWa_OHAl3RkAQwqH)
  
 # Other non-Sipser based courses
 - [Easy Theory](https://www.youtube.com/c/EasyTheory/playlists)
