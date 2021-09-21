@@ -17,6 +17,7 @@ classes: wide
 | Oct.  | 8    | Fri  | Pumping Lemma Proof Examples            | Ch 1.4               |        |
 | Oct.  | 12   | Tues | Context-free Grammars                   | Ch 2.1               | 4      |
 | Oct.  | 15   | Fri  | Pushdown Automata (PDA) CFG ↔ PDA       | Ch 2.2               |        |
+| Oct.  | 16   | SAT  | Online Gradescope Exam (open 8am-10pm)  |                      |        |
 | Oct.  | 19   | Tues | DCFLS, DPDAs, and Parsing               | Ch 2.4               | 5      |
 | Oct.  | 22   | Fri  | Non-CFLs; Intro to TMs                  | Ch 2.3, 3.1, 3.3     |        |
 | Oct.  | 26   | Tues | Turing Machine Variants                 | Ch 3.2, 3.3          | 6      |
@@ -27,6 +28,7 @@ classes: wide
 | Nov.  | 12   | Fri  | Mapping Reducibility                    | Ch 5.3               |        |
 | Nov.  | 16   | Tues | Turing Machines and Recursion           | Ch 6.1               | 9      |
 | Nov.  | 19   | Fri  | Intro to Time Complexity                | Ch 7.1               |        |
+| Nov.  | 20   | SAT  | Online Gradescope Exam (open 8am-10pm)  |                      |        |
 | Nov.  | 23   | Tues | Polynomial Time (P)                     | Ch 7.2               | 10     |
 | Nov.  | 26   | Fri  | Thanksgiving Break                      |                      |        |
 | Nov.  | 30   | Tues | NP                                      | Ch 7.3               |        |
