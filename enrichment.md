@@ -24,7 +24,8 @@ classes: wide
 
 - [Fast implementation of DFAs w/Haskell and C.](https://www.youtube.com/watch?v=b4bb8EP_pIE)
 - [Why theory pops up in practice](https://twitter.com/__phantomderp/status/1406334623408402441?s=20)
-- [Inappropriate regex](https://stackoverflow.com/a/1732454/)
+- [DDOS through Regex, in practice](https://people.cs.vt.edu/~davisjam/downloads/publications/DavisCoghlanServantLee-EcosystemREDOS-ESECFSE18.pdf)
+- [regex are not the appropriate choice](https://stackoverflow.com/a/1732454/)
 - [More on the Ackermann Function + History]({{ site.baseurl }}/assets/code/ack-etc.rkt)
 - [Quine-McCluskey Algorithm, Visualized](https://www.mathematik.uni-marburg.de/~thormae/lectures/ti1/code/qmc/)
 - [Automatically generating /conjectures/](https://www.nature.com/articles/s41586-021-03229-4)
