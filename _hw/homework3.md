@@ -23,8 +23,7 @@ layout: single
 
 **Submitting**
 
-Submit the solution to this assignment in [Gradescope
-`hw3`](https://www.gradescope.com/courses/219302/assignments/1002547).
+Submit the solution to this assignment in Gradescope.
 
 A submission must include the following files (**NOTE**: everything is
 case-sensitive):
