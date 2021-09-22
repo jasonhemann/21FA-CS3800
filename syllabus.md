@@ -371,8 +371,8 @@ assist.
 I have taken much of the design and execution of this course from
 [Stephen Chang](https://www.umb.edu/stephen_chang)'s version of a
 similar class at UMass Boston. Some slides and material therein is
-borrowed from, in no particular order: Costas Busch, Stephen Chang,
-and John MacCormick. [Lindsey
+borrowed from, in no particular order: Debasis Mitra (FIT), Costas
+Busch (RPI), Stephen Chang (UMB), and John MacCormick. [Lindsey
 Kuper](https://users.soe.ucsc.edu/~lkuper/) inspires some of this site
 and syllabus as well as being all-around inspirational.
 
