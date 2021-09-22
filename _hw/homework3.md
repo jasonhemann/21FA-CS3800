@@ -265,7 +265,7 @@ Your solution will be tested as follows:
   </automaton>
 ```
 
-## 4. NFA -> DFA (Optional Bonus)
+## 4. NFA -> DFA 
 
 This problem asks you to demonstrate that you understand the proof of
 Theorem 1.39.
