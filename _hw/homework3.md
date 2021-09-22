@@ -9,17 +9,17 @@ layout: single
 
 **Homework Problems**
 
-* A Data Representation for NFAs (4 points, 3 manually graded)
+* A Data Representation for NFAs (3 points, manually graded)
 
-* NFAs and the Language They Recognize (5 points)
+* NFAs and the Language They Recognize (2 points)
 
-* The Union Operation, on NFAs (4 points)
+* The Union Operation, on NFAs (2 points)
 
-* NFA -> DFA  (6 points)
+* NFA -> DFA  (2 points)
 
 * `README` (1 point)
 
-**Total**: 20 points (+ 5 bonus points)
+**Total**: 10 points
 
 **Submitting**
 
