@@ -137,7 +137,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   You can test your program with [this file named
-  `fig1.27-nfa.jff`](fig1.27-nfa.jff) containing the NFA from figure
+  `fig1.27-nfa.jff`]({{ site.baseurl }}/assets/docs/fig1.27-nfa.jff) containing the NFA from figure
   1.27 of the textbook.
 
   `printf "fig1.27-nfa.jff" | make -sf Makefile run-hw3-nfalang`
@@ -292,8 +292,8 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  You can test your program with this file:
-  [`fig1.27-nfa.jff`](fig1.27-nfa.jff)
+  You can test your program with this file: [`fig1.27-nfa.jff`]({{
+  site.baseurl }}/assets/docs/fig1.27-nfa.jff)
 
   `printf "fig1.27-nfa.jff" | make -sf Makefile run-hw3-nfa2dfa`
 
