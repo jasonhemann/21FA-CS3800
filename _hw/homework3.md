@@ -231,9 +231,9 @@ Your solution will be tested as follows:
 
   You can test your program with these files:
 
-  * [`nfa-a.xml`](nfa-a.xml): recognizes the language $\{"a"\}$
+  * [`nfa-a.xml`]({{ site.baseurl }}/assets/docs/nfa-a.xml): recognizes the language $\{"a"\}$
 
-  * [`nfa-b.xml`](nfa-b.xml): recognizes the language $\{"b"\}$
+  * [`nfa-b.xml`]({{ site.baseurl }}/assets/docs/nfa-b.xml): recognizes the language $\{"b"\}$
 
   `printf "nfa-a.xml nfa-b.xml" | make -sf Makefile run-hw3-union`
 
