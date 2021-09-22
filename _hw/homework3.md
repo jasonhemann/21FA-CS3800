@@ -36,7 +36,7 @@ case-sensitive):
 
   * `run-hw3-union`
 
-  * `run-hw3-nfa2dfa` (optional)
+  * `run-hw3-nfa2dfa` 
 
 * a `README` containing an NFA data representation (see A Data
   Representation for NFAs), and the other required information,
@@ -270,21 +270,21 @@ Your solution will be tested as follows:
 This problem asks you to demonstrate that you understand the proof of
 Theorem 1.39.
 
-In other words, implement a function or method that converts an NFA from
-the A Data Representation for NFAs problem to a DFA (from \[missing\],
-\[missing\] problem).
+In other words, implement a function or method that converts an NFA
+from the A Data Representation for NFAs problem to a DFA (as you
+represented them in an earlier assignment).
 
 Your solution should emit a DFA `automaton` XML element. The solution
-from HW2 will be useful here: use the solution from \[missing\] to write
-the XML output, and use the solution from \[missing\] to check that your
-output is actually a valid DFA.
+from HW2 will be useful here: use the solution from an earlier problem
+to write the XML output, and use the solution from another problem to
+check that your output is actually a valid DFA.
 
 Your solution will be tested as follows:
 
 * **Input** (from `stdin`): the name of an XML file containing an
   automaton element representing an NFA
 
-* Expected **Output** (to `stdout`):      an automaton element
+* Expected **Output** (to `stdout`): an automaton element
   representing an equivalent DFA
 
 * `Makefile` **target name**: `run-hw3-nfa2dfa`
