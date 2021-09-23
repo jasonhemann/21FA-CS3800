@@ -188,7 +188,7 @@ Your solution will be tested as follows:
   site.baseurl }}/assets/docs/dfa-empty.jff) containing a DFA that
   only accepts the empty string.
 
-  `printf "dfa-empty.jff" | make -sf Makefile run-hw2-dfa`
+  `printf "dfa-empty.jff" | make -sf Makefile run-hw2-dfalang`
 
   Output:
 
