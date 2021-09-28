@@ -201,7 +201,8 @@ answers.
 You will have two long-form exams. I have yet to determine our exams'
 format. Students' suggestions led to several improvements in how I
 conduct this course, and your continued suggestions will help lead to
-continued improvements. 
+continued improvements. These exams are at the dates laid out on the
+calendar and as discussed in class; we will not have a final exam.
 
 ### TRACE evaluations
 
