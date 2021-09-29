@@ -32,7 +32,13 @@ case-sensitive):
 
   * `setup` (optional)
 
+  * `run-hw4-concat`
+  
+  * `run-hw4-kleene`
+
   * `run-hw4-regexp`
+  
+  * `run-hw4-flip`
 
 * a `README` containing the required information,
 
@@ -52,6 +58,15 @@ Specifically, write a function that, given:
 
 returns an NFA recognizing $A\_1 \circ A\_2$.
 
+* `Makefile` **target name**: `run-hw4-concat`
+
+* **Example**:
+
+  `printf "nfa-a.xml nfa-b.xml" | make -sf Makefile run-hw4-concat`
+
+```
+```
+
 To do this, you’ll need to be able to extract individual components of
 an NFA instance, e.g., the states, transitions, etc., and use them to
 create a new NFA.
@@ -61,6 +76,7 @@ Figure 1.48 from the textbook should be helpful here.
 **NOTE**: When combining NFAs **be careful with duplicate state names**.
 Since the given files may use the same state names, it may be a good
 idea to first rename them to something unique.
+
 
 ## 2. Kleene Star
 
