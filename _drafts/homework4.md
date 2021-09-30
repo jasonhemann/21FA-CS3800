@@ -14,7 +14,7 @@ layout: single
 
 * [Kleene Star](#2-kleene-star)       (2 pt) 
 
-* [A Regular Expression Matcher](#3-a-regular-expression-matcher) (4 pts)
+* [A Regular Expression Matcher](#3-a-regular-expression-matcher) (4 pts, randomly selected from 8 after submission)
 
 * [The FLIP Operation](#4-the-flip-operation) (2 pts)
 
@@ -57,6 +57,14 @@ Specifically, write a function that, given:
 * an NFA recognizing language $A\_2$
 
 returns an NFA recognizing $A\_1 \circ A\_2$.
+
+* **Example**:
+
+  You can test your program with these files:
+
+  * [`nfa-a.xml`]({{ site.baseurl }}/assets/docs/nfa-a.xml): recognizes the language $\{"a"\}$
+
+  * [`nfa-b.xml`]({{ site.baseurl }}/assets/docs/nfa-b.xml): recognizes the language $\{"b"\}$
 
 * `Makefile` **target name**: `run-hw4-concat`
 
@@ -164,18 +172,19 @@ regular expression below means $0\cup 1$.
 
 * $1^\*\emptyset = \emptyset$
 
-<!-- * $0^\*10^\* = \{w \mid w \textrm{ contains a single } 1\}$ -->
-<!-- * $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$ -->
-<!-- * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$ -->
-<!-- * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$ -->
-<!-- * $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$ -->
-<!-- * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$ -->
-<!-- * $01 \cup 10 = \{01,10\}$ -->
-<!-- * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$ -->
-<!-- * $\(0\cup\varepsilon\)1^\* = 01^\*\cup1^\*$ -->
-<!-- * $\(0\cup\varepsilon\)\(1\cup\varepsilon\) = \{\varepsilon,0,1,01\}$ -->
-<!-- * $1^\*\emptyset = \emptyset$ -->
-<!-- * $\emptyset^\* = \{\varepsilon\}$ -->
+<!-- stars indicate moved, two nums indicate new numbering, old numbering -->
+<!-- 1 1  * $0^\*10^\* = \{w \mid w \textrm{ contains a single } 1\}$ --> 
+<!-- *2<!-- * $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$ -->
+<!-- 2 3<!-- * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$ -->
+<!-- 3 4<!-- * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$ -->
+<!--*5<!-- * $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$ -->
+<!--4 6<!-- * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$ -->
+<!--*7<!-- * $01 \cup 10 = \{01,10\}$ -->
+<!--5 8<!-- * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$ -->
+<!--6 9<!-- * $\(0\cup\varepsilon\)1^\* = 01^\*\cup1^\*$ -->
+<!--7 10<!-- * $\(0\cup\varepsilon\)\(1\cup\varepsilon\) = \{\varepsilon,0,1,01\}$ -->
+<!--  *11<!-- * $1^\*\emptyset = \emptyset$ -->
+<!--8 12<!-- * $\emptyset^\* = \{\varepsilon\}$ -->
 
 Each NFA you create is doing exactly the same thing as a real regexp
 matcher! To prove this to you, the grader will test your submission
@@ -191,7 +200,9 @@ Specifically, your solution will be tested as follows:
   representing an NFA that recognizes the same language as the regular
   expression corresponding to the input number. Though they should
   recognize the same language, our grader will only check strings up
-  to length at most eight.
+  to length at most eight. We will expect you to complete all 8, even
+  though we will only check four of them. Which four we check/allocate
+  points for is randomly selected after the final submissions.
 
   To be considered correct, **this NFA must have been constructed from
   smaller NFAs using union, concat, and star as described in Lemma
@@ -316,18 +327,24 @@ Define the $\textrm{FLIP}$ operation on a language to be:
 $\textrm{FLIP}(L) = \{c\_n \ldots c\_0 \mid c\_0\ldots c\_n \in L\}, \textrm{where } c\_i \in \Sigma$
 
 Prove that regular languages are closed under the \textrm{FLIP}
-operation by reading in the name of [an XML or JFF file (JBH: Which?)
-describing a DFA]({{ site.baseurl}}/assets/fig1.4.jff) for the
-language and producing a description of the resulting language as an
-NFA. We will test your machine by running it against a variety of
-outputs.
+operation by reading in the name of an XML file containing an XML
+automaton element describing a DFA and producing an XML automaton
+element representing an NFA that recognizes a flipped version of the
+language recognized by the machine from the input. We will test your
+machine by running it against a variety of outputs.
+
+* **Example**:
+
+  You can test your program with these files:
+
+  * [`dfa-abc.xml`]({{ site.baseurl }}/assets/docs/dfa-abc.xml): recognizes the language $\{"abc"\}$
 
 
 * `Makefile` **target name**: `run-hw4-flip`
 
 * **Example**:
 
-  `printf "" | make -sf Makefile run-hw4-flip`
+  `printf "dfa-abc.xml" | make -sf Makefile run-hw4-flip`
 
 ```
 ```
