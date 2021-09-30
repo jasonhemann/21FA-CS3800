@@ -174,17 +174,17 @@ regular expression below means $0\cup 1$.
 
 <!-- stars indicate moved, two nums indicate new numbering, old numbering -->
 <!-- 1 1  * $0^\*10^\* = \{w \mid w \textrm{ contains a single } 1\}$ --> 
-<!-- *2<!-- * $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$ -->
-<!-- 2 3<!-- * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$ -->
-<!-- 3 4<!-- * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$ -->
-<!--*5<!-- * $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$ -->
-<!--4 6<!-- * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$ -->
-<!--*7<!-- * $01 \cup 10 = \{01,10\}$ -->
-<!--5 8<!-- * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$ -->
-<!--6 9<!-- * $\(0\cup\varepsilon\)1^\* = 01^\*\cup1^\*$ -->
-<!--7 10<!-- * $\(0\cup\varepsilon\)\(1\cup\varepsilon\) = \{\varepsilon,0,1,01\}$ -->
-<!--  *11<!-- * $1^\*\emptyset = \emptyset$ -->
-<!--8 12<!-- * $\emptyset^\* = \{\varepsilon\}$ -->
+<!-- *2 * $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$ -->
+<!-- 2 3 * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$ -->
+<!-- 3 4 * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$ -->
+<!--*5 * $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$ -->
+<!--4 6 * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$ -->
+<!--*7 * $01 \cup 10 = \{01,10\}$ -->
+<!--5 8 * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$ -->
+<!--6 9 * $\(0\cup\varepsilon\)1^\* = 01^\*\cup1^\*$ -->
+<!--7 10 * $\(0\cup\varepsilon\)\(1\cup\varepsilon\) = \{\varepsilon,0,1,01\}$ -->
+<!--  *11 * $1^\*\emptyset = \emptyset$ -->
+<!--8 12 * $\emptyset^\* = \{\varepsilon\}$ -->
 
 Each NFA you create is doing exactly the same thing as a real regexp
 matcher! To prove this to you, the grader will test your submission
