@@ -141,7 +141,7 @@ R is a _regular expression_ if R is either:
 
 **Your Task**
 
-Use Lemma 1.55 and the closed NFA operations you’ve implemented to
+Use Lemma 1.55 and the NFA-closed operations you’ve implemented to
 create an equivalent NFA for each of the regular expressions below
 (these are all from Example 1.53 in the textbook).
 
@@ -150,17 +150,11 @@ regular expression below means $0\cup 1$.
 
 * $0^\*10^\* = \{w \mid w \textrm{ contains a single } 1\}$
 
-* $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$
-
 * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$
 
 * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$
 
-* $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$
-
 * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$
-
-* $01 \cup 10 = \{01,10\}$
 
 * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$
 
@@ -170,7 +164,18 @@ regular expression below means $0\cup 1$.
 
 * $1^\*\emptyset = \emptyset$
 
-* $\emptyset^\* = \{\varepsilon\}$
+<!-- * $0^\*10^\* = \{w \mid w \textrm{ contains a single } 1\}$ -->
+<!-- * $\Sigma^\*1\Sigma^\* = \{w \mid w \textrm{ has at least one } 1\}$ -->
+<!-- * $\Sigma^\*001\Sigma^\* = \{w \mid w \textrm{ contains the string } 001 \textrm{ as a substring}\}$ -->
+<!-- * $1^\*(01^+)^\* = \{w \mid \textrm{every } 0 \textrm{ in } w \textrm{ is followed by at least one } 1\}$ -->
+<!-- * $\(\Sigma\Sigma\)^\* = \{w \mid w \textrm{ is a string of even length}\}$ -->
+<!-- * $\(\Sigma\Sigma\Sigma\)^\* = \{w \mid \textrm{the length of } w \textrm{ is a multiple of } 3\}$ -->
+<!-- * $01 \cup 10 = \{01,10\}$ -->
+<!-- * $0\Sigma^\*0\cup 1\Sigma^\*1\cup 0\cup 1 = \{w\mid w \textrm{ starts and ends with the same symbol}\}$ -->
+<!-- * $\(0\cup\varepsilon\)1^\* = 01^\*\cup1^\*$ -->
+<!-- * $\(0\cup\varepsilon\)\(1\cup\varepsilon\) = \{\varepsilon,0,1,01\}$ -->
+<!-- * $1^\*\emptyset = \emptyset$ -->
+<!-- * $\emptyset^\* = \{\varepsilon\}$ -->
 
 Each NFA you create is doing exactly the same thing as a real regexp
 matcher! To prove this to you, the grader will test your submission
@@ -179,13 +184,14 @@ Python, Java, Racket, etc.).
 
 Specifically, your solution will be tested as follows:
 
-* **Input** (from `stdin`): a number, from 1 to 12 (inclusive),
+* **Input** (from `stdin`): a number, from 1 to 8 (inclusive),
   corresponding to one of the regular expression examples from above
 
 * Expected **Output** (to `stdout`): An XML automaton element
-  representing an NFA that recognizes the same language (for strings up
-  to length 5) as the regular expression corresponding to the input
-  number.
+  representing an NFA that recognizes the same language as the regular
+  expression corresponding to the input number. Though they should
+  recognize the same language, our grader will only check strings up
+  to length at most eight.
 
   To be considered correct, **this NFA must have been constructed from
   smaller NFAs using union, concat, and star as described in Lemma
@@ -241,7 +247,7 @@ Specifically, your solution will be tested as follows:
 To further help you, below are the exact regexp patterns (each
 corresponds to a numbered example from above) that the grader will use
 to grade your output NFA (the grader will only check strings up to
-length 5).
+length at most eight).
 
 Note that in typical regexp matching, a union of single chars, e.g., 0
 \cup 1, is typically written `[01]`, while the "vertical bar" $\mid$ is a
@@ -249,19 +255,11 @@ more general union operation.
 
 * `"0*10*"`
 
-* `"[01]*1[01]*"`
-
 * `"[01]*001[01]*"`
 
 * `"1*(01+)*"`
 
-* `"([01][01])*"`
-
 * `"([01][01][01])*"`
-
-* `"01|10"`
-
-* `"0[01]*0|1[01]*1|0|1"`
 
 * `"01*|1*"`
 
@@ -274,21 +272,42 @@ more general union operation.
 
 * `"\b\B"` (pattern that won’t match anything)
 
-* `""`
+<!-- * `"0*10*"` -->
+<!-- * `"[01]*1[01]*"` -->
+<!-- * `"[01]*001[01]*"` -->
+<!-- * `"1*(01+)*"` -->
+<!-- * `"([01][01])*"` -->
+<!-- * `"([01][01][01])*"` -->
+<!-- * `"01|10"` -->
+<!-- * `"0[01]*0|1[01]*1|0|1"` -->
+<!-- * `"01*|1*"` -->
+<!-- * `"^$|^0$|^1$|^01$"` -->
 
-With these, you should be able to easily test your solution on your own
-using the regexp library in your favorite language. Make sure to choose
-"exact match" ("partial match" is the default in some langs and will not
-recognize the same language), which corresponds to the textbook’s notion
-of matching.  Specifically, for any given string in the language of
-alphabet $\Sigma = \{0,1\}$ (up to length 5), your NFA should accept the
-string **if and only if** the equivalent regexp pattern matches on the
-string.
+<!--   \(won’t work without the `^` or `$`, which stand for "string start" -->
+<!--   and "string end", respectively, demonstrating that there ​_are_​ some -->
+<!--   differences between the theoretical regular expressions we study in -->
+<!--   class, and the regexp matching available in programming languages) -->
 
-Finally, if you still need more explanations, the internet has plenty of
-sites dedicated to learning about, and interactively exploring regexps,
-e.g., [regexr.com](https://regexr.com/) or
-[regex101.com](https://regex101.com/).
+<!-- * `"\b\B"` (pattern that won’t match anything) -->
+
+<!-- * `""` -->
+
+With these, you should be able to easily test your solution on your
+own using the regexp library in your favorite language. Make sure to
+choose "exact match" ("partial match" is the default in some langs and
+will not recognize the same language), which corresponds to the
+textbook’s notion of matching. Specifically, for any given string in
+the language of alphabet $\Sigma = \{0,1\}$ (up to length at most
+eight), your NFA should accept the string **if and only if** the
+equivalent regexp pattern matches on the string.
+
+Finally, if you still need more explanations, the internet has plenty
+of sites dedicated to learning about, and interactively exploring
+regexps, e.g., [regexr.com](https://regexr.com/) or
+[regex101.com](https://regex101.com/). The Emacs [`xr`
+package](https://elpa.gnu.org/packages/xr.html), for instance, will
+translate regular expressions back to a human-readable format, and
+also let you lint your regular expressions.
 
 ## 4. The FLIP Operation
 
@@ -297,10 +316,20 @@ Define the $\textrm{FLIP}$ operation on a language to be:
 $\textrm{FLIP}(L) = \{c\_n \ldots c\_0 \mid c\_0\ldots c\_n \in L\}, \textrm{where } c\_i \in \Sigma$
 
 Prove that regular languages are closed under the \textrm{FLIP}
-operation by reading in the name of [an XML file describing a DFA]({{
-site.baseurl}}/assets/fig1.4.jff) for the language and producing a
-description of the resulting language as an NFA. We will test your
-machine by running it against a variety of outputs.
+operation by reading in the name of [an XML or JFF file (JBH: Which?)
+describing a DFA]({{ site.baseurl}}/assets/fig1.4.jff) for the
+language and producing a description of the resulting language as an
+NFA. We will test your machine by running it against a variety of
+outputs.
 
+
+* `Makefile` **target name**: `run-hw4-flip`
+
+* **Example**:
+
+  `printf "" | make -sf Makefile run-hw4-flip`
+
+```
+```
 
 
