@@ -73,9 +73,11 @@ create a new NFA.
 
 Figure 1.48 from the textbook should be helpful here.
 
-**NOTE**: When combining NFAs **be careful with duplicate state names**.
-Since the given files may use the same state names, it may be a good
-idea to first rename them to something unique.
+**NOTE**: When combining NFAs **be careful with duplicate state
+names**. Since the given files may use the same state names, it may be
+a good idea to first rename them to something unique. Notice also how
+the JFLAP format distinguishes $\epsilon$ transitions from transitions
+on symbols of the alphabet.
 
 
 ## 2. Kleene Star
@@ -93,6 +95,15 @@ an NFA instance, e.g., the states, transitions, etc., and use them to
 create a new NFA.
 
 Figure 1.50 from the textbook should be helpful here.
+
+* `Makefile` **target name**: `run-hw4-kleene`
+
+* **Example**:
+
+  `printf "nfa-abc.xml" | make -sf Makefile run-hw4-kleene`
+
+```
+```
 
 ## 3. A Regular Expression Matcher
 
