@@ -211,7 +211,7 @@ Specifically, your solution will be tested as follows:
   To further illustrate what I mean, here is a snippet of (Racket) code
   from our sample solution:
 
-```
+```racket
   ;; Part of our sample solution, to illustrate what you should do
 
   (define N0 (mk-single-char-nfa "0")) ; NFA recognizing {"0"}
@@ -222,6 +222,7 @@ Specifically, your solution will be tested as follows:
     ["1" (nfa->xml (nfa-concat (nfa-concat N0* N1) N0*))]
     ....)
 ```
+
 * `Makefile` **target name**: `run-hw4-regexp`
 
 * **Example**:
