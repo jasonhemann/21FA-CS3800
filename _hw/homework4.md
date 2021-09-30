@@ -10,13 +10,13 @@ layout: single
 
 **Homework Problems**
 
-* [Concatentation](#1-concatentation) (2 pt)
+* Concatentation (2 pt)
 
-* [Kleene Star](#2-kleene-star)       (2 pt) 
+* Kleene Star       (2 pt) 
 
-* [A Regular Expression Matcher](#3-a-regular-expression-matcher) (4 pts, randomly selected from 8 after submission)
+* A Regular Expression Matcher (4 pts, randomly selected from 8 after submission)
 
-* [The FLIP Operation](#4-the-flip-operation) (2 pts)
+* The FLIP Operation (2 pts)
 
 
 **Total**: 10 points
