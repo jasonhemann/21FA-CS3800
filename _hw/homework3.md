@@ -9,7 +9,7 @@ layout: single
 
 **Homework Problems**
 
-* A Data Representation for NFAs (3 points, manually graded)
+* A Data Representation for NFAs (3 points, 2 manually graded)
 
 * NFAs and the Language They Recognize (2 points)
 
