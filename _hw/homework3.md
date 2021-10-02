@@ -43,8 +43,6 @@ case-sensitive):
 
 * the source code files needed by your `Makefile`,
 
-* and a pdf or plain-text file containing the answer to NFAs vs DFAs.
-
 ## 1. A Data Representation for NFAs
 
 Recall Definition 1.37 from the book. An NFA is a 5-tuple
