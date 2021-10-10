@@ -261,9 +261,9 @@ corresponds to a numbered example from above) that the grader will use
 to grade your output NFA (the grader will only check strings up to
 length at most eight).
 
-Note that in typical regexp matching, a union of single chars, e.g., 0
-\cup 1, is typically written `[01]`, while the "vertical bar" $\mid$ is a
-more general union operation.
+Note that in typical regexp matching, a union of single chars, e.g.,
+$0 \cup 1$, is typically written `[01]`, while the "vertical bar"
+$\mid$ is a more general union operation.
 
 * `"0*10*"`
 
