@@ -73,6 +73,53 @@ returns an NFA recognizing $A\_1 \circ A\_2$.
   `printf "nfa-a.xml nfa-b.xml" | make -sf Makefile run-hw4-concat`
 
 ```
+<automaton>
+<state id="0" name="q0"><initial/></state>
+<state id="1" name="b"></state>
+<state id="2" name="ba"></state>
+<state id="3" name="bad"></state>
+<state id="4" name="fail"></state>
+<state id="5" name="q02362079"></state>
+<state id="6" name="g2362080"></state>
+<state id="7" name="go2362081"></state>
+<state id="8" name="goo2362082"></state>
+<state id="9" name="good2362083"><final/></state>
+<state id="10" name="fail2362084"></state>
+<transition><from>0</from><to>4</to><read>a</read></transition>
+<transition><from>0</from><to>1</to><read>b</read></transition>
+<transition><from>0</from><to>4</to><read>d</read></transition>
+<transition><from>1</from><to>2</to><read>a</read></transition>
+<transition><from>1</from><to>4</to><read>b</read></transition>
+<transition><from>1</from><to>4</to><read>d</read></transition>
+<transition><from>2</from><to>4</to><read>a</read></transition>
+<transition><from>2</from><to>4</to><read>b</read></transition>
+<transition><from>2</from><to>3</to><read>d</read></transition>
+<transition><from>3</from><to>5</to><read/></transition>
+<transition><from>3</from><to>4</to><read>a</read></transition>
+<transition><from>3</from><to>4</to><read>b</read></transition>
+<transition><from>3</from><to>4</to><read>d</read></transition>
+<transition><from>4</from><to>4</to><read>a</read></transition>
+<transition><from>4</from><to>4</to><read>b</read></transition>
+<transition><from>4</from><to>4</to><read>d</read></transition>
+<transition><from>5</from><to>6</to><read>g</read></transition>
+<transition><from>5</from><to>10</to><read>o</read></transition>
+<transition><from>5</from><to>10</to><read>d</read></transition>
+<transition><from>6</from><to>10</to><read>g</read></transition>
+<transition><from>6</from><to>7</to><read>o</read></transition>
+<transition><from>6</from><to>10</to><read>d</read></transition>
+<transition><from>7</from><to>10</to><read>g</read></transition>
+<transition><from>7</from><to>8</to><read>o</read></transition>
+<transition><from>7</from><to>10</to><read>d</read></transition>
+<transition><from>8</from><to>10</to><read>g</read></transition>
+<transition><from>8</from><to>10</to><read>o</read></transition>
+<transition><from>8</from><to>9</to><read>d</read></transition>
+<transition><from>9</from><to>10</to><read>g</read></transition>
+<transition><from>9</from><to>10</to><read>o</read></transition>
+<transition><from>9</from><to>10</to><read>d</read></transition>
+<transition><from>10</from><to>10</to><read>g</read></transition>
+<transition><from>10</from><to>10</to><read>o</read></transition>
+<transition><from>10</from><to>10</to><read>d</read></transition>
+</automaton>
 ```
 
 To do this, you’ll need to be able to extract individual components of
