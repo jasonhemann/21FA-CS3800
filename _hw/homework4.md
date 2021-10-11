@@ -369,6 +369,109 @@ machine by running it against a variety of outputs.
   `printf "dfa-abc.xml" | make -sf Makefile run-hw4-flip`
 
 ```
+<automaton>
+<state id="5" name="q5">
+<initial/>
+</state>
+<state id="6" name="q6">
+</state>
+<state id="7" name="q7">
+</state>
+<state id="8" name="q8">
+</state>
+<state id="9" name="q9">
+</state>
+<state id="3" name="q3">
+</state>
+<state id="4" name="q4">
+<final/>
+</state>
+<transition>
+<from>5</from>
+<to>6</to>
+<read/>
+</transition>
+<transition>
+<from>3</from>
+<to>6</to>
+<read>c</read>
+</transition>
+<transition>
+<from>3</from>
+<to>6</to>
+<read>b</read>
+</transition>
+<transition>
+<from>3</from>
+<to>6</to>
+<read>a</read>
+</transition>
+<transition>
+<from>7</from>
+<to>8</to>
+<read>b</read>
+</transition>
+<transition>
+<from>9</from>
+<to>4</to>
+<read/>
+</transition>
+<transition>
+<from>3</from>
+<to>7</to>
+<read>b</read>
+</transition>
+<transition>
+<from>3</from>
+<to>7</to>
+<read>a</read>
+</transition>
+<transition>
+<from>3</from>
+<to>3</to>
+<read>a</read>
+</transition>
+<transition>
+<from>3</from>
+<to>3</to>
+<read>b</read>
+</transition>
+<transition>
+<from>3</from>
+<to>3</to>
+<read>c</read>
+</transition>
+<transition>
+<from>3</from>
+<to>9</to>
+<read>c</read>
+</transition>
+<transition>
+<from>3</from>
+<to>9</to>
+<read>b</read>
+</transition>
+<transition>
+<from>3</from>
+<to>8</to>
+<read>c</read>
+</transition>
+<transition>
+<from>3</from>
+<to>8</to>
+<read>a</read>
+</transition>
+<transition>
+<from>6</from>
+<to>7</to>
+<read>c</read>
+</transition>
+<transition>
+<from>8</from>
+<to>9</to>
+<read>a</read>
+</transition>
+</automaton>
 ```
 
 
