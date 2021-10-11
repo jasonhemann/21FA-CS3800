@@ -284,10 +284,10 @@ Write the following program:
 
 ## 4. Subsets and Power Sets
 
-A _subset_ A of a set S, written $A\subset S$ or \((A\subseteq S\)) (the latter means that A may be equal to S), is a set whose
+A _subset_ A of a set S, written $A\subset S$ or \($(A\subseteq S\)$) (the latter means that A may be equal to S), is a set whose
 elements must be in S.
 
-The _power set_ of a set S, sometimes written \((\mathcal{P}(S)\)), is
+The _power set_ of a set S, sometimes written \($(\mathcal{P}(S)\)$), is
 the set of all subsets of S.
 
 Write the following program:
