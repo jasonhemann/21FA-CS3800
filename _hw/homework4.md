@@ -10,7 +10,7 @@ layout: single
 
 **Homework Problems**
 
-* [Concatentation](#1-concatentation) (2 pt)
+* [Concatenation](#1-concatenation) (2 pt)
 
 * [Kleene Star](#2-kleene-star)       (2 pt) 
 
@@ -44,11 +44,11 @@ case-sensitive):
 
 * the source code files needed by your `Makefile`,
 
-## 1. Concatentation
+## 1. Concatenation
 
 **Your Task**
 
-Implement concatentation for your NFAs from the previous assignment.
+Implement concatenation for your NFAs from the previous assignment.
 
 Specifically, write a function that, given:
 
