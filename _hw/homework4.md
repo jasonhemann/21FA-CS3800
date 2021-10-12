@@ -132,6 +132,99 @@ Figure 1.50 from the textbook should be helpful here.
   `printf "nfa-abc.xml" | make -sf Makefile run-hw4-kleene`
 
 ```
+<automaton>
+<state id="0" name="0"></state>
+<state id="1" name="1"></state>
+<state id="2" name="2"></state>
+<state id="3" name="3"></state>
+<state id="4" name="4"></state>
+<state id="5" name="5"><initial /><final /></state>
+<transition>
+<from>5</from>
+<to>0</to>
+<read />
+</transition>
+<transition>
+<from>2</from>
+<to>3</to>
+<read>c</read>
+</transition>
+<transition>
+<from>2</from>
+<to>4</to>
+<read>b</read>
+</transition>
+<transition>
+<from>2</from>
+<to>4</to>
+<read>a</read>
+</transition>
+<transition>
+<from>1</from>
+<to>4</to>
+<read>c</read>
+</transition>
+<transition>
+<from>1</from>
+<to>2</to>
+<read>b</read>
+</transition>
+<transition>
+<from>1</from>
+<to>4</to>
+<read>a</read>
+</transition>
+<transition>
+<from>3</from>
+<to>4</to>
+<read>a</read>
+</transition>
+<transition>
+<from>3</from>
+<to>4</to>
+<read>b</read>
+</transition>
+<transition>
+<from>3</from>
+<to>4</to>
+<read>c</read>
+</transition>
+<transition>
+<from>3</from>
+<to>5</to>
+<read />
+</transition>
+<transition>
+<from>4</from>
+<to>4</to>
+<read>a</read>
+</transition>
+<transition>
+<from>4</from>
+<to>4</to>
+<read>b</read>
+</transition>
+<transition>
+<from>4</from>
+<to>4</to>
+<read>c</read>
+</transition>
+<transition>
+<from>0</from>
+<to>4</to>
+<read>c</read>
+</transition>
+<transition>
+<from>0</from>
+<to>1</to>
+<read>a</read>
+</transition>
+<transition>
+<from>0</from>
+<to>4</to>
+<read>b</read>
+</transition>
+</automaton>
 ```
 
 ## 3. A Regular Expression Matcher
@@ -303,7 +396,7 @@ $\mid$ is a more general union operation.
   differences between the theoretical regular expressions we study in
   class, and the regexp matching available in programming languages)
 
-* `"\b\B"` (pattern that won’t match anything)
+* `"[^[01]*]"` (a pattern that won’t match anything)
 
 <!-- * `"0*10*"` -->
 <!-- * `"[01]*1[01]*"` -->
