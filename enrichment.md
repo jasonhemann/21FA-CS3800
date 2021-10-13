@@ -68,6 +68,6 @@ classes: wide
 - [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ) 
 - Chiang's ["Division by Zero"]({{ site.baseurl }}/assets/docs/Chiang-Division-by-Zero.pdf) (a story about ex-falso quodlibet)
 - Russell's ["The Metaphysician's Nightmare"](http://www.naturalthinker.net/trl/texts/Russell,Bertrand/Philosophy/Russell,%20Bertrand%20-%20The%20Metaphysician%27s%20Nightmare.pdf) (a story about the troubles with negation).
-
+- [Dr. Spencer's Mantra for the relief of anxiety that accompanies attempts to prove theorems](https://users.wpi.edu/~martin/TEACHING/535/mantra.pdf)
 
 
