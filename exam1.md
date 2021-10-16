@@ -387,6 +387,17 @@ Your solution will be tested as follows:
   Output:
 
 ```
+<automaton>
+<state id="0" name="1"><initial/></state>
+<state id="1" name="2"><final/></state>
+<state id="2" name="3"></state>
+<transition><from>0</from><to>1</to><read>n</read></transition>
+<transition><from>0</from><to>2</to><read>f</read></transition>
+<transition><from>1</from><to>2</to><read>n</read></transition>
+<transition><from>1</from><to>2</to><read>f</read></transition>
+<transition><from>2</from><to>2</to><read>n</read></transition>
+<transition><from>2</from><to>2</to><read>f</read></transition>
+</automaton>
 ```
 
 <!-- ## 7. A Novel Proof by construction -->
