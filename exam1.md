@@ -329,12 +329,16 @@ it now and then use your solution here.**
 
   * [`nfa-efgstar.xml`]({{ site.baseurl }}/assets/docs/nfa-efgstar.xml): recognizes the language $\\{\textrm{""}, \textrm{"efg"}, \textrm{"efgefg"}, ... \\}$
 
+  * [`every-third-a-zero.jff`]({{ site.baseurl }}/assets/docs/every-third-a-zero.jff): recognizes the language over $\\{0,1,2\\}$ where every third char is a zero
+
   `printf "nfa-abc.xml nfa-efgstar.xml" | make -sf Makefile run-exam1-unionconcat`
 
   Output:
 
 ```
 ```
+
+There are other examples, but omitted for length.
 
 ## 6. Homomorphism of Regular Languages
 
