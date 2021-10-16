@@ -378,7 +378,7 @@ Your solution will be tested as follows:
 * Expected **Output** (to `stdout`): an automaton XML string
   representing an NFA that recognizes strings of the language $f(A)$.
 
-* `Makefile` **target name**: `run-hw3-homomorphism`
+* `Makefile` **target name**: `run-exam1-homomorphism`
 
 * **Example**:
 
