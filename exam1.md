@@ -23,7 +23,7 @@ layout: single
 
 * [Homomorphism of Regular Languages](#6-homomorphism-of-regular-languages)
 
-* [A Novel Proof by Construction](#7-a-novel-proof-by-construction)
+<!-- * [A Novel Proof by Construction](#7-a-novel-proof-by-construction) -->
 
 **Submitting**
 
@@ -48,7 +48,7 @@ case-sensitive):
   
   * `run-exam1-homomorphism`
   
-  * `run-exam1-nsdfa2dfa`
+  <!-- * `run-exam1-nsdfa2dfa` -->
 
 * a `README` containing the required information,
 
@@ -389,64 +389,64 @@ Your solution will be tested as follows:
 ```
 ```
 
-## 7. A Novel Proof by construction
+<!-- ## 7. A Novel Proof by construction -->
 
-In this problem you will demonstrate that you understand the technique
-of proof by construction by applying it in a new situation. DFAs are
-traditionally limited to only one start state. In this problem we ease
-that restriction for a type of machine we call nondeterministic-start
-DFAs (nsDFAs). An nsDFA can have one **or more** start states, and an
-nsDFA $M$ accepts a string $ w = w\_0 ... w\_n $ if there is a
-sequence of states $q\_0 ... q\_n$ consistent with M's $\delta$
-function and $q\_0$ is any one of the machine's start states.
+<!-- In this problem you will demonstrate that you understand the technique -->
+<!-- of proof by construction by applying it in a new situation. DFAs are -->
+<!-- traditionally limited to only one start state. In this problem we ease -->
+<!-- that restriction for a type of machine we call nondeterministic-start -->
+<!-- DFAs (nsDFAs). An nsDFA can have one **or more** start states, and an -->
+<!-- nsDFA $M$ accepts a string $ w = w\_0 ... w\_n $ if there is a -->
+<!-- sequence of states $q\_0 ... q\_n$ consistent with M's $\delta$ -->
+<!-- function and $q\_0$ is any one of the machine's start states. -->
 
-Your task is to demonstrate that nsDFAs are no more powerful than DFAs
-by implementing a constructive proof.
+<!-- Your task is to demonstrate that nsDFAs are no more powerful than DFAs -->
+<!-- by implementing a constructive proof. -->
 
-**Your Task**
+<!-- **Your Task** -->
 
-Define a data representation for nsDFAs, and implement a
-language-preserving function `nsDFA->DFA`. Specifically, write a
-function that, given
+<!-- Define a data representation for nsDFAs, and implement a -->
+<!-- language-preserving function `nsDFA->DFA`. Specifically, write a -->
+<!-- function that, given -->
 
-* an nsDFA recognizing language $A$
+<!-- * an nsDFA recognizing language $A$ -->
 
-returns a DFA recognizing $A$. **You must implement this
-programmatically**. That is, you should not write one-off solutions to
-pass our test cases, but instead write a programmatic transformation.
-We will verify this by manual code inspection.
+<!-- returns a DFA recognizing $A$. **You must implement this -->
+<!-- programmatically**. That is, you should not write one-off solutions to -->
+<!-- pass our test cases, but instead write a programmatic transformation. -->
+<!-- We will verify this by manual code inspection. -->
 
-**HINTS**:
+<!-- **HINTS**: -->
 
-* **Be careful and uniformly map symbols from the first alphabet to
-  the second**. $\Sigma\_1 \cap \Sigma\_2$ may be non-empty.
+<!-- * **Be careful and uniformly map symbols from the first alphabet to -->
+<!--   the second**. $\Sigma\_1 \cap \Sigma\_2$ may be non-empty. -->
 
-* **Make sure and remember to write your data description for nsDFAs
-  in your `README` file.**
+<!-- * **Make sure and remember to write your data description for nsDFAs -->
+<!--   in your `README` file.** -->
 
-Your solution will be tested as follows:
+<!-- Your solution will be tested as follows: -->
 
-* **Input** (from `stdin`): the name of **a XML file describing an
-  nsDFA for a language A**. An XML file describing an nsDFA is like
-  one describing a DFA, except that in an nsDFA more than one state
-  may have an `<initial/>` tag.
+<!-- * **Input** (from `stdin`): the name of **a XML file describing an -->
+<!--   nsDFA for a language A**. An XML file describing an nsDFA is like -->
+<!--   one describing a DFA, except that in an nsDFA more than one state -->
+<!--   may have an `<initial/>` tag. -->
 
-* Expected **Output** (to `stdout`): an automaton XML string
-  representing a DFA that recognizes strings of the language $A$.
+<!-- * Expected **Output** (to `stdout`): an automaton XML string -->
+<!--   representing a DFA that recognizes strings of the language $A$. -->
 
-* `Makefile` **target name**: `run-exam1-nsdfa2dfa`
+<!-- * `Makefile` **target name**: `run-exam1-nsdfa2dfa` -->
 
-* **Example**:
+<!-- * **Example**: -->
 
-  You can test your program with these files:
+<!--   You can test your program with these files: -->
 
-  * [`nsdfa-goodbad.xml`]({{ site.baseurl }}/assets/docs/nsdfa-goodbad.xml): recognizes the language $\\{\textrm{"good"}, \textrm{"bad"}\\}$
+<!--   * [`nsdfa-goodbad.xml`]({{ site.baseurl }}/assets/docs/nsdfa-goodbad.xml): recognizes the language $\\{\textrm{"good"}, \textrm{"bad"}\\}$ -->
 
-  `printf "nsdfa-goodbad.xml" | make -sf Makefile run-exam1-nsdfa2dfa`
+<!--   `printf "nsdfa-goodbad.xml" | make -sf Makefile run-exam1-nsdfa2dfa` -->
 
-  Output:
+<!--   Output: -->
 
-```
-```
+<!-- ``` -->
+<!-- ``` -->
 
 
