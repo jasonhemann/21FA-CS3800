@@ -55,7 +55,7 @@ information.
 
 You will find below a CFG representing the language of types in a
 simple ML-like language. I include below a [diagram from "Programming
-in Standard ML"]({{ site.baseurl}}assets/images/types.jpg) describing
+in Standard ML"]({{ site.baseurl}}/assets/images/types.jpg) describing
 this same information. Your job is to (1) open and read in the JFF
 file describing this construction, (2) construct an internal
 representation of your own devise, (3) derive the following strings in
