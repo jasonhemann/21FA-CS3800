@@ -39,56 +39,38 @@ Be sure to assign each page to the correct problem in Gradescope.
 Also, don’t forget to submit a `README` file containing the required
 information.
 
-## 1. Pump a string.
+<!-- ## 1. Pump a string. -->
+
+<!-- Your job here is to, given both a regular expression describing an -->
+<!-- infinite language and a string in the language of that expression, -->
+<!-- come up with a division into components $x$, $y$, and $z$ such that -->
+<!-- for any choice of $i$, any $xy^{i}z$ is also a string in the language -->
+<!-- of that regular expression.  -->
+
+<!-- More specifically, we will provide you the name of a `.jff` file -->
+<!-- containing the description of a regular expression,  -->
 
 
 ## 2. String Derivations
 
-Here’s a CFG representing a simple Java-like object-oriented language:
+You will find below a CFG representing the language of types in a
+simple ML-like language. I include below a [diagram from "Programming
+in Standard ML"]({{ site.baseurl}}assets/images/types.jpg) describing
+this same information. Your job is to (1) open and read in the JFF
+file describing this construction, (2) construct an internal
+representation of your own devise, (3) derive the following strings in
+your grammar. You will write out the sequence of strings in the
+derivation, one per line, starting with the initial symbol, and ending
+with the string in question. We will check that this sequence of
+strings follows the grammar. 
 
-\left\langle CLASS\right\rangle     \rightarrow\texttt{class } \left\langle CLSID\right\rangle \texttt{ extends }      
-                                               \left\langle CLSID\right\rangle \,\{\left\langle FLDDECLS\right\rangle  
-                                               \left\langle CONS\right\rangle \left\langle METHS\right\rangle\}        
-\left\langle FLDDECLS\right\rangle  \rightarrow\left\langle FLDDECL\right\rangle \left\langle FLDDECLS\right\rangle    
-                                               \mid \varepsilon                                                        
-\left\langle FLDDECL\right\rangle   \rightarrow\left\langle CLSID\right\rangle \left\langle                            
-                                               FLDID\right\rangle\texttt{;}                                            
-\left\langle CONS\right\rangle      \rightarrow\left\langle CLSID\right\rangle\(\left\langle                           
-                                               ARGS\right\rangle)\{\texttt{super(}\left\langle                         
-                                               EXPRS\right\rangle\texttt{)}; \left\langle FLDASSIGNS\right\rangle\}    
-\left\langle FLDASSIGNS\right\rangle\rightarrow\left\langle FLDASSIGN\right\rangle \left\langle FLDASSIGNS\right\rangle
-                                               \mid \varepsilon                                                        
-\left\langle FLDASSIGN\right\rangle \rightarrow\texttt{this.}\!\left\langle FLDID\right\rangle \texttt{=} \left\langle 
-                                               EXPR\right\rangle;                                                      
-\left\langle METHS\right\rangle     \rightarrow\left\langle METH\right\rangle \left\langle METHS\right\rangle \mid     
-                                               \varepsilon                                                             
-\left\langle METH\right\rangle      \rightarrow\left\langle CLSID\right\rangle \left\langle                            
-                                               METHID\right\rangle\(\left\langle ARGS\right\rangle)\{ \texttt{return } 
-                                               \left\langle EXPR\right\rangle; \}                                      
-\left\langle ARGS\right\rangle      \rightarrow\left\langle ARGS+\right\rangle \mid \left\langle ARG\right\rangle \mid 
-                                               \varepsilon                                                             
-\left\langle ARGS+\right\rangle     \rightarrow\left\langle ARG\right\rangle, \left\langle ARGS+\right\rangle \mid     
-                                               \left\langle ARG\right\rangle                                           
-\left\langle ARG\right\rangle       \rightarrow\left\langle CLSID\right\rangle \left\langle ARGID\right\rangle         
-\left\langle CLSID\right\rangle     \rightarrow\textrm{ class names can be any string in \texttt{\[a-zA-Z\]+}}         
-\left\langle METHID\right\rangle    \rightarrow\textrm{ method names can be any string in \texttt{\[a-zA-Z\]+}}        
-\left\langle FLDID\right\rangle     \rightarrow\textrm{ field names can be any string \texttt{\[a-zA-Z\]+}}            
-\left\langle ARGID\right\rangle     \rightarrow\textrm{ arg names can can be any string in \texttt{\[a-zA-Z\]+}}       
-\left\langle EXPRS\right\rangle     \rightarrow\left\langle EXPRS+\right\rangle \mid \left\langle EXPR\right\rangle    
-                                               \mid \varepsilon                                                        
-\left\langle EXPRS+\right\rangle    \rightarrow\left\langle EXPR\right\rangle, \left\langle EXPRS+\right\rangle \mid   
-                                               \left\langle EXPR\right\rangle                                          
-\left\langle EXPR\right\rangle      \rightarrow\left\langle VAR\right\rangle \mid \left\langle                         
-                                               EXPR\right\rangle\!.\!\left\langle FLDID\right\rangle \mid \left\langle 
-                                               EXPR\right\rangle\!.\!\left\langle METHID\right\rangle\(\left\langle    
-                                               EXPRS\right\rangle)\mid                                                 
-                                               \texttt{new } \left\langle CLSID\right\rangle\(\left\langle             
-                                               EXPRS\right\rangle) \mid (\left\langle CLSID\right\rangle)\left\langle  
-                                               EXPR\right\rangle                                                       
-\left\langle VAR\right\rangle       \rightarrow\textrm{ variable names can be any string in \texttt{\[a-zA-Z\]+}}      
+More specifically, you will receive the name of a JFF file containing
+the description of a CFG, and a string in the language of this
+grammar. 
 
-\(Yes, real-world languages are much more complicated than textbook
-examples.\)
+
+
+
 
 The terminals of this grammar are the tokens, i.e., the "words", of the
 language, which includes keywords (like `class`), identifiers (like
@@ -104,21 +86,10 @@ Whitespace is not included in the terminals and should be ignored.
 Give a parse tree or derivation for the following strings (i.e.,
 programs):
 
-* `class A extends Object { A() { super(); } }`
+* 
 
-* `class Pair extends Object {`             
-                                            
-    `Object fst;`                           
-    `Object snd;`                           
-                                            
-    `Pair(Object fst, Object snd) {`        
-      `super(); this.fst=fst; this.snd=snd;`
-    `}`                                     
-                                            
-    `Pair setfst(Object newfst) {`          
-      `return new Pair(newfst, this.snd);`  
-    `}`                                     
-  `}`                                       
+* 
+
 
 ## 3. Design a CFG
 
@@ -126,8 +97,13 @@ Create a CFG that generates the following language L.
 
 You can assume alphabet \Sigma = \{0,1\}.
 
-L = \{w\mid w = \textrm{FLIP}(w)\}, where \textrm{FLIP} is from
-\[missing\] in \[missing\].
+$ L = \\{w \mid w = \textrm{FLIP}(w)\\}$, where $\textrm{FLIP}$ is the
+language you already know from earlier.
+
+
+You will produce as output an XML element describing the grammar of
+this language. We will exercise your output by testing it against a
+sequence of strings in the language. 
 
 ## 4. Design a PDA
 
