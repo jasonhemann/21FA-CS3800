@@ -12,7 +12,7 @@ layout: single
 
 * [Concatenation](#1-concatenation) (2 pt)
 
-* [Kleene Star](#2-kleene-star)       (2 pt) 
+* [Kleene Star](#2-kleene-star) (2 pt) 
 
 * [A Regular Expression Matcher](#3-a-regular-expression-matcher) (4 pts, randomly selected from 8 after submission)
 

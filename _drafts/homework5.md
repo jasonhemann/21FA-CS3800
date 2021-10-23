@@ -5,42 +5,18 @@ layout: single
 
 ### Objectives 
 
-  - Begin to explore material from chapter 2
+  - Explore CFLs from several different points of view
   - Conclude relating regular languages to material of chapter 2
-
-(2) English Description -> (derivation + CFG for language -> XML)
-Given an English language description of a context free language, you
-will write a grammar generating that language. 
-
-You will also implement a generate-string operator that will produce
-the derivation of a string in the language of the grammar, if
-possible. You should implement this with a procedure `generate`, that
-produces a derivation of a string in the language if possible and
-produces false otherwise.
-
-(2) XML->CFG + confirm or disconfirm derivations
-
-You will implement `xml2cfg`, a program that, given a JFLAP XML
-description of a CFG and a string over the input alphabet of that
-grammar, will return either a derivation of that string in the
-grammar, or fail, a sentinel value showing that the string in question
-is not in the language of the grammar. 
-
-(2) NFA->PDA->XML
-
-(2) XML1, XML2 ->PDA A U B , run-PDA
-
-(2) README 
 
 **Homework Problems**
 
-* [Regular implies context-free](#1-regular-implies-context-free) (2 pts)
+* [Design a CFG](#1-design-a-cfg) (2 pts) 
 
-* [Design a CFG and Produce Derivation](#2-design-a-cfg) (2 pts) 
+* [Consume a CFG and Check String Derivations](#2-check-string-derivations) (2 pts)
 
-* [Consume a CFG and Check String Derivations](#3-check-string-derivations) (2 pts)
+* [Design, concat, and run a run a PDA](#3-design-a-pda) (2 pts)
 
-* [Design and run a PDA](#4-design-a-pda) (2 pts)
+* [Regular implies context-free](#4-regular-implies-context-free) (2 pts)
 
 * README (2 pts)
 
@@ -55,27 +31,52 @@ associated README. Don’t forget to submit a `README` file containing
 the required information, including time spent and resources
 consulted.
 
-## 1. Regular Implies Context-free
+
+## 1. Design a CFG
+
+- Construct your own data representation of a CFG. 
+- Given an English language description of a grammar, you will write the grammar in your own internal rep.
+- CFG->XML-JFLAP (if distinct from Sipser)
+
+(2) English Description -> (derivation + CFG for language -> XML)
+Given an English language description of a context free language, you
+will write a grammar generating that language, and output the result
+as XML.
+
+Create a CFG that generates the following language L.
+
+You can assume alphabet \Sigma = \{0,1\}.
+
+$ L = \\{w \mid w = \textrm{FLIP}(w)\\}$, where $\textrm{FLIP}$ is the
+language you already know from earlier.
 
 
-"Every regular language is context-free." You will prove this
-statement by reading in the XML description of an NFA, and producing
-as output an XML description of a PDA that recognizes the same
-language. We will test your implementation by running the resulting
-PDA against a variety of strings and verifying that your machine
-accepts strings in the language and rejects strings in $\Sigma^{*}$
-that are not in the language. 
-
-You will prove, by construction, the statement: For any language A, if
-A is regular, then A is also context-free. You will prove this by
-consuming an XML file containing a description of an NFA machine
-recognizing language A, and you will produce (an XML description of) a
-PDA recognizing that same machine. You will likely find your work on
-NFAs from earlier assignments helpful. We will test your assignment by
-testing your PDA on a variety of inputs.
+You will produce as output an XML element describing the grammar of
+this language. We will exercise your output by testing it against a
+sequence of strings in the language. 
 
 
 ## 2. String Derivations
+
+- XML->CFG 
+- Generate strings/n 
+- In-language (easy, after generate)
+
+(2) XML->CFG + confirm or disconfirm derivations
+
+You will implement `xml2cfg`, a program that, given a JFLAP XML
+description of a CFG and a string over the input alphabet of that
+grammar, will return either a derivation of that string in the
+grammar, or fail, a sentinel value showing that the string in question
+is not in the language of the grammar. 
+
+You will also implement a generate-string operator that will produce
+the derivation of a string in the language of the grammar, if
+possible. You should implement this with a procedure `generate`, that
+produces a derivation of a string in the language if possible and
+produces false otherwise.
+
+
 
 You will find below a CFG representing the language of types in a
 simple ML-like language. I include below a [diagram from "Programming
@@ -91,8 +92,6 @@ sequence of strings in your derivation follows from the grammar.
 More specifically, you will receive the name of a JFF file containing
 the description of a CFG, and a string in the language of this
 grammar. 
-
-
 
 
 
@@ -114,35 +113,54 @@ programs):
 
 * 
 
+## 3. Design a PDA
 
-## 3. Design a CFG
+- XML-PDA-JFLAP->PDA-JFLAP
+- PDA-JFLAP->PDA-SIPSER
+- Union/Kleene/Concat,whichever is most interesting-PDA-Sipser 
+- run-PDA-Sipser 
 
-Create a CFG that generates the following language L.
+(2) XML1, XML2 ->PDA A o B , run-PDA
 
-You can assume alphabet \Sigma = \{0,1\}.
+Take in via command line a filename of an XML description of a JFLAP
+PDA and a string. 
 
-$ L = \\{w \mid w = \textrm{FLIP}(w)\\}$, where $\textrm{FLIP}$ is the
-language you already know from earlier.
+Produce PDA1 in your own internal representation.
 
+Together with PDA2 from the next problem, construct a PDA that is the
+concatenation of PDA1 and PDA2.
 
-You will produce as output an XML element describing the grammar of
-this language. We will exercise your output by testing it against a
-sequence of strings in the language. 
-
-## 4. Design a PDA
-
-Create a pushdown automata that recognizes language L from [the previous
-problem](#2-design-a-cfg).
-
-
+Output "accept" or "reject" if that string is/is not in the language
+of PDA1 o PDA2.
 
 
+## 4. Regular Implies Context-free
 
-## 5. Closed Operations for CFLs
+- NFA -> PDA-Sipser 
+- PDA-Sipser->PDA-JFLAP
+- PDA-JFLAP->XML-PDA-JFLAP
 
-Show that the following operations are closed under context-free
-languages:
+(2) NFA->PDA->XML. This seems like the easiest one, but we could
+compare w/the Textbook pg 107. Say, don't use the textbook transition via CFG. 
 
-* concatentation
+"Every regular language is context-free." You will prove this
+statement by reading in the XML description of an NFA, and producing
+as output an XML description of a PDA that recognizes the same
+language. We will test your implementation by running the resulting
+PDA against a variety of strings and verifying that your machine
+accepts strings in the language and rejects strings in $\Sigma^{*}$
+that are not in the language. 
 
-* Kleene star
+You will prove, by construction, the statement: For any language A, if
+A is regular, then A is also context-free. You will prove this by
+consuming an XML file containing a description of an NFA machine
+recognizing language A, and you will produce (an XML description of) a
+PDA recognizing that same machine. You will likely find your work on
+NFAs from earlier assignments helpful. We will test your assignment by
+testing your PDA on a variety of inputs.
+
+
+```
+
+```
+
