@@ -30,6 +30,26 @@ associated README. Don’t forget to submit a `README` file containing
 the required information, including time spent and resources
 consulted.
 
+The submission must include the following files (**NOTE**: everything is
+case-sensitive):
+
+* a `Makefile` with the following targets:
+
+  * `setup` (optional)
+
+  * `run-hw6-dyck`
+  
+  * `run-hw6-generate-n`
+
+  * `run-hw6-verify`
+  
+  * `run-hw6-derive`
+
+* a `README` containing the required information,
+
+* the source code files needed by your `Makefile`,
+
+
 ## 1. Represent and Produce a CFG
 
 This problems asks you to demonstrate you can design CFGs.
