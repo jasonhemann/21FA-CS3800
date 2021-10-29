@@ -174,6 +174,7 @@ Your solution will be tested as follows:
 
 
 ```
+Coming
 ``` 
 
 ## 3. Verify a Simultaneous Derivation
@@ -181,44 +182,117 @@ Your solution will be tested as follows:
 This problem asks you to demonstrate that you understand how to derive
 strings from a grammar. 
 
-Your task is to verify a simultaneous derivation of an intermediate
-string from another intermediate string from the grammar you generated
-in earlier problem. See the discussion after 2.2 distinguishing the
-language of the grammar from the language of intermediate strings
+Your task is to verify a putative simultaneous derivation of a string
+in the language of the grammar, starting with the string containing
+only the start symbol.
 
-Again, we ask you to produce /simultaneous derivations/.
+Again, we ask you to verify /simultaneous derivations/.
 
 ** Your Tasks** 
 
-* Given a grammar in XML format, and a putative simultaneous
-  derivation, decide if this sequence represents a valid simultaneous
-  derivation in the language of the grammar.
+* Given a putative simultaneous derivation, decide if this sequence
+  represents a valid simultaneous derivation in the language of the
+  grammar of `types.jff`.
 
+Your solution will be tested as follows:
 
-```
+* **Input** (from `stdin`): A putative simultaneous derivation, one
+  intermediate string per line, starting with the string containing
+  only the initial symbol on the first line.
 
-```
+* Expected **Output** (to `stdout`): 
+
+    * `accept`, if this sequence represents a valid simultaneous
+      derivation in the grammar,
+
+    * otherwise `reject` otherwise
+
+* `Makefile` **target name**: `run-hw6-verify`
+
+* **Example**:
+
+  `printf "T\n{S}\n{L:T,S}\n{fst:V,L:T}\n{fst:t1,snd:V}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-verify`
+
+  Output: `accept`
+
+  `printf "T\n{T}\n{L:T,S}\n{fst:V,L:T}\n{fst:t1,snd:V}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-verify`
+
+  Output: `reject`
+
+  `printf "T\n{S}\n{L:T,S}\n{fst:V,L:T}\n" | make -sf Makefile run-hw6-verify`
+
+  Output: `reject`
+
+  `printf "T\n{S}\n{L:T,S}\n{fst:V,L:V}\n{fst:t1,snd:V}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-verify`
+
+  Output: `reject`
+
+  `printf "T\n{S}\n{L:T,S}\n{fst:V,L:T}\n{fst:V,L:V}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-verify`
+
+  Output: `accept`
 
 ## 4. Produce a simultaneous derivation
 
 You will implement a program that, given a JFLAP XML description of a
-CFG and a string in the language of that grammar, will return a
-simultaneous derivation of that string. We guarantee that the strings
-we provide will be strings in the language of the grammar.
+CFG, an intermediate source string in the language of that grammar,
+and an intermediate target string in the language of that grammar,
+will return a simultaneous derivation of the target from the source.
+We guarantee that the strings we provide will be intermediate strings
+of the grammar. See the discussion after 2.2 distinguishing the
+language of the grammar from the language of intermediate strings
 
-You will produce a derivation of the string in your grammar. You
-will write out the sequence of strings in the derivation, one per
-line, starting with a string of just the initial symbol, and ending
-with the string in question. Our checks will ensure that this sequence
-of strings in your derivation follows from the grammar.
-
-More specifically, you will receive the name of a JFF file containing
-the description of a CFG, and a string in the language of this
-grammar. 
-
-**Your Tasks** 
+You will produce a derivation of the intermediate string in the
+grammar. You will write out the sequence of strings in the derivation,
+one per line, starting with the initial source string, and ending with
+the target string in question. Our checks will ensure that this
+sequence of strings in your derivation follows from the grammar.
 
 
-```
+** Your Tasks** 
+ 
+ * Given the name of a JFF file containing the description of a CFG,
+   an intermediate source string in the language of the grammar, and
+   an intermediate target string in the language of this grammar,
+   construct a valid simultaneous derivation in the language of the
+   grammar from the source to the target.
 
-```
+Your solution will be tested as follows:
+
+* **Input** (from `stdin`): A filename, followed by a source string,
+  followed by a target string. These will be newline-separated, to
+  account for derivations beginning with and ending with the empty
+  string. Likewise you will use a blank link in your output to
+  indicate the empty string.
+
+* Expected **Output** (to `stdout`): 
+
+    * a sequence of intermediate strings, one per line, representing a
+      valid simultaneous derivation in the grammar
+
+* `Makefile` **target name**: `run-hw6-derive`
+
+* **Example**:
+
+
+  `"types.jff\n{fst:V,L:T}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
+
+  Output: 
+  
+  ```
+  {fst:V,L:T}
+  {fst:t1,snd:V}
+  {fst:t1,snd:t2}
+  ```
+
+  Output: `accept`
+
+  `"types.jff\nT\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
+
+  ```
+  T
+  {T}
+  {L:T,S}
+  {fst:V,L:T}
+  {fst:t1,snd:V}
+  {fst:t1,snd:t2}
+  ```
