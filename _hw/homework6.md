@@ -71,8 +71,7 @@ construct a function `CFG->XML` to output the result as an XML
 element. Create a CFG that generates the following language L. You can
 assume alphabet $\Sigma = \\{(,),[,]\\}$.
 
-$ L = \\{w \mid w = \textrm{ is a string of well-balanced
-matching brackets}\\}$. 
+$ L = \\{w \mid w = \textrm{ is a string of well-balanced matching brackets}\\}$. 
 
 
 **Your Tasks**
@@ -158,10 +157,10 @@ each variable in $w$. Note that not applying a rule to a variable is
 also a valid operation. There are almost always more than one ways to
 perform a simultaneous substitution into a string. To help you we use
 the following one-character abbreviations: `T`ype, Type`V`ariable,
-`I`d, `L`abel, T`u`ple (a parethesized grouping of types), `S`truct (a
-non-empty sequence of label-type pairs).
+`I`d, `L`abel, T`U`ple (a parethesized grouping of types), and
+`S`truct (a non-empty sequence of label-type pairs).
 
-** Your Tasks** 
+**Your Tasks** 
 
 * Open and read in a file ([types.jff]({{ site.baseurl
   }}/assets/docs/types.jff) for this example) containing a grammar
@@ -206,7 +205,7 @@ only the start symbol.
 
 Again, we ask you to verify /simultaneous derivations/.
 
-** Your Tasks** 
+**Your Tasks** 
 
 * Given a putative simultaneous derivation, decide if this sequence
   represents a valid simultaneous derivation in the language of the
@@ -266,7 +265,7 @@ the target string in question. Our checks will ensure that this
 sequence of strings in your derivation follows from the grammar.
 
 
-** Your Tasks** 
+**Your Tasks** 
  
  * Given the name of a JFF file containing the description of a CFG,
    an intermediate source string in the language of the grammar, and
