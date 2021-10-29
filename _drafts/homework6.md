@@ -50,10 +50,10 @@ will write in your own internal representation a grammar generating
 that language. Your grammar should be /unambiguous/. You will also
 construct a function `CFG->XML` to output the result as an XML
 element. Create a CFG that generates the following language L. You can
-assume alphabet $\Sigma = \\{0,1\\}$.
+assume alphabet $\Sigma = \\{(,),[,]\\}$.
 
-$ L = \\{w \mid w = \textrm{FLIP}(w)\\}$, where $\textrm{FLIP}$ is the
-FLIP language you already know.
+$ L = \\{w \mid w = \textrm{ is a string of well-balanced
+matching brackets}\\}$. 
 
 
 **Your Tasks**
@@ -74,26 +74,53 @@ You will produce as output an XML `structure` element containing the
 productions of your grammar for this language. We will exercise your
 output by testing it against a sequence of strings in the language.
 
+Your solution will be tested as follows:
+
+* **Input** (from `stdin`): Nothing
+
+* Expected **Output** (to `stdout`): an XML `structure` element,
+  containing the productions of your grammar. Note we will manually
+  inspect that you are in fact constructing the CFG and not just
+  printing the output
+
+* `Makefile` **target name**: `run-hw6-dyck`
+
+* **Example**:
+
+  `make -sf Makefile run-hw6-dyck`
+
+  Output:
+
 
 ```
+<structure>
+<type>grammar</type>
+<production><left>S</left><right>[S]</right></production>
+<production><left>S</left><right>(S)</right></production>
+<production><left>S</left><right>SS</right></production>
+<production><left>S</left><right/></production>
+</structure>
+``` 
 
-```
 
 ## 2. Generate Strings in a CFG
 
 This problem asks you to demonstrate you understand the JFLAP CFG
-format and know what it means to *generate* strings a language. 
+format, to internalize a new technical term related to derivations,
+and know what it means to *generate* strings a language.
 
 You will below a JFLAP file containing a CFG representing the language
 of types in a simple ML-like language. I include below a [diagram from
 "Programming in Standard ML"]({{
-site.baseurl}}/assets/images/types.jpg) describing this same
+site.baseurl}}/assets/images/types.jpeg) describing this same
 information. The terminals of this grammar are the tokens, i.e., the
 "words", of the language, which includes identifiers (like labels,
 ids, or type variables), parens and curly braces, `->`, `*`, and
 punctuation (colon and comma). This means all names would be leaves in
 a parse tree: we don’t separate them into individual characters.
 Whitespace is not included in the terminals and should be ignored.
+Notice that real-world languages are more complex than the languages
+we have thus-far worked with; this is just to describe a *type* in ML.
 
 In fact, the JFLAP format requires the variables be (a subset of the)
 single capital letters and treats any other characters as terminals.
@@ -105,17 +132,21 @@ a CFG, and a number $n$ representing the maximum quantity of
 simultaneous substitutions.
 
 The productions of a grammar are also called (Cf. 2.1) "substitution
-rules" or simply "rules." Define /simultaneous substitution into $w$
-of $R$/ as, if $w$ is a word $abXdcYdZX$, with $a$, $b$, $c$, $d, in
-$\Sigma$ and $X$, $Y$, $Z$ in $V$, as the set of all strings produced
-by applying at most one rule from $R$ for each instance of each
-variable in $w$. Note that not applying a rule to a variable is also a
-valid operation. There are almost always more than one ways to
-perform a simultaneous substitution into a string. 
+rules" or simply "rules." Define _simultaneous_ _substitution_ _into_
+$w$ _of_ $R$ as, if $w$ is a word $abXdcYdZX$, with $a$, $b$, $c$,
+$d$, in $\Sigma$ and $X$, $Y$, $Z$ in $V$, as the set of all strings
+produced by applying at most one rule from $R$ for each instance of
+each variable in $w$. Note that not applying a rule to a variable is
+also a valid operation. There are almost always more than one ways to
+perform a simultaneous substitution into a string. To help you we use
+the following one-character abbreviations: `T`ype, Type`V`ariable,
+`I`d, `L`abel, T`u`ple (a parethesized grouping of types), `S`truct (a
+non-empty sequence of label-type pairs).
 
 ** Your Tasks** 
 
-* Open and read in the `.jff` file describing this grammar
+* Open and read in a file ([`types.jff`]({{ site.baseurl
+  }}/assets/docs/types.jff) for this example) containing a grammar
 
 * Construct an instance of this grammar in the internal representation
   you devised
@@ -125,12 +156,25 @@ perform a simultaneous substitution into a string.
 
 * Write out the set of strings one string per line
 
-* 
+Your solution will be tested as follows:
+
+* **Input** (from `stdin`): The name of a `.jff` file containing a
+  CFG, and a number $n$
+
+* Expected **Output** (to `stdout`): the set of all strings derivable
+  through up to $n$ simultaneous derivations, one string per line.
+
+* `Makefile` **target name**: `run-hw6-generate-n`
+
+* **Example**:
+
+  `printf "types.jff 5" | make -sf Makefile run-hw6-generate-n`
+
+  Output:
+
 
 ```
-
-```
-
+``` 
 
 ## 3. Verify a Simultaneous Derivation
 
@@ -151,13 +195,11 @@ Again, we ask you to produce /simultaneous derivations/.
   derivation in the language of the grammar.
 
 
-
 ```
 
 ```
 
-
-## 4. 
+## 4. Produce a simultaneous derivation
 
 You will implement a program that, given a JFLAP XML description of a
 CFG and a string in the language of that grammar, will return a
