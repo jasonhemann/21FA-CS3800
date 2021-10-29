@@ -49,7 +49,6 @@ case-sensitive):
 
 * the source code files needed by your `Makefile`,
 
-
 ## 1. Represent and Produce a CFG
 
 This problems asks you to demonstrate you can design CFGs.
@@ -131,16 +130,15 @@ and know what it means to *generate* strings a language.
 
 You will below a JFLAP file containing a CFG representing the language
 of types in a simple ML-like language. I include below a [diagram from
-"Programming in Standard ML"]({{
-site.baseurl}}/assets/images/types.jpeg) describing this same
-information. The terminals of this grammar are the tokens, i.e., the
-"words", of the language, which includes identifiers (like labels,
-ids, or type variables), parens and curly braces, `->`, `*`, and
-punctuation (colon and comma). This means all names would be leaves in
-a parse tree: we don’t separate them into individual characters.
-Whitespace is not included in the terminals and should be ignored.
-Notice that real-world languages are more complex than the languages
-we have thus-far worked with; this is just to describe a *type* in ML.
+"Programming in Standard ML"]({{ site.baseurl }}/assets/images/types.jpeg) describing this same information. The
+terminals of this grammar are the tokens, i.e., the "words", of the
+language, which includes identifiers (like labels, ids, or type
+variables), parens and curly braces, `->`, `*`, and punctuation (colon
+and comma). This means all names would be leaves in a parse tree: we
+don’t separate them into individual characters. Whitespace is not
+included in the terminals and should be ignored. Notice that
+real-world languages are more complex than the languages we have
+thus-far worked with; this is just to describe a *type* in ML.
 
 In fact, the JFLAP format requires the variables be (a subset of the)
 single capital letters and treats any other characters as terminals.
@@ -165,7 +163,7 @@ non-empty sequence of label-type pairs).
 
 ** Your Tasks** 
 
-* Open and read in a file ([`types.jff`]({{ site.baseurl
+* Open and read in a file ([types.jff]({{ site.baseurl
   }}/assets/docs/types.jff) for this example) containing a grammar
 
 * Construct an instance of this grammar in the internal representation
