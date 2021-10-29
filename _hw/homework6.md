@@ -283,8 +283,8 @@ Your solution will be tested as follows:
 
 * Expected **Output** (to `stdout`): 
 
-    * a sequence of intermediate strings, one per line, representing a
-      valid simultaneous derivation in the grammar
+   * a sequence of intermediate strings, one per line, representing a
+     valid simultaneous derivation in the grammar
 
 * `Makefile` **target name**: `run-hw6-derive`
 
