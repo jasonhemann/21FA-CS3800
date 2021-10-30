@@ -60,7 +60,7 @@ $\(V,\Sigma,R,S\)$, where:
 
 * $\Sigma$ is a finite alphabet,
 
-* $R: V \times Stringof (V \Cup \Sigma)$ is a finite set of _rules_, and
+* $R: V \times \textrm{ Stringof } (V \cup \Sigma)$ is a finite set of _rules_, and
 
 * $S$ is the start variable
 
@@ -132,7 +132,7 @@ of types in a simple ML-like language. I include below a [diagram from
 "Programming in Standard ML"]({{ site.baseurl }}/assets/images/types.jpeg) describing this same information. The
 terminals of this grammar are the tokens, i.e., the "words", of the
 language, which includes identifiers (like labels, ids, or type
-variables), parens and curly braces, `->`, `*`, and punctuation (colon
+variables), parens and curly braces, `→`, `*`, and punctuation (colon
 and comma). This means all names would be leaves in a parse tree: we
 don’t separate them into individual characters. Whitespace is not
 included in the terminals and should be ignored. Notice that
@@ -264,8 +264,9 @@ CFG, an intermediate source string in the language of that grammar,
 and an intermediate target string in the language of that grammar,
 will return a simultaneous derivation of the target from the source.
 We guarantee that the strings we provide will be intermediate strings
-of the grammar. See the discussion after 2.2 distinguishing the
-language of the grammar from the language of intermediate strings
+of the grammar. See the both the discussion of Lemma 2.21 and the
+discussion after Definition 2.2 ("yields", "derives") distinguishing
+the language of the grammar from the language of intermediate strings
 
 You will produce a derivation of the intermediate string in the
 grammar. You will write out the sequence of strings in the derivation,
