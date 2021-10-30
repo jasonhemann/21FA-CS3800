@@ -311,8 +311,6 @@ Your solution will be tested as follows:
   {fst:t1,snd:t2}
   ```
 
-  Output: `accept`
-
   `"types.jff\nT\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
 
   ```
