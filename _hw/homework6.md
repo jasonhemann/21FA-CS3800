@@ -185,14 +185,23 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `printf "types.jff 5" | make -sf Makefile run-hw6-generate-n`
+  `printf "types.jff 2" | make -sf Makefile run-hw6-generate-n`
 
   Output:
 
-
-```
-Coming
-``` 
+  ```
+  d
+  c
+  b
+  a
+  t4
+  t3
+  t2
+  t1
+  ``` 
+  
+  Please notice the set of strings gets dramatically larger as the
+  values of $n$ increases.
 
 ## 3. Verify a Simultaneous Derivation
 
