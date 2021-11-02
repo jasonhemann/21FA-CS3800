@@ -301,7 +301,7 @@ Your solution will be tested as follows:
 * **Example**:
 
 
-  `"types.jff\n{fst:V,L:T}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
+  `printf "types.jff\n{fst:V,L:T}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
 
   Output: 
   
@@ -311,7 +311,7 @@ Your solution will be tested as follows:
   {fst:t1,snd:t2}
   ```
 
-  `"types.jff\nT\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
+  `printf "types.jff\nT\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw6-derive`
 
   ```
   T
