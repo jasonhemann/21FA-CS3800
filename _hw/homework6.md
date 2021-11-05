@@ -99,7 +99,7 @@ Your solution will be tested as follows:
 * Expected **Output** (to `stdout`): an XML `structure` element,
   containing the productions of your grammar. Note we will manually
   inspect that you are in fact constructing the CFG and not just
-  printing the output
+  printing the output. 
 
 * `Makefile` **target name**: `run-hw6-dyck`
 
@@ -108,7 +108,6 @@ Your solution will be tested as follows:
   `make -sf Makefile run-hw6-dyck`
 
   Output:
-
 
 ```
 <structure>
@@ -315,7 +314,7 @@ Your solution will be tested as follows:
 
   ```
   T
-  {T}
+  {S}
   {L:T,S}
   {fst:V,L:T}
   {fst:t1,snd:V}
