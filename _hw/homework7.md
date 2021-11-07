@@ -21,13 +21,11 @@ the questions so that we can readily decide them.
 
 **Homework Problems**
 
-* [Represent and Produce a PDA](#1-represent-and-produce-a-pda) (1 pt, manually graded)
+* [Represent and Produce a PDA](#1-represent-and-produce-a-pda) (2 pts, 1 manually graded)
 
-* [NFA->PDA](#2-regular-langs-are-context-free) (1 pts)
+* [NFA->PDA](#2-regular-langs-are-context-free) (2 pts)
 
 * [`run` for a PDA](#3-run-a-pda) (2 pts)
-
-* [PDA->CFG](#4-convert-a-pda) (2 pts)
 
 * [CFG->PDA](#5-convert-a-cfg) (2 pts)
 
@@ -57,8 +55,6 @@ case-sensitive):
 
   * `run-hw7-run`
 
-  * `run-hw7-pda2cfg`
-  
   * `run-hw7-cfg2pda`
 
 * a `README` containing the required information,
