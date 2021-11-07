@@ -27,7 +27,7 @@ the questions so that we can readily decide them.
 
 * [`run` for a PDA](#3-run-a-pda) (2 pts)
 
-* [CFG->PDA](#5-convert-a-cfg) (2 pts)
+* [CFG->PDA](#4-convert-a-cfg) (2 pts)
 
 * README (2 pts)
 
@@ -383,162 +383,74 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `printf "types.jff {fst:t1,snd:t2}" | make -sf Makefile run-hw7-run`
+  `printf "types-pda.jff {fst:t1,snd:t2}" | make -sf Makefile run-hw7-run`
 
   Output: `accept`
 
-  `printf "types.jff {f:stt1s,nd:a}n" | make -sf Makefile run-hw7-verify`
+  `printf "terminating-types-pda.jff {f:stt1s,nd:a}n" | make -sf Makefile run-hw7-verify`
 
   Output: `reject`
 
+## 4. Convert a CFG
 
+You will implement a program that, given a JFLAP XML description of a
+CFG, will return a JFLAP XML description of a PDA with an equivalent
+language to the language of the CFG. Recall that two languages are
+equivalent when they contain the same strings. We will test that your
+PDA accepts strings that it should. We will not *directly* test that
+your PDA accepts only those strings. 
 
-<!-- ## 4. Produce a simultaneous derivation -->
+**Your Tasks**
 
-<!-- You will implement a program that, given a JFLAP XML description of a -->
-<!-- CFG, an intermediate source string in the language of that grammar, -->
-<!-- and an intermediate target string in the language of that grammar, -->
-<!-- will return a simultaneous derivation of the target from the source. -->
-<!-- We guarantee that the strings we provide will be intermediate strings -->
-<!-- of the grammar. See the both the discussion of Lemma 2.21 and the -->
-<!-- discussion after Definition 2.2 ("yields", "derives") distinguishing -->
-<!-- the language of the grammar from the language of intermediate strings -->
+* Given a string in $\Sigma^{*}$, decide if the string is in the
+  language of the machine. 
 
-<!-- You will produce a derivation of the intermediate string in the -->
-<!-- grammar. You will write out the sequence of strings in the derivation, -->
-<!-- one per line, starting with the initial source string, and ending with -->
-<!-- the target string in question. Our checks will ensure that this -->
-<!-- sequence of strings in your derivation follows from the grammar. -->
+Your solution will be tested as follows:
 
+* **Input** (from `stdin`): A `.jff` file describing a PDA, and a
+  string over the alphabet of the PDA, separated by a space.
 
-<!-- **Your Tasks**  -->
- 
-<!--  * Given the name of a JFF file containing the description of a CFG, -->
-<!--    an intermediate source string in the language of the grammar, and -->
-<!--    an intermediate target string in the language of this grammar, -->
-<!--    construct a valid simultaneous derivation in the language of the -->
-<!--    grammar from the source to the target. -->
+* Expected **Output** (to `stdout`): 
 
-<!-- Your solution will be tested as follows: -->
+    * `accept`, if this string is in the language of the grammar,
 
-<!-- * **Input** (from `stdin`): A filename, followed by a source string, -->
-<!--   followed by a target string. These will be newline-separated, to -->
-<!--   account for derivations beginning with and ending with the empty -->
-<!--   string. Likewise you will use a blank link in your output to -->
-<!--   indicate the empty string. -->
+    * `reject`, if the PDA terminates in all paths through the machine
+      and this string is not in the language of the grammar.
+	  
+	* otherwise, it's behavior is undefined.  
 
-<!-- * Expected **Output** (to `stdout`):  -->
+* `Makefile` **target name**: `run-hw7-run`
 
-<!--    * a sequence of intermediate strings, one per line, representing a -->
-<!--      valid simultaneous derivation in the grammar -->
+* **Example**:
 
-<!-- * `Makefile` **target name**: `run-hw7-derive` -->
+  `printf "types.jff" | make -sf Makefile run-hw7-cfg2pda`
 
-<!-- * **Example**: -->
-
-
-<!--   `printf "types.jff\n{fst:V,L:T}\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw7-derive` -->
-
-<!--   Output:  -->
+  Output: 
   
-<!--   ``` -->
-<!--   {fst:V,L:T} -->
-<!--   {fst:t1,snd:V} -->
-<!--   {fst:t1,snd:t2} -->
-<!--   ``` -->
+  ```
 
-<!--   `printf "types.jff\nT\n{fst:t1,snd:t2}\n" | make -sf Makefile run-hw7-derive` -->
+  ```
 
-<!--   ``` -->
-<!--   T -->
-<!--   {S} -->
-<!--   {L:T,S} -->
-<!--   {fst:V,L:T} -->
-<!--   {fst:t1,snd:V} -->
-<!--   {fst:t1,snd:t2} -->
-<!--   ``` -->
+  `printf "terminating-types-pda.jff" | make -sf Makefile run-hw7-cfg2pda`
 
-
-<!-- ``````` -->
-
-
-
-<!-- This problem asks you to demonstrate you understand the JFLAP CFG -->
-<!-- format, to internalize a new technical term related to derivations, -->
-<!-- and know what it means to *generate* strings a language. -->
-
-<!-- You will below a JFLAP file containing a CFG representing the language -->
-<!-- of types in a simple ML-like language. I include below a [diagram from -->
-<!-- "Programming in Standard ML"]({{ site.baseurl }}/assets/images/types.jpeg) describing this same information. The -->
-<!-- terminals of this grammar are the tokens, i.e., the "words", of the -->
-<!-- language, which includes identifiers (like labels, ids, or type -->
-<!-- variables), parens and curly braces, `→`, `*`, and punctuation (colon -->
-<!-- and comma). This means all names would be leaves in a parse tree: we -->
-<!-- don’t separate them into individual characters. Whitespace is not -->
-<!-- included in the terminals and should be ignored. Notice that -->
-<!-- real-world languages are more complex than the languages we have -->
-<!-- thus-far worked with; this is just to describe a *type* in ML. -->
-
-<!-- In fact, the JFLAP format requires the variables be (a subset of the) -->
-<!-- single capital letters and treats any other characters as terminals. -->
-<!-- You should adhere to this format. I've given you a version of this -->
-<!-- situation with a fixed quantity of labels, type variables, and IDs to -->
-<!-- both simplify your lives and to accommodate JFLAP. More specifically, -->
-<!-- you will receive the name of a JFF file containing the description of -->
-<!-- a CFG, and a number $n$ representing the maximum quantity of -->
-<!-- simultaneous substitutions. -->
-
-<!-- The productions of a grammar are also called (Cf. 2.1) "substitution -->
-<!-- rules" or simply "rules." Define _simultaneous_ _substitution_ _into_ -->
-<!-- $w$ _of_ $R$ as, if $w$ is a word $abXdcYdZX$, with $a$, $b$, $c$, -->
-<!-- $d$, in $\Sigma$ and $X$, $Y$, $Z$ in $V$, as the set of all strings -->
-<!-- produced by applying at most one rule from $R$ for each instance of -->
-<!-- each variable in $w$. Note that not applying a rule to a variable is -->
-<!-- also a valid operation. There are almost always more than one ways to -->
-<!-- perform a simultaneous substitution into a string. To help you we use -->
-<!-- the following one-character abbreviations: `T`ype, Type`V`ariable, -->
-<!-- `I`d, `L`abel, T`U`ple (a parethesized grouping of types), and -->
-<!-- `S`truct (a non-empty sequence of label-type pairs). -->
-
-<!-- **Your Tasks**  -->
-
-<!-- * Open and read in a file ([types.jff]({{ site.baseurl -->
-<!--   }}/assets/docs/types.jff) for this example) containing a grammar -->
-
-<!-- * Construct an instance of this grammar in the internal representation -->
-<!--   you devised -->
-
-<!-- * Generate the set of all strings in the language of the grammar -->
-<!--   produced within a fixed number of simultaneous substitutions. -->
-
-<!-- * Write out the set of strings one string per line -->
-
-<!-- Your solution will be tested as follows: -->
-
-<!-- * **Input** (from `stdin`): The name of a `.jff` file containing a -->
-<!--   CFG, and a number $n$ -->
-
-<!-- * Expected **Output** (to `stdout`): the set of all strings derivable -->
-<!--   through up to $n$ simultaneous derivations, one string per line. -->
-
-<!-- * `Makefile` **target name**: `run-hw7-generate-n` -->
-
-<!-- * **Example**: -->
-
-<!--   `printf "types.jff 2" | make -sf Makefile run-hw7-generate-n` -->
-
-<!--   Output: -->
-
-<!--   ``` -->
-<!--   d -->
-<!--   c -->
-<!--   b -->
-<!--   a -->
-<!--   t4 -->
-<!--   t3 -->
-<!--   t2 -->
-<!--   t1 -->
-<!--   ```  -->
+  Output: 
   
-<!--   Please notice the set of strings gets dramatically larger as the -->
-<!--   values of $n$ increases. -->
+  ```
+  
+  ```
+
+## NB. Testing
+
+We will have to test that by transforming your machine to a CFG,
+transforming that CFG to CNF, and transforming the resulting CFG
+*back* to a PDA, and then testing _that_ PDA.
+
+Dang. It'd be easier if I had *you* all write those programs and then
+I could test them more directly. I could just give you the tests and
+have you all implement them. 
+
+Need also to think about the time complexity of the solutions we come
+up with. I know there are *significantly* more efficient mechanisms
+for doing some of these things, but I haven't programmed them, so I
+don't know how complicated they are to get right, or how tedious, or
+how much more efficient they are in practice.
