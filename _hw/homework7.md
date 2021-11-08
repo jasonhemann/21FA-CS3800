@@ -348,15 +348,27 @@ This problem asks you to demonstrate that you to implement `run` for a
 PDA. There are two classes of problems we can ask you about: the PDAs
 for which evaluation is guaranteed to terminate, and those for which
 it is *not* guaranteed to terminate. You'll have to write your `run`
-program so that it will terminate when it can, and we will have to be
-careful to only ask you to output `reject` when you have a PDA that is
-guaranteed to terminate for all paths through the machine. 
+program so that it will terminate when it can. 
+
+Clever improvement! We will also have you optionally take a maximum
+number, an upper bound, for the number of transitions to make (in any
+individual path, so non-deterministically trying each of 5 different
+choices from state A only counts as one in each of those individual
+paths). So if your machine accepts within $n$ steps, you `accept`. If
+your PDA finitely halts for all paths through the machine and none of
+the paths through that machine accept, or none of the paths through
+the machine accept within $n$ steps, reject.
+
+Unless we give you that upper bound, we will have to be careful to
+only ask you to output `reject` when the PDA we give you finitely
+halts for all paths through the machine. 
 
 Your task is to accept, or when possibly reject, a string in 
 $\Sigma^{*}$.
 
-Again, we ask you to reject only when we provide you a PDA that is
-guaranteed to terminate for all paths through the machine. 
+Again, we ask you to reject only when we provide you an upper bound,
+or when we provide you a PDA that is guaranteed to terminate for all
+paths through the machine.
 
 ### NB. Characterizing such PDAs isn't as simple as "no epsilon-push loops."
 
@@ -367,8 +379,10 @@ guaranteed to terminate for all paths through the machine.
 
 Your solution will be tested as follows:
 
-* **Input** (from `stdin`): A `.jff` file describing a PDA, and a
-  string over the alphabet of the PDA, separated by a space.
+* **Input** (from `stdin`): A `.jff` file describing a PDA, a string
+  over the alphabet of the PDA, *and optionally a max number of
+  transitions in a path to look for before rejecting*, separated by a
+  space.
 
 * Expected **Output** (to `stdout`): 
 
@@ -387,7 +401,11 @@ Your solution will be tested as follows:
 
   Output: `accept`
 
-  `printf "terminating-types-pda.jff {f:stt1s,nd:a}n" | make -sf Makefile run-hw7-verify`
+  `printf "types-pda.jff {fst:t1,snd:t2} 50" | make -sf Makefile run-hw7-run`
+
+  Output: `accept`
+
+  `printf "terminating-types-pda.jff {f:stt1s,nd:a}n 50" | make -sf Makefile run-hw7-verify`
 
   Output: `reject`
 
