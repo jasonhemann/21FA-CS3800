@@ -19,8 +19,9 @@ classes: wide
 ## Lessons for TRM 
 
 1. [Getting Started w/RM](https://iulg.sitehost.iu.edu/trm/startup.shtml)
-2. [Programs 4 Programs](https://iulg.sitehost.iu.edu/trm/programs.shtml)
-3. [Self-Rep](https://iulg.sitehost.iu.edu/trm/recursion.shtml)
+2. (You may skip)
+3. [Programs 4 Programs](https://iulg.sitehost.iu.edu/trm/programs.shtml)
+4. [Self-Rep](https://iulg.sitehost.iu.edu/trm/recursion.shtml)
 
 
 
