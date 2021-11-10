@@ -10,6 +10,7 @@ classes: wide
 - [JFLAP download site](https://www.jflap.org/jflaptmp/)
 - [Main site](http://www2.cs.duke.edu/csed/jflap/)
 - [JFLAP FA instruction manual](http://www2.cs.duke.edu/csed/jflap/tutorial/fa/createfa/fa.html)
+- [JFLAP textbook](https://www2.cs.duke.edu/csed/jflap/jflapbook/jflapbook2006.pdf)
 
 # OneHash Site and Tooling
 
