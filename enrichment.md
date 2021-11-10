@@ -13,7 +13,15 @@ classes: wide
 
 # OneHash Site and Tooling
 
-- [1\#](https://web.archive.org/web/20191025033718id_/http://www.indiana.edu:80/~iulg/trm/)
+- [1\#](https://iulg.sitehost.iu.edu/trm/)
+- [TRM Interpreter repository](https://github.com/melvinzhang/text-register-machine) (Download, `make`, and run)
+
+## Lessons for TRM 
+
+1. [Getting Started w/RM](https://iulg.sitehost.iu.edu/trm/startup.shtml)
+2. [Programs 4 Programs](https://iulg.sitehost.iu.edu/trm/programs.shtml)
+3. [Self-Rep](https://iulg.sitehost.iu.edu/trm/recursion.shtml)
+
 
 
 # Supplementary Videos
