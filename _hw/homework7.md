@@ -420,24 +420,15 @@ your PDA accepts only those strings.
 
 **Your Tasks**
 
-* Given a string in $\Sigma^{*}$, decide if the string is in the
-  language of the machine. 
 
 Your solution will be tested as follows:
 
-* **Input** (from `stdin`): A `.jff` file describing a PDA, and a
-  string over the alphabet of the PDA, separated by a space.
+* **Input** (from `stdin`): A `.jff` file describing a CFG.
 
-* Expected **Output** (to `stdout`): 
+* Expected **Output** (to `stdout`): an XML `structure` element,
+  containing a PDA recognizing the language of the CFG.
 
-    * `accept`, if this string is in the language of the grammar,
-
-    * `reject`, if the PDA terminates in all paths through the machine
-      and this string is not in the language of the grammar.
-	  
-	* otherwise, it's behavior is undefined.  
-
-* `Makefile` **target name**: `run-hw7-run`
+* `Makefile` **target name**: `run-hw7-cfg2pda`
 
 * **Example**:
 
