@@ -14,7 +14,7 @@ layout: single
 
 * [Consume a CFG and Check String Derivations](#2-check-string-derivations) (2 pts)
 
-* [Design, concat, and run a run a PDA](#3-design-a-pda) (2 pts)
+* [Design, concat, and run a PDA](#3-design-a-pda) (2 pts)
 
 * [Regular implies context-free](#4-regular-implies-context-free) (2 pts)
 
@@ -42,6 +42,8 @@ consulted.
 Given an English language description of a context free language, you
 will write a grammar generating that language, and output the result
 as XML.
+
+<!-- . Your grammar should be /unambiguous/ -->
 
 Create a CFG that generates the following language L.
 
@@ -76,7 +78,7 @@ possible. You should implement this with a procedure `generate`, that
 produces a derivation of a string in the language if possible and
 produces false otherwise.
 
-
+Remember you should implement leftmost derivations.
 
 You will find below a CFG representing the language of types in a
 simple ML-like language. I include below a [diagram from "Programming

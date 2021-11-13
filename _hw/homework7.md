@@ -420,7 +420,6 @@ your PDA accepts only those strings.
 
 **Your Tasks**
 
-
 Your solution will be tested as follows:
 
 * **Input** (from `stdin`): A `.jff` file describing a CFG.
