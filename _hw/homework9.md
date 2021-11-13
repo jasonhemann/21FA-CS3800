@@ -18,9 +18,9 @@ layout: single
 
 * [Write to R2](#3-write-to-r2) (2 pts)
 
-* [A program to write a program](#a-program-to-write-a-program) (2 pts)
+* [Move writer](#4-a-program-to-write-move-programs) (2 pts)
 
-* [self\#](#self\#) (4 pts)
+* [self\#](#5-self\#) (4 pts)
 
 **Total**: 10 points
 
@@ -42,7 +42,7 @@ case-sensitive):
 
 * `write-to-r2.trm`
 
-* `program-to-write-a-program.trm`
+* `move-writer.trm`
 
 * `self-hash.trm`
 
@@ -76,8 +76,9 @@ $
 
 To run with automation, provide `trm` two arguments: first, the
 maximum number of steps to execute, and then the frames per second of
-an animation of the machine's operation. 
-
+an animation of the machine's operation. For this assignment, all of
+your programs should successfully halt, according to the 1# definition
+of halting.
 
 
 ## 1. Basic program interaction 
@@ -90,8 +91,8 @@ the datum `1#`.
 **Your Tasks**
 
 * Write a file `basic-program-interactions.trm` containing a 1#
-  program to write the aforementioned data to the appropriate
-  registers, with all other registers empty. 
+  program to halt with the aforementioned data written to the
+  appropriate registers, with all other registers empty. 
   
 Your solution will be tested as follows:
 
@@ -184,14 +185,50 @@ Your solution will be tested as follows:
   ```
 
 
-## 4. A program to write a program. 
+## 4. A program to write move programs
 
 Look carefully at your solution to problem 1. The data `1#1#` and
 `11#1##` are actually also code---these are 1# programs. Your solution
 to problem 1 is an instance of using a 1# program to write another 1#
-program. Here we will work with and use `write` and `diag` to
-construct other program-writing programs. I STILL NEED TO FIGURE OUT
-SOMETHING GOOD TO DO WITH THIS.
+program. Here we will work with and use `write` and `move` to
+construct other program-writing programs. Write a file
+`move-writer.trm` which writes move programs. In more detail, if m and
+n are different numbers in unary, we want $\phi\_{p}(m,n)$ to be a
+program $\textrm{move}_{m,n}$ as we described it in Lesson 1. (If
+either m or n is not a unary numeral, then we don't care what
+$\phi\_{p}(m,n)$ is.
+
+**Your Tasks**
+
+* Write a file `move-writer.trm` containing a 1# program that, when
+  executed in a machine with all registers empty, writes to R1 itself
+  followed by a `#` symbol and all other registers empty.
+  
+Your solution will be tested as follows:
+
+* **Example**:
+
+  ```
+  move-writer.trm | ./trm | tail -n 1
+  ```
+
+  Output: 
+
+  ```
+  Coming
+  ```
+
+* **Example**:
+
+  ```
+  cat move-writer.trm | ./trm | tail -n 1 | sed 's/.$//' | ./trm `
+  ``
+
+  Output: 
+
+  ```
+  Coming
+  ```
 
 
 ## 5. self\# 
