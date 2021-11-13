@@ -97,7 +97,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `cat basic-program-interactions.trm | ./trm | tail -n 6 | head -n 3`
+  ```
+  cat basic-program-interactions.trm | ./trm | tail -n 6 | head -n 3
+  ```
 
   Output: 
 
@@ -128,7 +130,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm | tail -n 5 | head -n 2`
+  ```
+  cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm | tail -n 5 | head -n 2
+  ```
 
   Output: 
 
@@ -141,7 +145,7 @@ Your solution will be tested as follows:
 
 Create a program write-to-2 with the following feature: If we start
 write-to-2 with x in R1 and R2 empty, we eventually halt with a word
-$y = \phi_{\textrf{write-to-2}}(x)$ in R2 and all other registers
+$y = \phi_{\textrm{write-to-2}}(x)$ in R2 and all other registers
 empty; moreover, running y with R2 empty results in x back in R2 (not
 R1) and all other registers empty.
 
@@ -157,7 +161,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 5 | head -n 2`
+  ```
+  cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 5 | head -n 2
+  ```
 
   Output: 
 
@@ -167,7 +173,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 4 | head -n 1 | ./trm`
+  ```
+  cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 4 | head -n 1 | ./trm
+  ```
 
   Output: 
 
@@ -182,16 +190,15 @@ Look carefully at your solution to problem 1. The data `1#1#` and
 `11#1##` are actually also code---these are 1# programs. Your solution
 to problem 1 is an instance of using a 1# program to write another 1#
 program. Here we will work with and use `write` and `diag` to
-construct other program-writing programs.
-
-
+construct other program-writing programs. I STILL NEED TO FIGURE OUT
+SOMETHING GOOD TO DO WITH THIS.
 
 
 ## 5. self\# 
 
 Write a program p which, when started on all empty registers writes
 itself to R1 but rather writes itself followed by a `#` symbol. In
-other words, $\phi_{p}()  = p + #$
+other words, $\phi_{p}()  = p + \\#$
 
 **Your Tasks**
 
@@ -203,7 +210,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `self-hash.trm | ./trm | tail -n 1`
+  ```
+  self-hash.trm | ./trm | tail -n 1
+  ```
 
   Output: 
 
@@ -213,7 +222,9 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `cat self-hash.trm | ./trm | tail -n 1 | sed 's/.$//' | ./trm ` 
+  ```
+  cat self-hash.trm | ./trm | tail -n 1 | sed 's/.$//' | ./trm `
+  ``
 
   Output: 
 
