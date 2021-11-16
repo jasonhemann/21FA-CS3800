@@ -3,16 +3,7 @@ title: "Homework 7"
 layout: single
 ---
 
-### NB. 
-
-This is still a draft form, I'm developing, and hoping to develop
-_with_ you all this time rather than merely _for_ you all. I've been
-under-utilizing a _great_ resource, having a class of knowledgeable
-developers. So let's spec this out together, come up with some
-examples we can use to test, nail down the wording, and go from there.
-
-The tricky bit is still going to be what I can auto-grade and framing
-the questions so that we can readily decide them. 
+## Still drafty but better 
 
 
 ### Objectives 
@@ -65,16 +56,20 @@ case-sensitive):
 
 For this problem I want you to design PDAs.
 
-Recall Definition ?? from textbook book. A PDA is an $n$-tuple
-$\(...\)$, where:
+Recall Definition ?? from textbook book. A PDA is an $6$-tuple
+$\(Q, \Sigma, \Gamma, \delta, q_{0}, F\)$, where:
 
-* 
+* $Q$ is the set of states
 
-* 
+* $\Sigma$ is the input alphabet
 
-* 
+* $\Gamma$ is the stack alphabet
 
-* 
+* $\delta: \cross \times \Sigma_{\epsilon} \times \Gamma_{\epsilon} \longrightarrow \textit{P}(Q \times \Gamma_{\epsilon})$ is the transition function
+
+* $q_{0} \in Q$ is the start state and 
+
+* $F \subseteq Q$ is the set of accept states.
 
 Given an English language description of a context free language, you
 will write in your own internal representation a grammar generating
@@ -99,7 +94,7 @@ $ L = \\{w \mid w = \textrm{ is a string of well-balanced matching brackets}\\}$
 * Implement your data representation in your chosen language.
 
 * Create a PDA that accepts the given language L. Your PDA is not
-  required to terminate on strings in $\Sigma^{*} \setminus L$.
+  required to terminate on strings in $\Sigma^{\*} \setminus L$.
 
 * Construct a function `PDA->XML` to output the result as an XML
 
@@ -276,22 +271,12 @@ Your solution will be tested as follows:
 </structure>
 ``` 
 
-### NB. Creating the above and testing. 
+### Testing
 
-Right now, I don't have my own implementation. So I took our Dyck
-language, changed parens to curlies, turned the grammar to CNF, added
-`S->epsilon`, converted that to a PDA in JFLAP, wrote the JFLAP
-output, and then modified that to (1) use parens again (2) use `$` as
-the empty stack marker again, (3) added an additional state because
-JFLAP starts by adding two symbols to the stack at once. 
-
-I'm going to be able to test this by reading in your PDA and then
-running it on some accepting programs, and make sure it accepts.
-*AND/OR* I'll have to take your PDA, convert it to a CFG, convert that
-CFG to some normalized form (GNF, CNF) and run it on a
-randomly-generated collection of inputs in the language of the machine
-and ensure that it corresponds with some known-good solution. And
-this'll all have to be my code because as you know, JFLAP limitations.
+I'm going to be able to test this by reading in your PDA and make sure
+it accepts on some known strings in the language. I have my CFG->CNF
+implementation, but not PDA->CFG, so I won't automatically check that
+the language of the grammar is *exactly* the language in question.
 
 ## 2. Regular Langs are Context Free 
 
@@ -300,15 +285,6 @@ language is context-free.". You will prove this statement by reading
 in the XML description of an NFA, and producing as output an XML
 description of a PDA that recognizes the same language. You will
 likely find your work on NFAs from earlier assignments helpful. 
-
-
-We will test your assignment by testing your PDA on a variety of
-strings in the language of the NFA. We will also test your
-implementation by running (a transformed version of) the resulting PDA
-against a variety of strings and verifying that your machine accepts
-strings in the language and that it does not accept strings in
-$\Sigma^{*}$ that are not in the language.
-
 
 Your solution will be tested as follows:
 
@@ -332,15 +308,11 @@ Haven't done it yet, but take it through JFLAP if you want an example for right 
 
 ### NB. Testing 
 
-See once again the above limitations in testing, together w/our
-difficulties in implementing equality of PDAs. Even though all *good*
-solutions are guaranteed to be PDAs describing regular languages, I
-need to be prepared to test *arbitrary* PDAs, because I need to be
-able to also determine *wrong* answers.
-
-<!-- (2) NFA->PDA->XML. This seems like the easiest one, but we could -->
-<!-- compare w/the Textbook pg 107. Say, don't use the textbook transition via CFG.  -->
-
+We will test your assignment by testing your PDA on a variety of
+strings in the language of the NFA. Even though all *good* solutions
+are guaranteed to be PDAs describing regular languages, I need to be
+prepared to test *arbitrary* PDAs, because I need to be able to also
+determine *wrong* answers. 
 
 ## 3. Run a PDA
 
@@ -350,32 +322,33 @@ for which evaluation is guaranteed to terminate, and those for which
 it is *not* guaranteed to terminate. You'll have to write your `run`
 program so that it will terminate when it can. 
 
-Clever improvement! We will also have you optionally take a maximum
-number, an upper bound, for the number of transitions to make (in any
-individual path, so non-deterministically trying each of 5 different
-choices from state A only counts as one in each of those individual
-paths). So if your machine accepts within $n$ steps, you `accept`. If
-your PDA finitely halts for all paths through the machine and none of
-the paths through that machine accept, or none of the paths through
-the machine accept within $n$ steps, reject.
+We will also have you optionally take a maximum number, an upper
+bound, for the number of transitions to make (in any individual path,
+so non-deterministically trying each of 5 different choices from state
+A only counts as one in each of those individual paths). So if your
+machine accepts within $n$ steps, you `accept`. If your PDA finitely
+halts for all paths through the machine and none of the paths through
+that machine accept, or none of the paths through the machine accept
+within $n$ steps, reject.
 
-Unless we give you that upper bound, we will have to be careful to
-only ask you to output `reject` when the PDA we give you finitely
-halts for all paths through the machine. 
+Your task is to accept a string in $\Sigma^{\*}$ when that string is in
+the language of the machine. If we give you that upper bound, `reject`
+when the PDA we give you does not accept within the maximum number of
+steps. Further, when the PDA we give you is a decider, your
+implementation should also reject a string in $\Sigma^{\*}$ when that
+string is not in the language of the machine. Because of exponential
+blow-up, we will only exercise this latter capacity on small examples.
 
-Your task is to accept, or when possibly reject, a string in 
-$\Sigma^{*}$.
-
-Again, we ask you to reject only when we provide you an upper bound,
-or when we provide you a PDA that is guaranteed to terminate for all
-paths through the machine.
-
-### NB. Characterizing such PDAs isn't as simple as "no epsilon-push loops."
+Characterizing the PDAs that are deciders isn't as simple as "no
+epsilon-push loops"---consider other loops for instance, that
+repeatedly push and pop the same symbol.
 
 **Your Tasks**
 
-* Given a string in $\Sigma^{*}$, decide if the string is in the
-  language of the machine. 
+* Given a string in $\Sigma^{\*}$, accept if the string is in the
+  language of the machine, reject if the string is not accepted within
+  a given bound, or if the machine is a decider, reject if the string
+  is not in the language of the machine.
 
 Your solution will be tested as follows:
 
