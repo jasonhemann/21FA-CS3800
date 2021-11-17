@@ -215,11 +215,6 @@ Done. Executed 1 instructions.
 1111111
 ```
 
-Please note also that for the arithmetic programs you can consult the
-second lesson for documentation, and the file `add.trm` for the addition
-program. You should be able to use this as a subroutine without having
-to write your own.
-
 
 **Your Tasks**
 
@@ -235,7 +230,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  move-writer.trm | ./trm | tail -n 1
+  cat <(move-writer.trm) <(printf "R | ./trm | tail -n 1
   ```
 
   Output: 
