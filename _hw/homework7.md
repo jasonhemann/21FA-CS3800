@@ -474,31 +474,34 @@ Your solution will be tested as follows:
   
   ```
   <structure>
-  <automaton>
   <type>pda</type>
-  <state id="0" name="p"><initial/></state>
-  <state id="1" name="q"><final/></state>
-  <state id="2" name="r"><final/></state>
-  <state id="3" name="s"><final/></state>
-  <state id="4" name="t"><final/></state>
-  <state id="5" name="u"><final/></state>
-  <transition><from>0</from><to>1</to><read/><pop/><push>T</push></transition>
-  <transition><from>1</from><to>2</to><read/><pop>T</pop><push>r</push></transition>
-  <transition><from>2</from><to>3</to><read/><pop/><push>T</push></transition>
-  <transition><from>3</from><to>4</to><read/><pop/><push>k</push></transition>
-  <transition><from>4</from><to>5</to><read/><pop/><push>L</push></transition>
-  <transition><from>5</from><to>1</to><read/><pop/><push>l</push></transition>
-  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>a</push></transition>
-  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>f</push></transition>
-  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>s</push></transition>
-  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>b</push></transition>
-  <transition><from>1</from><to>1</to><read>b</read><pop>b</pop><push/></transition>
+  <automaton>
+  <state id="0" name="qstart"><initial/></state>
+  <state id="10" name="qstart1"></state> 
+  <state id="1" name="qloop"></state>
+  <state id="11" name="qloop1"></state>
+  <state id="21" name="qloop2"></state>
+  <state id="31" name="qloop3"></state>
+  <state id="41" name="qloop4"></state>
+  <state id="2" name="qaccept"><final/></state>
   <transition><from>1</from><to>1</to><read>r</read><pop>r</pop><push/></transition>
-  <transition><from>1</from><to>1</to><read>k</read><pop>k</pop><push/></transition>
-  <transition><from>1</from><to>1</to><read>l</read><pop>l</pop><push/></transition>
-  <transition><from>1</from><to>1</to><read>a</read><pop>a</pop><push/></transition>
   <transition><from>1</from><to>1</to><read>s</read><pop>s</pop><push/></transition>
-  <transition><from>1</from><to>1</to><read>t</read><pop>t</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>l</read><pop>l</pop><push/></transition>
+  <transition><from>1</from><to>2</to><read/><pop>Z</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>a</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>b</push></transition>
+  <transition><from>1</from><to>11</to><read/><pop>T</pop><push>r</push></transition>
+  <transition><from>11</from><to>21</to><read/><pop/><push>T</push></transition>
+  <transition><from>21</from><to>31</to><read/><pop/><push>k</push></transition>
+  <transition><from>31</from><to>41</to><read/><pop/><push>L</push></transition>
+  <transition><from>41</from><to>1</to><read/><pop/><push>l</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>s</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>f</push></transition>
+  <transition><from>1</from><to>1</to><read>a</read><pop>a</pop><push/></transition>
+  <transition><from>0</from><to>10</to><read/><pop/><push>Z</push></transition>
+  <transition><from>10</from><to>1</to><read/><pop/><push>T</push></transition>
+  <transition><from>1</from><to>1</to><read>k</read><pop>k</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>b</read><pop>b</pop><push/></transition>
   <transition><from>1</from><to>1</to><read>f</read><pop>f</pop><push/></transition>
   </automaton>
   </structure>
