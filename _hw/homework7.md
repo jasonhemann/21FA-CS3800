@@ -374,10 +374,10 @@ repeatedly push and pop the same symbol.
 
 Your solution will be tested as follows:
 
-* **Input** (from `stdin`): A `.jff` file describing a PDA, a string
-  over the alphabet of the PDA, *and optionally a max number of
-  transitions in a path to look for before rejecting*, separated by a
-  space.
+* **Input** (from `stdin`): The name of a `.jff` file describing a
+  PDA, a string over the alphabet of the PDA, *and optionally a max
+  number of transitions in a path to look for before rejecting*,
+  separated by a space.
 
 * Expected **Output** (to `stdout`): 
 
@@ -417,7 +417,8 @@ your PDA accepts only those strings.
 
 Your solution will be tested as follows:
 
-* **Input** (from `stdin`): A `.jff` file describing a CFG.
+* **Input** (from `stdin`): The name of a `.jff` file describing a
+  CFG.
 
 * Expected **Output** (to `stdout`): an XML `structure` element,
   containing a PDA recognizing the language of the CFG.
@@ -426,15 +427,35 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  `printf "types.jff" | make -sf Makefile run-hw7-cfg2pda`
+  You can test your program with [this file named `dyck-cfg-with-valid-terminals.jff`]({{
+  site.baseurl }}/assets/docs/dyck-cfg-with-valid-terminals.jff)
+
+  `printf "dyck-cfg-with-valid-terminals.jff" | make -sf Makefile run-hw7-cfg2pda`
 
   Output: 
   
   ```
-
+  <structure>
+  <type>pda</type>
+  <automaton>
+  <state id="0" name="qstart"><initial/></state>
+  <state id="1" name="qloop"></state>
+  <state id="2" name="qaccept"><final/></state>
+  <transition><from>1</from><to>1</to><read>l</read><pop>l</pop><push/></transition>
+  <transition><from>1</from><to>2</to><read/><pop>Z</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read/><pop>S</pop><push>lSr</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>S</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read/><pop>S</pop><push>SS</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>S</pop><push>fSb</push></transition>
+  <transition><from>0</from><to>1</to><read/><pop/><push>SZ</push></transition>
+  <transition><from>1</from><to>1</to><read>r</read><pop>r</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>b</read><pop>b</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>f</read><pop>f</pop><push/></transition>
+  </automaton>
+  </structure>
   ```
 
-  `printf "terminating-types-pda.jff" | make -sf Makefile run-hw7-cfg2pda`
+  `printf "smaller-terminating-types.jff" | make -sf Makefile run-hw7-cfg2pda`
 
   Output: 
   
