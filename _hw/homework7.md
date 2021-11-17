@@ -386,21 +386,26 @@ Your solution will be tested as follows:
     * `reject`, if the PDA terminates in all paths through the machine
       and this string is not in the language of the grammar.
 	  
-	* otherwise, it's behavior is undefined.  
+	* otherwise, it's behavior is undefined.
 
 * `Makefile` **target name**: `run-hw7-run`
 
 * **Example**:
 
-  `printf "types-pda.jff {fst:t1,snd:t2}" | make -sf Makefile run-hw7-run`
+  [this file named `elementary-types-pda.jff`]({{ site.baseurl
+  }}/assets/docs/elementary-types-pda.jff) and I need to give you a
+  slightly larger `types-pda.jff` to exercise our upper limit
+  functionality.
+
+  `printf "elementary-types-pda.jff lsklfkarr" | make -sf Makefile run-hw7-run`
 
   Output: `accept`
 
-  `printf "types-pda.jff {fst:t1,snd:t2} 50" | make -sf Makefile run-hw7-run`
+  `printf "elementary-types-pda.jff lsklfkarsrrlsklfkarr 50" | make -sf Makefile run-hw7-run`
 
-  Output: `accept`
+  Output: `reject`
 
-  `printf "terminating-types-pda.jff {f:stt1s,nd:a}n 50" | make -sf Makefile run-hw7-verify`
+  `printf "./types-pda.jff " | make -sf Makefile run-hw7-run`
 
   Output: `reject`
 
