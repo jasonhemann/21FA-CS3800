@@ -99,16 +99,15 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-   $ cat basic-program-interactions.trm | ./trm 2>&1 | tail -n 6 | head -n 3
-   R1: 1#1#
-   R2: 11#1##
-   R3: 1# 
+  cat basic-program-interactions.trm | ./trm 2>&1 | tail -n 6 | head -n 3
   ```
 
   Output: 
 
   ```
-  Coming
+  R1: 1#1#
+  R2: 11#1##
+  R3: 1# 
   ```
 
 ## 2. Clear and move
@@ -168,7 +167,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(printf "R111#111") <(write-to-2.trm) | ./trm 2>&1 | tail -n 5 | head -n 2
+  cat <(write-to-2.trm) <(printf "R111#111") | ./trm 2>&1 | tail -n 5 | head -n 2
   ```
 
   Output: 
@@ -180,7 +179,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(printf "???") <(write-to-2.trm) | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm
+  cat <(write-to-2.trm) <(printf "???") | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm
   ```
 
   Output: 
@@ -222,12 +221,14 @@ program. You should be able to use this as a subroutine without having
 to write your own.
 
 
-
 **Your Tasks**
 
 * Write a file `move-writer.trm` containing a 1# program that, when
-  executed in a machine with all registers empty, writes to R1 itself
-  followed by a `#` symbol and all other registers empty.
+  executed in a machine with unary number $m$ in R1 and unary number
+  $n$ in R2, halts with a program y in R1 and all other registers
+  empty. This program y should be a program that computes $move{m,n}$,
+  that is, it is a program that when run on a machine with data in Rm,
+  halts with those same data in Rn, and all other registers empty.
   
 Your solution will be tested as follows:
 
