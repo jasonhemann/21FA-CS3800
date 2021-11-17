@@ -303,6 +303,8 @@ Your solution will be tested as follows:
   Output: (a PDA with a language equivalent to that of)
 
 ```
+<structure>
+<type>pda</type>
 <automaton>
 <state id="0" name="A-0"><initial/></state>
 <state id="1" name="A-1"><final/></state>
@@ -326,6 +328,7 @@ Your solution will be tested as follows:
 <transition><from>5</from><to>6</to><read/><pop/><push/></transition>
 <transition><from>9</from><to>3</to><read/><pop/><push/></transition>
 </automaton>
+</structure>
 ```
 
 ### NB. Testing 
