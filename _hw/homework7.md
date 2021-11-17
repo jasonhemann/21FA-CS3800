@@ -56,7 +56,7 @@ case-sensitive):
 
 For this problem I want you to design PDAs.
 
-Recall Definition ?? from textbook book. A PDA is an $6$-tuple
+Recall Definition 2.13 from textbook book. A PDA is an $6$-tuple
 $\(Q, \Sigma, \Gamma, \delta, q_{0}, F\)$, where:
 
 * $Q$ is the set of states
@@ -65,7 +65,7 @@ $\(Q, \Sigma, \Gamma, \delta, q_{0}, F\)$, where:
 
 * $\Gamma$ is the stack alphabet
 
-* $\delta: \cross \times \Sigma_{\epsilon} \times \Gamma_{\epsilon} \longrightarrow \textit{P}(Q \times \Gamma_{\epsilon})$ is the transition function
+* $\delta: \times \Sigma_{\epsilon} \times \Gamma_{\epsilon} \longrightarrow \textit{P}(Q \times \Gamma_{\epsilon})$ is the transition function
 
 * $q_{0} \in Q$ is the start state and 
 
@@ -303,7 +303,29 @@ Your solution will be tested as follows:
   Output: (a PDA with a language equivalent to that of)
 
 ```
-Haven't done it yet, but take it through JFLAP if you want an example for right now. 
+<automaton>
+<state id="0" name="A-0"><initial/></state>
+<state id="1" name="A-1"><final/></state>
+<state id="2" name="A-2"></state>
+<state id="3" name="A-3"></state>
+<state id="4" name="A-4"></state>
+<state id="5" name="A-5"></state>
+<state id="6" name="A-6"></state>
+<state id="7" name="A-7"></state>
+<state id="8" name="A-8"></state>
+<state id="9" name="A-9"></state>
+<transition><from>3</from><to>1</to><read/><pop/><push/></transition>
+<transition><from>6</from><to>7</to><read>f</read><pop/><push/></transition>
+<transition><from>7</from><to>8</to><read/><pop/><push/></transition>
+<transition><from>8</from><to>9</to><read>g</read><pop/><push/></transition>
+<transition><from>1</from><to>0</to><read/><pop/><push/></transition>
+<transition><from>0</from><to>1</to><read/><pop/><push/></transition>
+<transition><from>0</from><to>2</to><read/><pop/><push/></transition>
+<transition><from>2</from><to>4</to><read/><pop/><push/></transition>
+<transition><from>4</from><to>5</to><read>e</read><pop/><push/></transition>
+<transition><from>5</from><to>6</to><read/><pop/><push/></transition>
+<transition><from>9</from><to>3</to><read/><pop/><push/></transition>
+</automaton>
 ```
 
 ### NB. Testing 
