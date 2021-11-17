@@ -64,7 +64,7 @@ if you wish.
 
 
 ```
-$ printf "1##1##1#1#1##1##1##1#1#1##" | ./trm 
+$ printf "1##1##1#1#1##1##1##1#1#1##" | ./trm 2>&1
 Add# 1
 ...
 R1: ##11###11#
@@ -99,7 +99,10 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat basic-program-interactions.trm | ./trm | tail -n 6 | head -n 3
+   $ cat basic-program-interactions.trm | ./trm 2>&1 | tail -n 6 | head -n 3
+   R1: 1#1#
+   R2: 11#1##
+   R3: 1# 
   ```
 
   Output: 
@@ -132,7 +135,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm | tail -n 5 | head -n 2
+  cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1 | tail -n 5 | head -n 2
   ```
 
   Output: 
@@ -147,23 +150,25 @@ Your solution will be tested as follows:
 Create a program write-to-2 with the following feature: If we start
 write-to-2 with x in R1 and R2 empty, we eventually halt with a word
 $y = \phi_{\textrm{write-to-2}}(x)$ in R2 and all other registers
-empty; moreover, running y with R2 empty results in x back in R2 (not
-R1) and all other registers empty.
+empty; moreover, running y with all registers empty results in x back
+in R2 (not R1) and all other registers empty.
 
 
 **Your Tasks**
 
-* Write a file `write-to-2.trm` containing a 1# program to swap
-  the contents of R1 and R2 emptying R3. Your program should terminate
-  with the values of R1 and R2 swapped, and with all other registers
-  empty.
+* Write a file `write-to-2.trm` containing a 1# program that, when
+  begun with `x` in R1, writes a program y to R2 and halts with all
+  other registers empty. That program `y` it generates should be a
+  program that, when run with all registers empty, halts with the
+  original string `x` in R2 and all other registers empty.
+
   
 Your solution will be tested as follows:
 
 * **Example**:
 
   ```
-  cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 5 | head -n 2
+  cat <(printf "R111#111") <(write-to-2.trm) | ./trm 2>&1 | tail -n 5 | head -n 2
   ```
 
   Output: 
@@ -175,7 +180,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(printf "???") <(write-to-2.trm) | ./trm | tail -n 4 | head -n 1 | ./trm
+  cat <(printf "???") <(write-to-2.trm) | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm
   ```
 
   Output: 
@@ -196,7 +201,27 @@ construct other program-writing programs. Write a file
 n are different numbers in unary, we want $\phi\_{p}(m,n)$ to be a
 program $\textrm{move}_{m,n}$ as we described it in Lesson 1. (If
 either m or n is not a unary numeral, then we don't care what
-$\phi\_{p}(m,n)$ is.
+$\phi\_{p}(m,n)$ is. Please note that you can seed registers with
+values in the following manner:
+
+```
+$ printf "1# R111111 R111" | ./trm
+Add1 1
+
+IN: Add1 1
+R1: 1111111
+R2: 111
+
+Done. Executed 1 instructions.
+1111111
+```
+
+Please note also that for the arithmetic programs you can consult the
+second lesson for documentation, and the file `add.trm` for the addition
+program. You should be able to use this as a subroutine without having
+to write your own.
+
+
 
 **Your Tasks**
 
