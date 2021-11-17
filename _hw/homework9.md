@@ -119,7 +119,7 @@ immediately by your solution to this problem and ensure that you get
 the correct output.
 
 ```
-$ cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 
+$ cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1
 ```
 
 **Your Tasks**
@@ -167,19 +167,19 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "R111#111") | ./trm 2>&1 | tail -n 5 | head -n 2
+  cat <(write-to-2.trm) <(printf "R111#111") | printf "11# R R111#11" | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
 
   ```
-  Coming
+  R2: 111#111
   ```
 
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "???") | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm
+  cat <(write-to-2.trm) <(printf "???") | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm 2>&1
   ```
 
   Output: 
@@ -230,7 +230,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(move-writer.trm) <(printf "R | ./trm | tail -n 1
+  cat <(move-writer.trm) <(printf "R | ./trm 2>&1 | tail -n 1
   ```
 
   Output: 
@@ -242,7 +242,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat move-writer.trm | ./trm | tail -n 1 | sed 's/.$//' | ./trm `
+  cat move-writer.trm | ./trm 2>&1 | tail -n 1 | sed 's/.$//' | ./trm  2>&1 `
   ``
 
   Output: 
@@ -269,7 +269,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  self-hash.trm | ./trm | tail -n 1
+  self-hash.trm | ./trm 2>&1 | tail -n 1
   ```
 
   Output: 
@@ -281,7 +281,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat self-hash.trm | ./trm | tail -n 1 | sed 's/.$//' | ./trm `
+  cat self-hash.trm | ./trm 2>&1 | tail -n 1 | sed 's/.$//' | ./trm 2>&1 `
   ``
 
   Output: 
