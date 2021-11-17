@@ -432,8 +432,12 @@ Your solution will be tested as follows:
 
 * **Example**:
 
-  You can test your program with [this file named `dyck-cfg-with-valid-terminals.jff`]({{
-  site.baseurl }}/assets/docs/dyck-cfg-with-valid-terminals.jff)
+  You can test your program with [this file named
+  `dyck-cfg-with-valid-terminals.jff`]({{ site.baseurl
+  }}/assets/docs/dyck-cfg-with-valid-terminals.jff) and [this file
+  named `elementary-types-grammar.jff`]({{ site.baseurl
+  }}/assets/docs/elementary-types-grammar.jff)
+
 
   `printf "dyck-cfg-with-valid-terminals.jff" | make -sf Makefile run-hw7-cfg2pda`
 
@@ -459,13 +463,42 @@ Your solution will be tested as follows:
   </automaton>
   </structure>
   ```
+  Notice that here I am permitting myself to use multi-character push and pops. You are not required to implement this.
 
-  `printf "smaller-terminating-types.jff" | make -sf Makefile run-hw7-cfg2pda`
+  `printf "elementary-types-cfg.jff" | make -sf Makefile run-hw7-cfg2pda`
 
   Output: 
   
   ```
-  
+  <structure>
+  <automaton>
+  <type>pda</type>
+  <state id="0" name="p"><initial/></state>
+  <state id="1" name="q"><final/></state>
+  <state id="2" name="r"><final/></state>
+  <state id="3" name="s"><final/></state>
+  <state id="4" name="t"><final/></state>
+  <state id="5" name="u"><final/></state>
+  <transition><from>0</from><to>1</to><read/><pop/><push>T</push></transition>
+  <transition><from>1</from><to>2</to><read/><pop>T</pop><push>r</push></transition>
+  <transition><from>2</from><to>3</to><read/><pop/><push>T</push></transition>
+  <transition><from>3</from><to>4</to><read/><pop/><push>k</push></transition>
+  <transition><from>4</from><to>5</to><read/><pop/><push>L</push></transition>
+  <transition><from>5</from><to>1</to><read/><pop/><push>l</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>a</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>f</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>L</pop><push>s</push></transition>
+  <transition><from>1</from><to>1</to><read/><pop>T</pop><push>b</push></transition>
+  <transition><from>1</from><to>1</to><read>b</read><pop>b</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>r</read><pop>r</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>k</read><pop>k</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>l</read><pop>l</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>a</read><pop>a</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>s</read><pop>s</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>t</read><pop>t</pop><push/></transition>
+  <transition><from>1</from><to>1</to><read>f</read><pop>f</pop><push/></transition>
+  </automaton>
+  </structure>
   ```
 
 ## NB. Testing
