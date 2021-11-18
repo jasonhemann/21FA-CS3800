@@ -167,7 +167,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "R111#111") | printf "11# R R111#11" | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
+  cat <(write-to-2.trm) <(printf "R111#111") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
