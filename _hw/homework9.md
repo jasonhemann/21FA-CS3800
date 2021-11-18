@@ -232,25 +232,27 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(move-writer.trm) <(printf "R | ./trm 2>&1 | tail -n 1
+  printf "%s %s" $(cat move-writer.trm <(printf "R1 R111111") | ./trm 2>&1 | tail -n 7 | head -n 1 | cut -c5-) "R1111111#" | ./trm 2>&1 | tail -n 5 | head -n 2
   ```
 
   Output: 
 
   ```
-  Coming
+  R1: 
+  R6: 1111111#
   ```
 
 * **Example**:
 
   ```
-  cat move-writer.trm | ./trm 2>&1 | tail -n 1 | sed 's/.$//' | ./trm  2>&1 `
-  ``
+  printf "%s %s" $(cat move-writer.trm <(printf "R111111111 R1111") | ./trm 2>&1 | tail -n 7 | head -n 1 | cut -c5-) "R R R R R R R R R#####1#" | ./trm 2>&1 | tail -n 5 | head -n 2
+  ```
 
   Output: 
 
   ```
-  Coming
+  R4: #####1#
+  R9:
   ```
 
 
