@@ -119,7 +119,7 @@ immediately by your solution to this problem and ensure that you get
 the correct output.
 
 ```
-$ cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1
+$ cat basic-program-interactions.trm clear-and-move.trm | ./trm 2>&1
 ```
 
 **Your Tasks**
@@ -134,13 +134,15 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1 | tail -n 5 | head -n 2
+  cat basic-program-interactions.trm clear-and-move.trm | ./trm 2>&1 | tail -n 6 | head -n 3
   ```
 
   Output: 
 
   ```
-  Coming
+  R1: 11#1##
+  R2: 1#1#
+  R3:
   ```
 
 
@@ -150,7 +152,20 @@ Create a program write-to-2 with the following feature: If we start
 write-to-2 with x in R1 and R2 empty, we eventually halt with a word
 $y = \phi_{\textrm{write-to-2}}(x)$ in R2 and all other registers
 empty; moreover, running y with all registers empty results in x back
-in R2 (not R1) and all other registers empty.
+in R2 (not R1) and all other registers empty. Please note that you can seed registers with
+values in the following manner:
+
+```
+$ printf "1# R111111 R111" | ./trm
+Add1 1
+
+IN: Add1 1
+R1: 1111111
+R2: 111
+
+Done. Executed 1 instructions.
+1111111
+```
 
 
 **Your Tasks**
@@ -167,7 +182,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "R111#111") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
+  cat write-to-2.trm <(printf "R111#111") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
@@ -179,13 +194,13 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "???") | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm 2>&1
+  cat write-to-2.trm <(printf "R############") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
 
   ```
-  Coming
+  R2: ############
   ```
 
 
@@ -200,20 +215,7 @@ construct other program-writing programs. Write a file
 n are different numbers in unary, we want $\phi\_{p}(m,n)$ to be a
 program $\textrm{move}_{m,n}$ as we described it in Lesson 1. (If
 either m or n is not a unary numeral, then we don't care what
-$\phi\_{p}(m,n)$ is. Please note that you can seed registers with
-values in the following manner:
-
-```
-$ printf "1# R111111 R111" | ./trm
-Add1 1
-
-IN: Add1 1
-R1: 1111111
-R2: 111
-
-Done. Executed 1 instructions.
-1111111
-```
+$\phi\_{p}(m,n)$ is.
 
 
 **Your Tasks**
