@@ -152,7 +152,20 @@ Create a program write-to-2 with the following feature: If we start
 write-to-2 with x in R1 and R2 empty, we eventually halt with a word
 $y = \phi_{\textrm{write-to-2}}(x)$ in R2 and all other registers
 empty; moreover, running y with all registers empty results in x back
-in R2 (not R1) and all other registers empty.
+in R2 (not R1) and all other registers empty. Please note that you can seed registers with
+values in the following manner:
+
+```
+$ printf "1# R111111 R111" | ./trm
+Add1 1
+
+IN: Add1 1
+R1: 1111111
+R2: 111
+
+Done. Executed 1 instructions.
+1111111
+```
 
 
 **Your Tasks**
@@ -177,8 +190,6 @@ Your solution will be tested as follows:
   ```
   R2: 111#111
   ```
-  
-  The purpose of the printf statement here is to seed Register 1 with the value 111#111. If you wanted to seed multiple registers, it would be: "R(1s and #s) R(1s and #s) R(1s and #s)", where each R denotes the next register.
 
 * **Example**:
 
@@ -204,20 +215,7 @@ construct other program-writing programs. Write a file
 n are different numbers in unary, we want $\phi\_{p}(m,n)$ to be a
 program $\textrm{move}_{m,n}$ as we described it in Lesson 1. (If
 either m or n is not a unary numeral, then we don't care what
-$\phi\_{p}(m,n)$ is. Please note that you can seed registers with
-values in the following manner:
-
-```
-$ printf "1# R111111 R111" | ./trm
-Add1 1
-
-IN: Add1 1
-R1: 1111111
-R2: 111
-
-Done. Executed 1 instructions.
-1111111
-```
+$\phi\_{p}(m,n)$ is.
 
 
 **Your Tasks**
