@@ -119,7 +119,7 @@ immediately by your solution to this problem and ensure that you get
 the correct output.
 
 ```
-$ cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1
+$ cat basic-program-interactions.trm clear-and-move.trm | ./trm 2>&1
 ```
 
 **Your Tasks**
@@ -134,13 +134,15 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(basic-program-interaction.trm) <(clear-and-move.trm) | ./trm 2>&1 | tail -n 5 | head -n 2
+  cat basic-program-interactions.trm clear-and-move.trm | ./trm 2>&1 | tail -n 6 | head -n 3
   ```
 
   Output: 
 
   ```
-  Coming
+  R1: 11#1##
+  R2: 1#1#
+  R3:
   ```
 
 
@@ -167,7 +169,7 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "R111#111") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
+  cat write-to-2.trm <(printf "R111#111") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
@@ -175,17 +177,19 @@ Your solution will be tested as follows:
   ```
   R2: 111#111
   ```
+  
+  The purpose of the printf statement here is to seed Register 1 with the value 111#111. If you wanted to seed multiple registers, it would be: "R(1s and #s) R(1s and #s) R(1s and #s)", where each R denotes the next register.
 
 * **Example**:
 
   ```
-  cat <(write-to-2.trm) <(printf "???") | ./trm 2>&1 | tail -n 4 | head -n 1 | ./trm 2>&1
+  cat write-to-2.trm <(printf "R############") | ./trm 2>&1 | tail -n 4 | head -n 1 | cut -c5- | ./trm 2>&1 | tail -n 4 | head -n 1
   ```
 
   Output: 
 
   ```
-  Coming
+  R2: ############
   ```
 
 
