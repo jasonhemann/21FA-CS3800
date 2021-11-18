@@ -223,9 +223,10 @@ $\phi\_{p}(m,n)$ is.
 * Write a file `move-writer.trm` containing a 1# program that, when
   executed in a machine with unary number $m$ in R1 and unary number
   $n$ in R2, halts with a program y in R1 and all other registers
-  empty. This program y should be a program that computes $move{m,n}$,
-  that is, it is a program that when run on a machine with data in Rm,
-  halts with those same data in Rn, and all other registers empty.
+  empty. This program y should be a program that computes
+  $\textrm{move}_{m,n}$, that is, it is a program that when run on a
+  machine with data in Rm, halts with those same data in Rn, and all
+  other registers empty.
   
 Your solution will be tested as follows:
 
