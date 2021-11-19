@@ -396,19 +396,13 @@ Your solution will be tested as follows:
 * **Example**:
 
   [this file named `elementary-types-pda.jff`]({{ site.baseurl
-  }}/assets/docs/elementary-types-pda.jff) and I need to give you a
-  slightly larger `types-pda.jff` to exercise our upper limit
-  functionality.
+  }}/assets/docs/elementary-types-pda.jff).
 
   `printf "elementary-types-pda.jff lsklfkarr" | make -sf Makefile run-hw7-run`
 
   Output: `accept`
 
   `printf "elementary-types-pda.jff lsklfkarsrrlsklfkarr 50" | make -sf Makefile run-hw7-run`
-
-  Output: `reject`
-
-  `printf "./types-pda.jff " | make -sf Makefile run-hw7-run`
 
   Output: `reject`
 
