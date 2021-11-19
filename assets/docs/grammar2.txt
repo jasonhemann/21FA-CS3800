@@ -1,0 +1,10 @@
+S -> aSc
+S -> aKCc
+K -> aKb
+K -> aBb
+B -> bB
+B -> b
+C -> cC
+C -> c
+
+

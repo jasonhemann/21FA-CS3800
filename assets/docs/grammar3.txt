@@ -1,0 +1,11 @@
+T -> tv
+T -> pUe
+T -> ToT
+T -> a
+T -> lSr
+T -> Ta
+S -> fkT
+S -> fkTqS
+U -> T
+U -> TqU
+

@@ -1,0 +1,9 @@
+A -> cdD
+A -> cEf
+D -> bE
+D -> ε
+E -> EaE
+E -> EbE
+E -> EEb
+E -> d 
+E -> g
