@@ -1,0 +1,8 @@
+<structure>
+<type>grammar</type>
+<production><left>A</left><right>E</right></production>
+<production><left>E</left><right>C</right></production>
+<production><left>B</left><right/></production>
+<production><left>C</left><right>BBD</right></production>
+<production><left>D</left><right>abc</right></production>
+</structure>

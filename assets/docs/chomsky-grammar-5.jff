@@ -1,0 +1,10 @@
+<structure>
+<type>grammar</type>
+<production><left>A</left><right>D</right></production>
+<production><left>D</left><right>CDC</right></production>
+<production><left>D</left><right>aB</right></production>
+<production><left>C</left><right>B</right></production>
+<production><left>C</left><right>D</right></production>
+<production><left>B</left><right>b</right></production>
+<production><left>B</left><right/></production>
+</structure>

@@ -1,0 +1,12 @@
+<structure>
+<type>grammar</type>
+<production><left>A</left><right>B</right></production>
+<production><left>B</left><right>F</right></production>
+<production><left>F</left><right>F</right></production>
+<production><left>F</left><right/></production>
+<production><left>F</left><right>DF</right></production>
+<production><left>C</left><right/></production>
+<production><left>D</left><right>CCE</right></production>
+<production><left>E</left><right>a</right></production>
+<production><left>E</left><right/></production>
+</structure>
