@@ -291,20 +291,27 @@ w \rangle$.
 
 **Your Task**
 
-Specifically, define a data representation for nsDFAs, and implement a
-language-preserving function `nsDFA->DFA` that, given
+Specifically, 
 
-* an nsDFA recognizing language $A$
+* define a data representation for nsDFAs, 
 
-returns a DFA recognizing $A$. **You must implement this
-programmatically**. That is, you should not write one-off solutions to
-pass our test cases, but instead write a programmatic transformation.
-We will verify this by manual code inspection.
+* implement a language-preserving function `nsDFA->DFA` that, given an
+  nsDFA recognizing language $A$ returns a DFA recognizing $A$. **You
+  must implement this programmatically**. That is, you should not
+  write one-off solutions to pass our test cases, but instead write a
+  programmatic transformation. We will verify this by manual code
+  inspection.
+
+* a file `exam2-nsdfa2dfa.txt` describing your overall algorithm for
+  solving this problem. You should walk us through your data types,
+  your overall approach, the specific subroutines you implement to
+  help solve this problem and the purposes of each, and any
+  preconditions or invariants upon which you rely. I mean these
+  specifically for the grammar transformation part; you do not need to
+  e.g. recapitulate our XML format.
 
 **HINTS**:
 
-* **Be careful and uniformly map symbols from the first alphabet to
-  the second**. $\Sigma\_1 \cap \Sigma\_2$ may be non-empty.
 
 * **Make sure and remember to write your data description for nsDFAs
   in your `README` file.**
@@ -334,7 +341,7 @@ Your solution will be tested as follows:
 ```
 ```
 
-Together with knowing that we have a decider for $A_{\textrm{DFA}}}$
+Together with knowing that we have a decider for $A_{\textrm{DFA}}$
 we can use this function to demonstrate that this new class of
 automaton is also decidable. 
 
