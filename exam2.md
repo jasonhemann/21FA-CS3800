@@ -96,7 +96,8 @@ this language. For instance, one valid string would be
 "asstfloxlqeldylzplhru". And as long as we aren't concerned with the
 actual leaf data---if anything of the sort will do, then we could use
 regular expression substitution to *produce* an automaton element as a
-result.
+result. If you wish you can assume that all leaf data are the
+lowercase letter `l`. 
 
 ```
 <automaton>
