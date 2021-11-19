@@ -91,7 +91,7 @@ question assume that transition elements always come* "from", then
 
 Your job is to construct a grammar describing JFLAP-like strings in
 this language. For instance, one valid string would be
-"asstfloxlqplhplzeldru". And as long as we aren't concerned with the
+"asstfloxlqplhylzeldru". And as long as we aren't concerned with the
 actual leaf data---if anything of the sort will do, then we could use
 regular expression substitution to *produce* an automaton element as a
 result.
