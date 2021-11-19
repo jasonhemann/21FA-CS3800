@@ -252,15 +252,15 @@ Your solution will be automatically tested as follows:
 
   You can test your program with these files:
 
-  * [`grammar1.jff`]({{ site.baseurl }}/assets/docs/grammar1.jff)
-  * [`grammar2.jff`]({{ site.baseurl }}/assets/docs/grammar2.jff)
-  * [`grammar3.jff`]({{ site.baseurl }}/assets/docs/grammar3.jff)
-  * [`grammar4.jff`]({{ site.baseurl }}/assets/docs/grammar4.jff)
-  * [`grammar5.jff`]({{ site.baseurl }}/assets/docs/grammar5.jff)
+  * [`chomsky-grammar1.jff`]({{ site.baseurl }}/assets/docs/chomsky-grammar1.jff)
+  * [`chomsky-grammar2.jff`]({{ site.baseurl }}/assets/docs/chomsky-grammar2.jff)
+  * [`chomsky-grammar3.jff`]({{ site.baseurl }}/assets/docs/chomsky-grammar3.jff)
+  * [`chomsky-grammar4.jff`]({{ site.baseurl }}/assets/docs/chomsky-grammar4.jff)
+  * [`chomsky-grammar5.jff`]({{ site.baseurl }}/assets/docs/chomsky-grammar5.jff)
 
 * **Examples**:
 
-  `printf "grammar1.jff" | make -sf Makefile run-exam2-chomsky`
+  `printf "chomsky-grammar1.jff" | make -sf Makefile run-exam2-chomsky`
 
   Output:
 
