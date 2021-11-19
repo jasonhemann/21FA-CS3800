@@ -87,7 +87,9 @@ l - leaf aka some actual data
 Note that we're ignoring questions of duplicate state names, whether
 or not there's a *single* initial state, etc. Furthermore *for this
 question assume that transition elements always come* "from", then
-"to", then "read", then "pop", then "push".
+"to", then "read", then "pop", then "push". Further, assume that
+automaton always have at least one state and at least one transition.
+Moreover, say that all states must come before any automaton elements.
 
 Your job is to construct a grammar describing JFLAP-like strings in
 this language. For instance, one valid string would be
@@ -99,10 +101,10 @@ result.
 ```
 <automaton>
 <state id="0" name="q0"/>
-b<state id="1" name="q1"/>
+<state id="1" name="q1"/>
 <transition>
-<to>l</to>
 <from>l</from>
+<to>l</to>
 <read>l</read>
 <pop>l</pop>
 <push>l</push>
@@ -170,7 +172,7 @@ I'm not being super clear right now about _how_ to generate the
 concatenation of two CFLs, but I suggest thinking in terms of
 productions--how what it would look like to generate a string in the
 concatenation? You will put your grammar in the file
-`exam2-kleene.txt`. You should come up with a simple solution, we will
+`exam2-concat.txt`. You should come up with a simple solution, we will
 deduct points for overly complicated solutions.
 
 ## 4. Kleene star for CFLs. 
