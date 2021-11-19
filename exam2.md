@@ -99,6 +99,7 @@ result.
 ```
 <automaton>
 <state id="0" name="q0"/>
+<state id="1" name="q1"/>
 <transition>
 <to>l</to>
 <from>l</from>
