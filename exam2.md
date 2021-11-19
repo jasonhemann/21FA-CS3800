@@ -342,6 +342,7 @@ Your solution will be tested as follows:
   Output:
 
 ```
+Output omitted for length
 ```
 
 Together with knowing that we have a decider for $A_{\textrm{DFA}}$
