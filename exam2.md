@@ -19,7 +19,7 @@ layout: single
 
 * [Kleene star of CFLs](#4-kleene-star-of-cfls) (2pts, manually graded)
   
-* [Chomsky Normal Form](#5-chomsky-normal-form) (6pts, 3 manually graded)
+* [Chomsky Normal Form](#5-chomsky-normal-form) (6pts, 2 manually graded, 1 freebie)
 
 * [A Novel Reduction](#6-a-novel-reduction) (4pts, 2 manually graded)
 
