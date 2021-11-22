@@ -19,7 +19,7 @@ layout: single
 
 * [Kleene star of CFLs](#4-kleene-star-of-cfls) (2pts, manually graded)
   
-* [Chomsky Normal Form](#5-chomsky-normal-form) (6pts, 2 manually graded)
+* [Chomsky Normal Form](#5-chomsky-normal-form) (6pts, 3 manually graded)
 
 * [A Novel Reduction](#6-a-novel-reduction) (4pts, 2 manually graded)
 
@@ -337,6 +337,7 @@ Your solution will be tested as follows:
   You can test your program with these files:
 
   * [`nsdfa-goodbad.xml`]({{ site.baseurl }}/assets/docs/nsdfa-goodbad.xml): recognizes the language $\\{\textrm{"good"}, \textrm{"bad"}\\}$
+  * [`nsdfa-abc-two-three.jff`]({{ site.baseurl }}/assets/docs/nsdfa-abc-two-three.jff): recognizes two out of three in a row
 
   `printf "nsdfa-goodbad.xml" | make -sf Makefile run-exam2-nsdfa2dfa`
 
