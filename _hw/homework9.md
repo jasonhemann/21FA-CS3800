@@ -40,7 +40,7 @@ case-sensitive):
 
 * `clear-and-move.trm`
 
-* `write-to-r2.trm`
+* `write-to-2.trm`
 
 * `move-writer.trm`
 
