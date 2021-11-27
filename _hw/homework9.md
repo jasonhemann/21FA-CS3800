@@ -274,23 +274,23 @@ Your solution will be tested as follows:
 * **Example**:
 
   ```
-  self-hash.trm | ./trm 2>&1 | tail -n 1
+  self-hash.trm | ./trm 2>&1 10000 | tail -n 1
   ```
 
   Output: 
 
   ```
-  Coming
+  Omitted, because that's basically the answer.
   ```
 
 * **Example**:
 
   ```
-  cat self-hash.trm | ./trm 2>&1 | tail -n 1 | sed 's/.$//' | ./trm 2>&1 `
+  cat self-hash.trm | ./trm 2>&1 10000 | tail -n 1 | sed 's/.$//' | ./trm 10000 2>&1 `
   ``
 
   Output: 
 
   ```
-  Coming
+  Omitted, because that's basically the answer.
   ```
