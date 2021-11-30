@@ -1,3 +1,7 @@
+---
+title: "Homework 10"
+layout: single
+---
 
 # [Homework 10](http://jasonhemann.github.io/21FA-CS3800/hw/homework10/)
 
@@ -16,7 +20,7 @@
 -   [Modular Exponentiation](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#3-mod-exp)  (3 pts, 2 graded manually)
 
 - [3-colorability is in NP](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#4-3-color)  (2 pt, 1 graded manually)
-    
+
 
 **Total**: 10 points
 
