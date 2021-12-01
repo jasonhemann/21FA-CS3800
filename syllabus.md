@@ -173,7 +173,7 @@ late/etc homework clemency. I shan't accept late submissions except
 under the most exceptional of circumstances (family emergencies,
 hospitalizations, the like)---if that comes up please see me. We are,
 however happy to go over these missed submissions with you at office
-hours.
+hours. 
 
 You should make every effort to complete and submit each assignment.
 If you are struggling with an assignment, it best to turn in what you
@@ -202,6 +202,9 @@ format. Students' suggestions led to several improvements in how I
 conduct this course, and your continued suggestions will help lead to
 continued improvements. These exams are at the dates laid out on the
 calendar and as discussed in class; we will not have a final exam.
+
+We added an additional, optional final. We will score the exam portion
+of your grade as the best two out of three. 
 
 ### TRACE evaluations
 
