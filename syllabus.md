@@ -85,22 +85,21 @@ I will assign overall course grades as follows:
      |---------------------------+------------|
      | Lecture Quizzes           |         20 |
      | Exams                     |         35 |
-     | Homework*                 |         45 |
+     | Homework                  |         45 |
      | TRACE                     |          1 | 
      | Total                     |        101 |
 
-I will calculate overall numeric grade according to this grading
-scheme. Everyone who gets at least 90% will get some form of A,
-everyone with at least 80% will get at least some form of B, and
-everyone with at least 70% will get at least some form of
-C. Additionally, there will be a "curve", but I will determine it only
-at the end of the semester. This curve will potentially raise grades
-above those described here, but will not lower them. Therefore, the
-total grade shown on Canvas does not necessarily reflects the
-worst-case scenario of the letter grade you will get at the end of the
-semester. This means I *cannot* give you a more precise estimate of
-your grade than what you calculate from the raw score. I detail below
-the aforementioned individual components of your final grade.
+I will calculate overall numeric grade according to the [Northeastern
+grading schema]({{ site.baseurl
+}}/assets/images/northeastern-grading-schema.jpg). Additionally, there
+will be a "curve", but I will determine it only at the end of the
+semester. This curve will potentially raise grades above those
+described here, but will not lower them. Therefore, the total grade
+shown on Canvas does not necessarily reflects the worst-case scenario
+of the letter grade you will get at the end of the semester. This
+means I *cannot* give you a more precise estimate of your grade than
+what you calculate from the raw score. I detail below the
+aforementioned individual components of your final grade.
 
 I will base some portions of your homework and lecture quiz
 grades on completion and submission of the relevant exercises. I will
