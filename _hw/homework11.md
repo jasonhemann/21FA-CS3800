@@ -61,7 +61,7 @@ size of the instance $I\_{P}$. Cf. 7.28 and 7.29 in §7.4.
 Let's remind ourselves about where we saw reductions in an earlier
 context: _mapping reducibility_. Let us define $R$ as follows: 
 
-$ R = \\{<M> | M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textcal{R}} \\}$
+$ R = \\{<M> \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textcal{R}} \\}$
 
 You will show that R is undecidable using mapping reducibility. 
 
