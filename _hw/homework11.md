@@ -61,7 +61,7 @@ size of the instance $I\_{P}$. Cf. 7.28 and 7.29 in §7.4.
 Let's remind ourselves about where we saw reductions in an earlier
 context: _mapping reducibility_. Let us define $R$ as follows: 
 
- $ \textit{R} = \\{\langle M \rangle \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textit{R}} \\}$
+ $ \mathrm{R} = \\{\langle M \rangle \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\mathrm{R}} \\}$
 
 You will show that R is undecidable using mapping reducibility. 
 
@@ -76,53 +76,53 @@ You will show that R is undecidable using mapping reducibility.
 
 ## 2. EULPATHCOMP
 
-Let us define $\textit{EULPATHCOMP}$ as follows:
+Let us define $\mathrm{EULPATHCOMP}$ as follows:
 
-$ \textit{EULPATHCOMP} = \\{\langle G,s,t \rangle \mid G \textrm{ is a complete undirected graph that contains a path from } s \textrm{ to } t \textrm{ through every edge in } G \\}$. 
+$ \mathrm{EULPATHCOMP} = \\{\langle G,s,t \rangle \mid G \textrm{ is a complete undirected graph that contains a path from } s \textrm{ to } t \textrm{ through every edge in } G \\}$. 
 
-Let us define $\textit{EULCIRCUITCOMP}$ as follows:
+Let us define $\mathrm{EULCIRCUITCOMP}$ as follows:
 
-$ \textit{EULCIRCUITCOMP} = \\{\langle G \rangle \mid G \textrm{ is a complete undirected graph that contains an Eulerian circuit} \\}$. 
+$ \mathrm{EULCIRCUITCOMP} = \\{\langle G \rangle \mid G \textrm{ is a complete undirected graph that contains an Eulerian circuit} \\}$. 
 
-You will show that $\textit{EULPATHCOMP} =\_{P}
-\textit{EULCIRCUITCOMP}$ by showing $\textit{EULPATHCOMP} \leq\_{P}
-\textit{EULCIRCUITCOMP}$ and $\textit{EULCIRCUITCOMP} \leq\_{P}
-\textit{EULPATHCOMP}$. You might consider investigating the Seven
+You will show that $\mathrm{EULPATHCOMP} =\_{P}
+\mathrm{EULCIRCUITCOMP}$ by showing $\mathrm{EULPATHCOMP} \leq\_{P}
+\mathrm{EULCIRCUITCOMP}$ and $\mathrm{EULCIRCUITCOMP} \leq\_{P}
+\mathrm{EULPATHCOMP}$. You might consider investigating the Seven
 Bridges of Konigsburg Problem.
 
 **Your Tasks**
 
 * Describe, in pseudocode or prose or a mixture of both, an informal
   description of your algorithm that will implement a reduction from
-  $\textit{EULPATHCOMP}$ to $\textit{EULCIRCUITCOMP}$.
+  $\mathrm{EULPATHCOMP}$ to $\mathrm{EULCIRCUITCOMP}$.
 
 * Describe, in pseudocode or prose or a mixture of both, an informal
   description of your algorithm that will implement a reduction from
-  $\textit{EULCIRCUITCOMP}$ to $\textit{EULPATHCOMP}$.
+  $\mathrm{EULCIRCUITCOMP}$ to $\mathrm{EULPATHCOMP}$.
   
 * Submit these both in `eulpathcomp.txt`. 
 
 ## 3. UNDIRHAMPATH
 
-Let us define $\textit{UNDIRHAMPATH}$ as follows:
+Let us define $\mathrm{UNDIRHAMPATH}$ as follows:
 
-$ \textit{UNDIRHAMPATH} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian path} \\}$. 
+$ \mathrm{UNDIRHAMPATH} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian path} \\}$. 
 
-Let us define $\textit{UNDIRHAMCIRCUIT}$ as follows:
+Let us define $\mathrm{UNDIRHAMCIRCUIT}$ as follows:
 
-$ \textit{UNDIRHAMCIRCUIT} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian circuit} \\}$. 
+$ \mathrm{UNDIRHAMCIRCUIT} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian circuit} \\}$. 
 
-You will show that $\textit{UNDIRHAMPATH} =\_{P}
-\textit{UNDIRHAMCIRCUIT}$, in a similar fashion.
+You will show that $\mathrm{UNDIRHAMPATH} =\_{P}
+\mathrm{UNDIRHAMCIRCUIT}$, in a similar fashion.
 
 **Your Tasks**
 
 * Describe, in pseudocode or prose or a mixture of both, an informal
   description of your algorithm that will implement a reduction from
-  $\textit{UNDIRHAMPATHP}$ to $\textit{UNDIRHAMCIRCUIT}$.
+  $\mathrm{UNDIRHAMPATHP}$ to $\mathrm{UNDIRHAMCIRCUIT}$.
 
 * Describe, in pseudocode or prose or a mixture of both, an informal
   description of your algorithm that will implement a reduction from
-  $\textit{UNDIRHAMCIRCUIT}$ to $\textit{UNDIRHAMPATHP}$.
+  $\mathrm{UNDIRHAMCIRCUIT}$ to $\mathrm{UNDIRHAMPATHP}$.
   
 * Submit these both in `undirhampath.txt`. 
