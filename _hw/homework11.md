@@ -61,7 +61,7 @@ size of the instance $I\_{P}$. Cf. 7.28 and 7.29 in §7.4.
 Let's remind ourselves about where we saw reductions in an earlier
 context: _mapping reducibility_. Let us define $R$ as follows: 
 
- $R = \\{<M> \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\texit{R}} \\}$
+ $ \textit{R}} = \\{\langle M \rangle \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textit{R}} \\}$
 
 You will show that R is undecidable using mapping reducibility. 
 
@@ -78,11 +78,11 @@ You will show that R is undecidable using mapping reducibility.
 
 Let us define $\textit{EULPATHCOMP}$ as follows:
 
-$ \textit{EULPATHCOMP} = \\{<G,s,t> \mid G \textrm{ is a complete undirected graph that contains a path from } s \textrm{ to } t \textrm{ through every edge in } G \\}$. 
+$ \textit{EULPATHCOMP} = \\{\langle G,s,t \rangle \mid G \textrm{ is a complete undirected graph that contains a path from } s \textrm{ to } t \textrm{ through every edge in } G \\}$. 
 
 Let us define $\textit{EULCIRCUITCOMP}$ as follows:
 
-$ \textit{EULCIRCUITCOMP} = \\{<G> \mid G \textrm{ is a complete undirected graph that contains an eulerian circuit} \\}$. 
+$ \textit{EULCIRCUITCOMP} = \\{\langle G \rangle \mid G \textrm{ is a complete undirected graph that contains an eulerian circuit} \\}$. 
 
 You will show that $\textit{EULPATHCOMP} =\_{P}
 \textit{EULCIRCUITCOMP}$ by showing $\textit{EULPATHCOMP} \leq\_{P}
@@ -106,11 +106,11 @@ Bridges of Konigsburg Problem.
 
 Let us define $\textit{UNDIRHAMPATH}$ as follows:
 
-$ \textit{UNDIRHAMPATH} = \\{<G> \mid G \textrm{ is an undirected graph with a Hamiltonian path} \\}$. 
+$ \textit{UNDIRHAMPATH} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian path} \\}$. 
 
 Let us define $\textit{UNDIRHAMCIRCUIT}$ as follows:
 
-$ \textit{UNDIRHAMCIRCUIT} = \\{<G> \mid G \textrm{ is an undirected graph with a Hamiltonian circuit} \\}$. 
+$ \textit{UNDIRHAMCIRCUIT} = \\{\langle G \rangle \mid G \textrm{ is an undirected graph with a Hamiltonian circuit} \\}$. 
 
 You will show that $\textit{UNDIRHAMPATH} =\_{P}
 \textit{UNDIRHAMCIRCUIT}$, in a similar fashion.
