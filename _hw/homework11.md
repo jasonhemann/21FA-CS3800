@@ -61,7 +61,7 @@ size of the instance $I\_{P}$. Cf. 7.28 and 7.29 in §7.4.
 Let's remind ourselves about where we saw reductions in an earlier
 context: _mapping reducibility_. Let us define $R$ as follows: 
 
- $ \textit{R}} = \\{\langle M \rangle \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textit{R}} \\}$
+ $ \textit{R} = \\{\langle M \rangle \mid M \textrm{ is a TM that accepts } w \textrm{ iff } w^{\textit{R}} \\}$
 
 You will show that R is undecidable using mapping reducibility. 
 
@@ -82,7 +82,7 @@ $ \textit{EULPATHCOMP} = \\{\langle G,s,t \rangle \mid G \textrm{ is a complete 
 
 Let us define $\textit{EULCIRCUITCOMP}$ as follows:
 
-$ \textit{EULCIRCUITCOMP} = \\{\langle G \rangle \mid G \textrm{ is a complete undirected graph that contains an eulerian circuit} \\}$. 
+$ \textit{EULCIRCUITCOMP} = \\{\langle G \rangle \mid G \textrm{ is a complete undirected graph that contains an Eulerian circuit} \\}$. 
 
 You will show that $\textit{EULPATHCOMP} =\_{P}
 \textit{EULCIRCUITCOMP}$ by showing $\textit{EULPATHCOMP} \leq\_{P}
