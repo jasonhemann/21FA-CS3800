@@ -27,11 +27,12 @@ classes: wide
 | 19 | Nov.  | 12    | Fri       | Mapping Reducibility, Intro RM               | Ch 5.3, [Getting Started w/RM](https://iulg.sitehost.iu.edu/trm/startup.shtml)                                                               | 9           |
 | 20 | Nov.  | 16    | Tues      | Turing Machines, Recursion Theorem           | Ch 6.1, [Programs 4 Programs](https://iulg.sitehost.iu.edu/trm/programs.shtml), [Self-Rep](https://iulg.sitehost.iu.edu/trm/recursion.shtml) |             |
 | 21 | Nov.  | 19    | Fri       | Intro to Time Complexity                     | Ch 7.1                                                                                                                                       | Exam Period |
-| 22 | Nov.  | 19-20 | FRI + SAT | Online Gradescope Exam (8am FRI -  10pm SAT) |                                                                                                                                              |             |
+| 22 | Nov.  | 19-20 | FRI + SAT | Online Gradescope Exam (8am FRI - 10pm SAT)  |                                                                                                                                              |             |
 | 23 | Nov.  | 23    | Tues      | Polynomial Time (P)                          | Ch 7.2                                                                                                                                       |             |
 |    | Nov.  | 26    | Fri       | Thanksgiving Break                           |                                                                                                                                              |             |
 | 24 | Nov.  | 30    | Tues      | NP                                           | Ch 7.3                                                                                                                                       | 10          |
 | 25 | Dec.  | 3     | Fri       | Poly-time Reducibility, NP Completeness      | Ch 7.4                                                                                                                                       | 11          |
 | 26 | Dec.  | 7     | Tues      | Cook-Levin theorem, Living in a fallen world | Ch 7.4-7.5                                                                                                                                   |             |
-	
+|    | Dec.  | 14-17 | Tues-Fri  | Online Gradescope Exam (8am TUES - 10pm FRI) |                                                                                                                                              |             |
+
 
