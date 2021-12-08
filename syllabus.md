@@ -91,7 +91,7 @@ I will assign overall course grades as follows:
 
 I will calculate overall numeric grade according to the [Northeastern
 grading schema]({{ site.baseurl
-}}/assets/images/northeastern-grading-schema.jpg). Additionally, there
+}}/assets/images/northeastern-grading-scheme.jpg). Additionally, there
 will be a "curve", but I will determine it only at the end of the
 semester. This curve will potentially raise grades above those
 described here, but will not lower them. Therefore, the total grade
