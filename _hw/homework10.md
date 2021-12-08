@@ -3,9 +3,7 @@ title: "Homework 10"
 layout: single
 ---
 
-# [Homework 10](http://jasonhemann.github.io/21FA-CS3800/hw/homework10/)
-
-### Objectives[Permalink](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#objectives "Permalink")
+### Objectives
 
 -   More self-referencing exercises for TMs
 -   Understand the complexity class P
@@ -13,13 +11,13 @@ layout: single
 
 **Homework Problems**
 
--   [Reference loop](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#1-reference-loop)  (3 pts)
+-   [Reference loop](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#1-reference-looppermalink)  (3 pts)
 
--   [Matrix Multiplication](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#2-matrix)  (2 pts, 1 graded manually)
+-   [Matrix Multiplication](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#2-matrix-multiplicationpermalink)  (2 pts, 1 graded manually)
 
--   [Modular Exponentiation](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#3-mod-exp)  (3 pts, 2 graded manually)
+-   [Modular Exponentiation](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#3-modexppermalink)  (3 pts, 2 graded manually)
 
-- [3-colorability is in NP](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#4-3-color)  (2 pt, 1 graded manually)
+- [3-colorability is in NP](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#4-3-colorability-is-in-nppermalink)  (2 pt, 1 graded manually)
 
 
 **Total**: 10 points
@@ -54,7 +52,7 @@ The submission must include the following files (**NOTE**: everything is case-se
 -   the source code files needed by your  `Makefile`.
    
 
-## 1. Reference loop[Permalink](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#1-reference-loop "Permalink")
+## 1. Reference loop
 
 This problem is taken from Sipser Exercise 6.6.
 
@@ -104,7 +102,7 @@ The program has 2 for-loops:
 Overall this runs in time polynomial to the input length.
 ```
 
-## 2. Matrix Multiplication[Permalink](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#2-matrix "Permalink")
+## 2. Matrix Multiplication
 
 In this problem, you will show the matrix multiplication language is in $P$.
 
@@ -112,7 +110,7 @@ The language MATMUL is described as follows:
 
 $$  \begin{align*} \textit{MATMUL}=\{\langle &n,m,k, X,Y,Z\rangle :\\
 & n,m,k\text{ are integers, }\\
-&X\in\Z^{n\times m},Y\in \Z^{m\times k},Z\in \Z^{n\times k} \text{ are matrices,}\\
+&X\in\mathbb{Z}^{n\times m},Y\in \mathbb{Z}^{m\times k},Z\in \mathbb{Z}^{n\times k} \text{ are matrices,}\\
 & XY=Z\} \end{align*}$$
 In plain English, this is: given the dimension $n,m,k$, a $n$-by-$m$ matrix $X$, a $m$-by-$k$ matrix $Y$, and a result $n$-by-$k$ matrix $Z$, test whether $XY=Z$.
 
@@ -151,7 +149,7 @@ Output:
 1
 ```
 
-## 3. MODEXP[Permalink](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#3-mod-exp "Permalink")
+## 3. MODEXP
 
 This problem is taken from Sipser Exercise 7.12.
 
@@ -164,7 +162,7 @@ $$  \begin{align*} \textit{MODEXP}=\{\langle a,b,c,p\rangle : a&,b,c,p \text{ ar
 
 Show that $\textit{MODEXP}\in P$ by writing a polynomial time decider of the language, in a programming language of your choice.
 
-A straightforward method is to compute $a^b\pmod p$ and compare it against $c$. However, the most obvious algorithm (computing $a^b$ in a for-loop) won't work, since the algorithm must run in polynomial time of the *length* of $b$, making the for-loop exponentially large.
+A straightforward method is to compute $a^b\pmod p$ and compare it against $c$. However, the most obvious algorithm (computing $a^b$ in a for-loop) won't work, since an efficient algorithm must run in polynomial time of the *length* of $b$ (which, in turn, must run in $O(\log b)$, so logarithmic of $b$). A simple for-loop computing $a^b$ runs in time $O(b\log a)$, which is exponential (inefficient) in $\log b$.
 
 A hint is to consider when $b$ is a power of 2. Is there any shortcut to compute $a^b$ in this case?
 
@@ -177,13 +175,13 @@ A hint is to consider when $b$ is a power of 2. Is there any shortcut to compute
 
 **Example**
 ```
-7, 18, 9, 11
+7 18 9 11
 
 Output:
 1
 ```
 
-## 4. 3-Colorability is in NP[Permalink](https://jasonhemann.github.io/21FA-CS3800/hw/homework10/#3-4-color "Permalink")
+## 4. 3-Colorability is in NP
 
 In this problem, you will show the 3-colorability language is in $NP$.
 
