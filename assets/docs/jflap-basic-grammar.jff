@@ -1,0 +1,7 @@
+<structure>
+<type>grammar</type>
+<production><left>B</left><right>ACAC</right></production>
+<production><left>A</left><right/></production>
+<production><left>A</left><right>f</right></production>
+<production><left>C</left><right>abc</right></production>
+</structure>

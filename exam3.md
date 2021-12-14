@@ -167,6 +167,9 @@ run-exam3-chomsky:
 
   * [`jflap-without-epsilons.jff`]({{ site.baseurl }}/assets/docs/jflap-without-epsilons.jff)
   * [`jflap-without-epsilons-2.jff`]({{ site.baseurl }}/assets/docs/jflap-without-epsilons-2.jff)
+  * [`jflap-without-units.jff`]({{ site.baseurl }}/assets/docs/jflap-without-units.jff)
+  * [`jflap-without-units-2.jff`]({{ site.baseurl }}/assets/docs/jflap-without-units-2.jff)
+  * [`jflap-basic-grammar.jff`]({{ site.baseurl }}/assets/docs/jflap-basic-grammar.jff)
 
 Your solution will be automatically tested as follows:
 
@@ -211,12 +214,22 @@ Your solution will be automatically tested as follows:
 </structure>
 ```
 
-<!--   `printf "jflap-without-epsilons-2.jff" | make -sf Makefile run-exam3-remove-units` -->
+  `printf "jflap-without-epsilons-2.jff" | make -sf Makefile run-exam3-remove-units`
 
-<!--   Output: -->
+  Output:
 
-<!-- ``` -->
-<!-- ``` -->
+```
+<structure>
+<type>grammar</type>
+<production><left>B</left><right>FE</right></production>
+<production><left>D</left><right>FE</right></production>
+<production><left>A</left><right>FE</right></production>
+<production><left>C</left><right>FE</right></production>
+<production><left>F</left><right>a</right></production>
+<production><left>E</left><right>FE</right></production>
+<production><left>E</left><right>b</right></production>
+</structure>
+```
 
 * **Input** (from `stdin`): the name of **an XML file** containing a
   CFG .
@@ -276,13 +289,31 @@ Your solution will be automatically tested as follows:
 </structure>
 ```
 
-<!--   `printf "jflap-without-units-2.jff" | make -sf Makefile -->
-<!--   run-exam3-normalize` -->
+  `printf "jflap-without-units-2.jff" | make -sf Makefile run-exam3-normalize`
 
-<!--   Output: -->
+  Output:
 
-<!-- ``` -->
-<!-- ``` -->
+```
+<structure>
+<type>grammar</type>
+<production><left>F</left><right>KJ</right></production>
+<production><left>E</left><right>PO</right></production>
+<production><left>O</left><right>NG</right></production>
+<production><left>N</left><right>t</right></production>
+<production><left>P</left><right>p</right></production>
+<production><left>H</left><right>AB</right></production>
+<production><left>B</left><right>CI</right></production>
+<production><left>C</left><right>e</right></production>
+<production><left>A</left><right>d</right></production>
+<production><left>D</left><right>ML</right></production>
+<production><left>L</left><right>Ey</right></production>
+<production><left>M</left><right>b</right></production>
+<production><left>J</left><right>HD</right></production>
+<production><left>K</left><right>x</right></production>
+<production><left>I</left><right>z</right></production>
+<production><left>G</left><right>f</right></production>
+</structure>
+```
 
 * **Input** (from `stdin`): the name of **an XML file** containing a
   CFG .
@@ -296,12 +327,41 @@ Your solution will be automatically tested as follows:
 
 * **Examples**:
 
-  `printf "grammar1.jff" | make -sf Makefile run-exam3-chomsky`
+  `printf "jflap-basic-grammar.jff" | make -sf Makefile run-exam3-chomsky`
 
   Output:
 
 ```
-WORKING ON IT
+<structure>
+<type>grammar</type>
+<production><left>G</left><right>JB</right></production>
+<production><left>A</left><right>HU</right></production>
+<production><left>U</left><right>TH</right></production>
+<production><left>T</left><right>J</right></production>
+<production><left>I</left><right>JA</right></production>
+<production><left>B</left><right>HS</right></production>
+<production><left>S</left><right>RH</right></production>
+<production><left>R</left><right>J</right></production>
+<production><left>I</left><right>HQ</right></production>
+<production><left>Q</left><right>PH</right></production>
+<production><left>P</left><right>J</right></production>
+<production><left>G</left><right>HC</right></production>
+<production><left>C</left><right>DH</right></production>
+<production><left>D</left><right>J</right></production>
+<production><left>I</left><right>JO</right></production>
+<production><left>O</left><right>NH</right></production>
+<production><left>N</left><right>H</right></production>
+<production><left>G</left><right>JE</right></production>
+<production><left>E</left><right>FH</right></production>
+<production><left>F</left><right>H</right></production>
+<production><left>H</left><right>ML</right></production>
+<production><left>L</left><right>Kc</right></production>
+<production><left>K</left><right>b</right></production>
+<production><left>M</left><right>a</right></production>
+<production><left>G</left><right>HH</right></production>
+<production><left>I</left><right>HH</right></production>
+<production><left>J</left><right>f</right></production>
+</structure>
 ```
 
 
