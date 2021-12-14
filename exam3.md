@@ -156,12 +156,10 @@ you will produce
   presentation. 
   
 * You should be able to write your `run-exam3-chomsky` Makefile target as follows:
+  EDIT: What I wrote was inaccurate, because they are taking filenames as arguments. 
+  Instead, just call you other targets in sequence, piping the output to an intermediate file. 
+  Or you can choose to write a separate file that does the work of chaining your earlier procedures together, if you wish.
 
-```
-run-exam3-chomsky:
-	make -sf Makefile run-exam2-chomsky | make -sf Makefile run-exam3-remove-units | make -sf Makefile run-exam3-normalize 
-
-```
 
   You can test your program with these files:
 
