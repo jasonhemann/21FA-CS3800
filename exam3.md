@@ -432,10 +432,9 @@ named `exam3-undecidability-by-reduction.txt`.
 ## 5. Graph Components
 
 In a directed graph, a **component** is a subgraph where all the nodes
-of that subgraph are connected to each other by a path, and do not
-connect to any nodes not in that subgraph. Show that the following
-language is in $\textbf{P}$ by describing an algorithm polynomial in
-the size of the graph G to decide membership in
+of that subgraph are connected to each other by a path. Show that the
+following language is in $\textbf{P}$ by describing an algorithm
+polynomial in the size of the graph G to decide membership in
 $\textrm{2COMPONENTS}$.
 
 $ \textrm{2COMPONENTS} =  \\{ \left \langle G \right \rangle \mid G \textrm{ is a directed graph and has at least two components} \\}$
