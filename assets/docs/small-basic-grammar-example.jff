@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.-->
+<structure>
+<type>grammar</type>
+<production><left>C</left><right>HG</right></production>
+<production><left>D</left><right>JI</right></production>
+<production><left>I</left><right>bc</right></production>
+<production><left>J</left><right>a</right></production>
+<production><left>E</left><right>AB</right></production>
+<production><left>B</left><right>bc</right></production>
+<production><left>A</left><right>a</right></production>
+<production><left>G</left><right>bc</right></production>
+<production><left>H</left><right>a</right></production>
+<production><left>C</left><right>FD</right></production>
+<production><left>E</left><right>FD</right></production>
+</structure>

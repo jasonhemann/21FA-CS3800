@@ -1,0 +1,25 @@
+Let L = { 0ⁱ1ʲ0ⁱ | i ≤ j }. We use the pumping lemma to show that L is
+not a CFL. Firstly, we assume (temporarily, for this proof, to obtain
+a contradiction) that L is a CFL. Let p be the pumping length given by
+the context-free pumping lemma.
+
+We will show that a string s ∈ L cannot be pumped. 
+
+We choose the string s to be YOU FILL IN HERE, again where p is the
+pumping length.
+
+From our temporary assumption that L is a CFL, it follows that since s
+is in L, s should be pumpable. That is, the pumping lemma says that we
+can divide s into uvxyz, where |vxy| < p and |vy| > 0. However, we
+show here that no matter how we divide s into uvxyz, one of the
+conditions of the pumping lemma is violated.
+
+YOU FILL IN HERE
+
+
+
+
+
+Because each case results in a contradiction, a contradiction is
+inevitable. So the assumption that L is a CFL must be false. Thus we
+have proved that L is not context free. 
