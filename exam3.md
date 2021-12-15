@@ -400,13 +400,13 @@ such that $φ_{p}() = p + p$. Write your program in a file named
 
   * You have a program that produces some output and when we run it on its own output it again produces output 
     ```
-	cat exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1 | exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1 
+	cat exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1 | ./trm 100000 -1 2>&1 | tail -n 1 
 	``` 
     This should produce four copies of your program as a result
 	
   * You have a program that, when we submit it twice, is the same as running your program twice
     ```
-	diff <(cat exam3-duplicating-program.trm exam3-duplicating-program.trm | ./trm 100000 -1 2>&1) <(cat exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1 | exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1) 
+	diff <(cat exam3-duplicating-program.trm exam3-duplicating-program.trm | ./trm 100000 -1 2>&1) <(cat exam3-duplicating-program.trm | ./trm 100000 -1 2>&1 | tail -n 1 | ./trm 100000 -1 2>&1 | tail -n 1) 
 	``` 
 	Running your program through trm twice should be the same as running two copies of your program through trm once. 
 
