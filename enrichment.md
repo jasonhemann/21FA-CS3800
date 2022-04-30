@@ -63,7 +63,8 @@ classes: wide
  
 # Other non-Sipser based courses
 - [Easy Theory](https://www.youtube.com/c/EasyTheory/playlists)
-- [IIT](https://www.youtube.com/playlist?list=PLbMVogVj5nJSd25WnSU144ZyGmsqjuKr3)
+- [IIT Kanpur](https://www.youtube.com/playlist?list=PLbMVogVj5nJSd25WnSU144ZyGmsqjuKr3)
+- [IIT Guwahati](https://www.youtube.com/playlist?list=PLbMVogVj5nJSMghTc2Qu0tk-lwY4ui7iY)
 - [UVA](https://www.youtube.com/playlist?list=PL7yS_81K9Sey0zq1qwoLp2OreNYPlk8TF)
 
 # Meta 
