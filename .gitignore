@@ -1,5 +1,15 @@
-*.md~
-*#*.ss~
-*.lisp~
-*.org~
-*.yml~
+# -*- mode: gitignore; -*-
+
+# Emacs / editor backups
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+
+_site
+.sass-cache
+.jekyll-metadata
+*.org
+*~
+*.bak
