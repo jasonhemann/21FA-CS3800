@@ -14,15 +14,15 @@ classes: wide
 
 # OneHash Site and Tooling
 
-- [1\#](https://iulg.sitehost.iu.edu/trm/)
+- [1\#](https://web.archive.org/web/20210508160129/https://iulg.sitehost.iu.edu/trm/)
 - [TRM Interpreter repository](https://github.com/melvinzhang/text-register-machine) (Download, `make`, and run)
 
 ## Lessons for TRM 
 
-1. [Getting Started w/RM](https://iulg.sitehost.iu.edu/trm/startup.shtml)
+1. [Getting Started w/RM](https://web.archive.org/web/20200403020415/https://iulg.sitehost.iu.edu/trm/startup.shtml)
 2. (You may skip)
-3. [Programs 4 Programs](https://iulg.sitehost.iu.edu/trm/programs.shtml)
-4. [Self-Rep](https://iulg.sitehost.iu.edu/trm/recursion.shtml)
+3. [Programs 4 Programs](https://web.archive.org/web/20200403020414/https://iulg.sitehost.iu.edu/trm/programs.shtml)
+4. [Self-Rep](https://web.archive.org/web/20200403020414/https://iulg.sitehost.iu.edu/trm/self.shtml)
 
 
 
@@ -79,7 +79,7 @@ classes: wide
 
 # Ancillary
 
-- Chiang's short story ["Seventy-two Letters"](https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf) ([Audio version](https://archive.org/details/TedChiangSeventyTwoLetters))
+- Chiang's short story ["Seventy-two Letters"](https://archive.org/download/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf) ([Audio version](https://archive.org/details/TedChiangSeventyTwoLetters))
 - [Logicomix](https://en.wikipedia.org/wiki/Logicomix) (It's a comic about Russell and early 20th century mathematical logic. ᕕ( ᐛ )ᕗ) 
 - Chiang's ["Division by Zero"]({{ site.baseurl }}/assets/docs/Chiang-Division-by-Zero.pdf) (a story about ex-falso quodlibet)
 - Russell's ["The Metaphysician's Nightmare"](http://www.naturalthinker.net/trl/texts/Russell,Bertrand/Philosophy/Russell,%20Bertrand%20-%20The%20Metaphysician%27s%20Nightmare.pdf) (a story about the troubles with negation).
