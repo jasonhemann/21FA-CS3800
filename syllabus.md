@@ -3,6 +3,16 @@ title: Syllabus
 layout: single
 toc: true
 toc_label: "Syllabus Contents"
+toc-depth: 2
+to: pdf
+standalone: true
+documentclass: scrartcl
+fontsize: 11pt
+geometry:
+  - margin=1in
+linestretch: 1.15
+mainfont: TeX Gyre Pagella
+colorlinks: true
 ---
 
 ## Purpose and Objectives
@@ -382,5 +392,4 @@ and syllabus as well as being all-around inspirational.
 
 ![In the syllabus]({{ site.baseurl }}/assets/images/syllabus.gif
 "Might just be worth checking.")
-
 
